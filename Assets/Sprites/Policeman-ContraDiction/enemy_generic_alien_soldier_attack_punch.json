@@ -1,0 +1,463 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "enemy_generic_alien_soldier_attack_punch.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 512
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "attack",
+        "from": 0,
+        "to": 19,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 63,
+      "y": 127,
+      "normalized": {
+        "x": 0.5,
+        "y": 0.9921875
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 77,
+        "height": 128
+      },
+      "frameBounds": {
+        "width": 126,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "enemy_generic_alien_soldier_attack_punch_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_001.png": {
+      "frame": {
+        "x": 126,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_002.png": {
+      "frame": {
+        "x": 252,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_003.png": {
+      "frame": {
+        "x": 378,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_004.png": {
+      "frame": {
+        "x": 504,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_005.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_006.png": {
+      "frame": {
+        "x": 126,
+        "y": 128,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_007.png": {
+      "frame": {
+        "x": 252,
+        "y": 128,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_008.png": {
+      "frame": {
+        "x": 378,
+        "y": 128,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_009.png": {
+      "frame": {
+        "x": 504,
+        "y": 128,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_010.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_011.png": {
+      "frame": {
+        "x": 126,
+        "y": 256,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_012.png": {
+      "frame": {
+        "x": 252,
+        "y": 256,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_013.png": {
+      "frame": {
+        "x": 378,
+        "y": 256,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_014.png": {
+      "frame": {
+        "x": 504,
+        "y": 256,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_015.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_016.png": {
+      "frame": {
+        "x": 126,
+        "y": 384,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_017.png": {
+      "frame": {
+        "x": 252,
+        "y": 384,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_018.png": {
+      "frame": {
+        "x": 378,
+        "y": 384,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_attack_punch_019.png": {
+      "frame": {
+        "x": 504,
+        "y": 384,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

@@ -1,0 +1,164 @@
+{
+    "activeFile": "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level1.tmj",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "Todos os Ficheiros (*)",
+    "fileStates": {
+        "": {
+            "scaleInDock": 1
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level1ContraDiction/Level1.tmj": {
+            "expandedObjectLayers": [
+                4,
+                2
+            ],
+            "scale": 0.33,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 6160.60606060606,
+                "y": 481.81818181818176
+            }
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level1ContraDiction/Level1.tmj#Assets": {
+            "scaleInDock": 1
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level1ContraDiction/Level1.tmj#NaveQuebrada": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level1ContraDiction/Level1.tmj#Tiles": {
+            "scaleInDock": 2
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level1ContraDiction/Level1.tmj#vegetation-1-alt-2": {
+            "scaleInDock": 1
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level1ContraDiction/NaveQuebrada.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 0.5
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level1ContraDiction/Tiles.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level1.tmj": {
+            "scale": 0.25,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 1404,
+                "y": -392
+            }
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level1.tmj#Assets": {
+            "scaleInDock": 1
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level1.tmj#NaveQuebrada": {
+            "scaleInDock": 1
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level1.tmj#Tiles": {
+            "scaleInDock": 1
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level1.tmj#vegetation-1-alt-2": {
+            "scaleInDock": 1
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level3.tmj": {
+            "scale": 1,
+            "selectedLayer": 5,
+            "viewCenter": {
+                "x": 6123,
+                "y": 641
+            }
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level3.tmj#Assets": {
+            "scaleInDock": 1
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level3.tmj#NaveQuebrada": {
+            "scaleInDock": 1.5
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level3.tmj#Tiles": {
+            "scaleInDock": 1
+        },
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level3.tmj#vegetation-1-alt-2": {
+            "scaleInDock": 1
+        },
+        "Level2.tmj": {
+            "scale": 0.25,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 7432,
+                "y": 160
+            }
+        },
+        "Level2.tmj#Building Tiles 32x32": {
+            "scaleInDock": 1
+        },
+        "Level2.tmj#Decoration 32x32": {
+            "scaleInDock": 1
+        },
+        "Level2.tmj#GandalfHardcore city tiles 32x32": {
+            "scaleInDock": 1
+        },
+        "Level2_City_Generated.tmj": {
+            "expandedObjectLayers": [
+                8
+            ],
+            "scale": 1.5,
+            "selectedLayer": 6,
+            "viewCenter": {
+                "x": 12630,
+                "y": 350
+            }
+        },
+        "Level2_City_Generated.tmj#Building Tiles 32x32": {
+            "scaleInDock": 1
+        },
+        "Level2_City_Generated.tmj#Decoration 32x32": {
+            "scaleInDock": 1.5
+        },
+        "Level2_City_Generated.tmj#GandalfHardcore city tiles 32x32": {
+            "scaleInDock": 1
+        },
+        "Level2_City_Generated.tmj#NaveQuebrada": {
+            "scaleInDock": 1
+        },
+        "NaveQuebrada.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "SCS_Building_01_Blue_Nighttime_01.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        },
+        "SCS_Building_03_Daytime_01.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 5.5
+        },
+        "SCS_Building_04_Blue_Nighttime_01.tsx": {
+            "scaleInDock": 1,
+            "scaleInEditor": 1
+        }
+    },
+    "last.imagePath": "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Sprites",
+    "openFiles": [
+        "Level2_City_Generated.tmj",
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level1ContraDiction/Level1.tmj",
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level1.tmj"
+    ],
+    "project": "Level2.tiled-project",
+    "recentFiles": [
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level1ContraDiction/Level1.tmj",
+        "Level2_City_Generated.tmj",
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level3ContraDiction/Level1.tmj",
+        "NaveQuebrada.tsx",
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level1ContraDiction/NaveQuebrada.tsx",
+        "C:/Users/pichau/Documents/UFMG/DES JOGOS/Contra-Diction/Assets/Levels/Level1ContraDiction/Tiles.tsx",
+        "SCS_Building_01_Blue_Nighttime_01.tsx",
+        "SCS_Building_04_Blue_Nighttime_01.tsx",
+        "SCS_Building_03_Daytime_01.tsx",
+        "Level2.tmj"
+    ],
+    "tileset.lastUsedFormat": "tsx",
+    "tileset.tileSize": {
+        "height": 32,
+        "width": 32
+    }
+}

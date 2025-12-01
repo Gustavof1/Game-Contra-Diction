@@ -1,0 +1,3932 @@
+{
+    "name": "Retrograde Input 16",
+    "version": 1.0,
+    "themes": {
+        "dark": {
+            "input_1": "#141020",
+            "input_2": "#26243A",
+            "input_3": "#393A56",
+
+            "text_1": "#DBE0E7",
+            "text_2": "#67708B",
+
+            "white_1": "#DBE0E7",
+            "white_2": "#67708B",
+
+            "green_1": "#7BCF5C",
+            "green_2": "#2E6A42",
+
+            "red_1": "#ED5259",
+            "red_2": "#781F2C",
+
+            "blue_1": "#13B2F2",
+            "blue_2": "#0F4DA3",
+
+            "yellow_1": "#F7AC37",
+            "yellow_2": "#97432A",
+
+            "purple_1": "#B45EB3",
+            "purple_2": "#622D68",
+
+            "mouse_green_1": "#7BCF5C",
+            "mouse_green_2": "#2E6A42",
+
+            "mouse_red_1": "#ED5259",
+            "mouse_red_2": "#781F2C",
+
+            "mouse_blue_1": "#13B2F2",
+            "mouse_blue_2": "#0F4DA3",
+
+            "mouse_yellow_1": "#F7AC37",
+            "mouse_yellow_2": "#97432A",
+
+            "mouse_purple_1": "#B45EB3",
+            "mouse_purple_2": "#622D68"
+        },
+        "light": {
+            "input_1": "#8D7F80",
+            "input_2": "#A0938E",
+            "input_3": "#CFC6B8",
+
+            "text_1": "#302C2E",
+            "text_2": "#7D7071",
+
+            "white_1": "#302C2E",
+            "white_2": "#7D7071",
+
+            "green_1": "#397B44",
+            "green_2": "#71AA34",
+
+            "red_1": "#A93B3B",
+            "red_2": "#E6482E",
+
+            "blue_1": "#394778",
+            "blue_2": "#3978A8",
+
+            "yellow_1": "#F47E1B",
+            "yellow_2": "#F4B41B",
+
+            "purple_1": "#8E478C",
+            "purple_2": "#CD6093",
+
+            "mouse_green_1": "#397B44",
+            "mouse_green_2": "#71AA34",
+
+            "mouse_red_1": "#A93B3B",
+            "mouse_red_2": "#E6482E",
+
+            "mouse_blue_1": "#394778",
+            "mouse_blue_2": "#3978A8",
+
+            "mouse_yellow_1": "#F47E1B",
+            "mouse_yellow_2": "#F4B41B",
+
+            "mouse_purple_1": "#8E478C",
+            "mouse_purple_2": "#CD6093"
+        }
+    },
+    "inputs": {
+        "keyboard": {
+            "paths": [
+                "./input/keyboard_template.ora",
+                "./input/keyboard_variants.ora"
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#3E3546",
+                "input_3": "#694F62",
+
+                "text_1": "#C7DCD0",
+                "text_2": "#7F708A"
+            },
+            "groups": {
+                "Keys-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K",
+                        "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V",
+                        "W", "X", "Y", "Z",
+
+                        "1", "2", "3", "4", "5", "6", "7", "8", "9", "0",
+
+                        "F1", "F2", "F3", "F4", "F5", "F6", "F7", "F8", "F9",
+                        "F10", "F11", "F12",
+
+                        "Up", "Down", "Left", "Right",
+
+                        "Period", "Comma", "Question Mark", "Semi Colon",
+                        "Slash", "Back Slash", "Minus", "Equal",
+                        "Bracket Left", "Bracket Right", "Apostrophe", "Tilde",
+                        "Escape"
+                    ],
+                    "references": {
+                        "Key-0": "Key-16x16-0",
+                        "Key-1": "Key-16x16-1",
+                        "Key-2": "Key-16x16-2",
+                        "Key-3": "Key-16x16-3"
+                    }
+                },
+                "Keys-32x16": {
+                    "size": [32, 16],
+                    "variants": [
+                        "Insert", "End", "Delete", "Alt"
+                    ],
+                    "references": {
+                        "Key-0": "Key-32x16-0",
+                        "Key-1": "Key-32x16-1",
+                        "Key-2": "Key-32x16-2",
+                        "Key-3": "Key-32x16-3"
+                    }
+                },
+                "Keys-40x16": {
+                    "size": [40, 16],
+                    "variants": [
+                        "Tab", "Home", "Ctrl"
+                    ],
+                    "references": {
+                        "Key-0": "Key-40x16-0",
+                        "Key-1": "Key-40x16-1",
+                        "Key-2": "Key-40x16-2",
+                        "Key-3": "Key-40x16-3"
+                    }
+                },
+                "Keys-48x16": {
+                    "size": [48, 16],
+                    "variants": [
+                        "Print", "Pause", "Backspace", "Enter", "Page Up",
+                        "Page Down", "Shift", "Space"
+                    ],
+                    "references": {
+                        "Key-0": "Key-48x16-0",
+                        "Key-1": "Key-48x16-1",
+                        "Key-2": "Key-48x16-2",
+                        "Key-3": "Key-48x16-3"
+                    }
+                }
+            },
+            "templates": {
+                "Normal": {
+                    "frames": [
+                        [
+                            {"layer": "Key-0", "offset": [0, 0]},
+                            {"layer": "*", "offset": [0, 0]}
+                        ]
+                    ]
+                },
+                "Pressed": {
+                    "frames": [
+                        [
+                            {"layer": "Key-3", "offset": [0, 0]},
+                            {"layer": "*", "offset": [0, 3]}
+                        ]
+                    ]
+                },
+                "Animated": {
+                    "frames": [
+                        [
+                            {"layer": "Key-0", "offset": [0, 0]},
+                            {"layer": "*", "offset": [0, 0]}
+                        ],
+                        [
+                            {"layer": "Key-1", "offset": [0, 0]},
+                            {"layer": "*", "offset": [0, 1]}
+                        ],
+                        [
+                            {"layer": "Key-2", "offset": [0, 0]},
+                            {"layer": "*", "offset": [0, 2]}
+                        ],
+                        [
+                            {"layer": "Key-3", "offset": [0, 0]},
+                            {"layer": "*", "offset": [0, 3]}
+                        ]
+                    ]
+                }
+            }
+        },
+        "mouse": {
+            "paths": [
+                "./input/mouse_template.ora",
+                "./input/mouse_variants.ora"
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#3E3546",
+                "input_3": "#694F62",
+
+                "mouse_green_1": "#D5E04B",
+                "mouse_green_2": "#A2A947",
+
+                "mouse_red_1": "#E83B3B",
+                "mouse_red_2": "#AE2334",
+
+                "mouse_blue_1": "#4D9BE6",
+                "mouse_blue_2": "#4D65B4",
+
+                "mouse_yellow_1": "#F9C22B",
+                "mouse_yellow_2": "#F79617",
+
+                "mouse_purple_1": "#A884F3",
+                "mouse_purple_2": "#905EA9"
+            },
+            "groups": {
+                "Buttons-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "Right", "Left", "Middle"
+                    ]
+                },
+                "Wheel-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "Wheel-Up", "Wheel-Down"
+                    ]
+                }
+            },
+            "frames": {
+                "Frame-Normal": [
+                    {
+                        "variants": ["Right", "Left", "Middle"],
+                        "alpha": 0.25
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.25
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.25,
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.25
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.25,
+                        "offset": [0, -1]
+                    }
+                ],
+                "Frame-Pressed": [
+                    {
+                        "variants": ["Right", "Left", "Middle"],
+                        "alpha": 1.0
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 1.0
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 1.0,
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 1.0
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 1.0,
+                        "offset": [0, -1]
+                    }
+                ],
+                "Frame-Animated-0": [
+                    {
+                        "variants": ["Right", "Left", "Middle"],
+                        "alpha": 0.25
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.25
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.5,
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.75,
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 1.0,
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 1.0,
+                        "offset": [0, -3]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.75,
+                        "offset": [0, -2]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.5,
+                        "offset": [0, -1]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.25
+                    }
+                ],
+                "Frame-Animated-1": [
+                    {
+                        "variants": ["Right", "Left", "Middle"],
+                        "alpha": 0.5
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.5
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.75,
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 1.0,
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.75,
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.75,
+                        "offset": [0, -3]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 1.0,
+                        "offset": [0, -2]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.75,
+                        "offset": [0, -1]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.5
+                    }
+                ],
+                "Frame-Animated-2": [
+                    {
+                        "variants": ["Right", "Left", "Middle"],
+                        "alpha": 0.75
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.75
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 1.0,
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.75,
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.5,
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.5,
+                        "offset": [0, -3]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.75,
+                        "offset": [0, -2]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 1.0,
+                        "offset": [0, -1]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.75
+                    }
+                ],
+                "Frame-Animated-3": [
+                    {
+                        "variants": ["Right", "Left", "Middle"],
+                        "alpha": 1.0
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 1.0
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.75,
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.5,
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["Wheel-Up"],
+                        "alpha": 0.25,
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.25,
+                        "offset": [0, -3]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.5,
+                        "offset": [0, -2]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 0.75,
+                        "offset": [0, -1]
+                    },
+                    {
+                        "variants": ["Wheel-Down"],
+                        "alpha": 1.0
+                    }
+                ]
+            },
+            "templates": {
+                "Normal": {
+                    "frames": [
+                        ["Mouse", "Frame-Normal"]
+                    ]
+                },
+                "Pressed": {
+                    "frames": [
+                        ["Mouse", "Frame-Pressed"]
+                    ]
+                },
+                "Animated": {
+                    "frames": [
+                        ["Mouse", "Frame-Animated-0"],
+                        ["Mouse", "Frame-Animated-1"],
+                        ["Mouse", "Frame-Animated-2"],
+                        ["Mouse", "Frame-Animated-3"]
+                    ]
+                }
+            }
+        },
+        "joypad": {
+            "paths": [
+                "./input/joypad_template.ora",
+                "./input/joypad_variants.ora"
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#3E3546",
+                "input_3": "#694F62",
+
+                "white_1": "#C7DCD0",
+                "white_2": "#7F708A"
+            },
+            "groups": {
+                "Buttons-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "A", "B", "X", "Y", "Home", "Share", "View", "Menu"
+                    ],
+                    "references": {
+                        "Input-0": "Button-16x16-0",
+                        "Input-1": "Button-16x16-1",
+                        "Input-2": "Button-16x16-2",
+                        "Input-3": "Button-16x16-3"
+                    }
+                },
+                "Shoulder-Buttons-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "R1", "L1"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R1": "R-Button-0",
+                            "L1": "L-Button-0"
+                        },
+                        "Input-1": {
+                            "R1": "R-Button-1",
+                            "L1": "L-Button-1"
+                        },
+                        "Input-2": {
+                            "R1": "R-Button-2",
+                            "L1": "L-Button-2"
+                        },
+                        "Input-3": {
+                            "R1": "R-Button-3",
+                            "L1": "L-Button-3"
+                        }
+                    }
+                },
+                "Triggers-20x16": {
+                    "size": [20, 16],
+                    "variants": [
+                        "R2", "L2"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R2": "R-Trigger-0",
+                            "L2": "L-Trigger-0"
+                        },
+                        "Input-1": {
+                            "R2": "R-Trigger-1",
+                            "L2": "L-Trigger-1"
+                        },
+                        "Input-2": {
+                            "R2": "R-Trigger-2",
+                            "L2": "L-Trigger-2"
+                        },
+                        "Input-3": {
+                            "R2": "R-Trigger-3",
+                            "L2": "L-Trigger-3"
+                        }
+                    }
+                },
+                "Buttons-Square-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "R3", "R4", "R5",
+                        "L3", "L4", "L5"
+                    ],
+                    "references": {
+                        "Input-0": "Button-Square-24x16-0",
+                        "Input-1": "Button-Square-24x16-1",
+                        "Input-2": "Button-Square-24x16-2",
+                        "Input-3": "Button-Square-24x16-3"
+                    }
+                },
+                "Trackpads-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "RP", "LP"
+                    ],
+                    "references": {
+                        "Input-0": "Trackpad-16x16-0",
+                        "Input-1": "Trackpad-16x16-1",
+                        "Input-2": "Trackpad-16x16-2",
+                        "Input-3": "Trackpad-16x16-3"
+                    }
+                },
+                "D-Pad": {
+                    "size": [16, 16],
+                    "variants": [
+                        "D-Pad-Up", "D-Pad-Down",
+                        "D-Pad-Right", "D-Pad-Left"
+                    ],
+                    "references": {
+                        "Input-0": "D-Pad",
+                        "Input-1": {
+                            "D-Pad-Up": "D-Pad-Up-1",
+                            "D-Pad-Down": "D-Pad-Down-1",
+                            "D-Pad-Left": "D-Pad-Left-1",
+                            "D-Pad-Right": "D-Pad-Right-1"
+                        },
+                        "Input-2": {
+                            "D-Pad-Up": "D-Pad-Up-2",
+                            "D-Pad-Down": "D-Pad-Down-2",
+                            "D-Pad-Left": "D-Pad-Left-2",
+                            "D-Pad-Right": "D-Pad-Right-2"
+                        },
+                        "Input-3": {
+                            "D-Pad-Up": "D-Pad-Up-3",
+                            "D-Pad-Down": "D-Pad-Down-3",
+                            "D-Pad-Left": "D-Pad-Left-3",
+                            "D-Pad-Right": "D-Pad-Right-3"
+                        }
+                    }
+                },
+                "Sticks": {
+                    "size": [16, 16],
+                    "variants": [
+                        "R-Stick-Up", "R-Stick-Down",
+                        "R-Stick-Right", "R-Stick-Left",
+                        "R-Stick-Up-Right", "R-Stick-Up-Left",
+                        "R-Stick-Down-Right", "R-Stick-Down-Left",
+
+                        "L-Stick-Up", "L-Stick-Down",
+                        "L-Stick-Right", "L-Stick-Left",
+                        "L-Stick-Up-Right", "L-Stick-Up-Left",
+                        "L-Stick-Down-Right", "L-Stick-Down-Left"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R-Stick-Up": "Stick-Up-0",
+                            "R-Stick-Down": "Stick-Down-0",
+                            "R-Stick-Right": "Stick-Right-0",
+                            "R-Stick-Left": "Stick-Left-0",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-0",
+                            "R-Stick-Up-Left": "Stick-Up-Left-0",
+                            "R-Stick-Down-Right": "Stick-Down-Right-0",
+                            "R-Stick-Down-Left": "Stick-Down-Left-0",
+
+                            "L-Stick-Up": "Stick-Up-0",
+                            "L-Stick-Down": "Stick-Down-0",
+                            "L-Stick-Right": "Stick-Right-0",
+                            "L-Stick-Left": "Stick-Left-0",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-0",
+                            "L-Stick-Up-Left": "Stick-Up-Left-0",
+                            "L-Stick-Down-Right": "Stick-Down-Right-0",
+                            "L-Stick-Down-Left": "Stick-Down-Left-0"
+                        },
+                        "Input-1": {
+                            "R-Stick-Up": "Stick-Up-1",
+                            "R-Stick-Down": "Stick-Down-1",
+                            "R-Stick-Right": "Stick-Right-1",
+                            "R-Stick-Left": "Stick-Left-1",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-1",
+                            "R-Stick-Up-Left": "Stick-Up-Left-1",
+                            "R-Stick-Down-Right": "Stick-Down-Right-1",
+                            "R-Stick-Down-Left": "Stick-Down-Left-1",
+
+                            "L-Stick-Up": "Stick-Up-1",
+                            "L-Stick-Down": "Stick-Down-1",
+                            "L-Stick-Right": "Stick-Right-1",
+                            "L-Stick-Left": "Stick-Left-1",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-1",
+                            "L-Stick-Up-Left": "Stick-Up-Left-1",
+                            "L-Stick-Down-Right": "Stick-Down-Right-1",
+                            "L-Stick-Down-Left": "Stick-Down-Left-1"
+                        },
+                        "Input-2": {
+                            "R-Stick-Up": "Stick-Up-2",
+                            "R-Stick-Down": "Stick-Down-2",
+                            "R-Stick-Right": "Stick-Right-2",
+                            "R-Stick-Left": "Stick-Left-2",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-2",
+                            "R-Stick-Up-Left": "Stick-Up-Left-2",
+                            "R-Stick-Down-Right": "Stick-Down-Right-2",
+                            "R-Stick-Down-Left": "Stick-Down-Left-2",
+
+                            "L-Stick-Up": "Stick-Up-2",
+                            "L-Stick-Down": "Stick-Down-2",
+                            "L-Stick-Right": "Stick-Right-2",
+                            "L-Stick-Left": "Stick-Left-2",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-2",
+                            "L-Stick-Up-Left": "Stick-Up-Left-2",
+                            "L-Stick-Down-Right": "Stick-Down-Right-2",
+                            "L-Stick-Down-Left": "Stick-Down-Left-2"
+                        },
+                        "Input-3": {
+                            "R-Stick-Up": "Stick-Up-3",
+                            "R-Stick-Down": "Stick-Down-3",
+                            "R-Stick-Right": "Stick-Right-3",
+                            "R-Stick-Left": "Stick-Left-3",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-3",
+                            "R-Stick-Up-Left": "Stick-Up-Left-3",
+                            "R-Stick-Down-Right": "Stick-Down-Right-3",
+                            "R-Stick-Down-Left": "Stick-Down-Left-3",
+
+                            "L-Stick-Up": "Stick-Up-3",
+                            "L-Stick-Down": "Stick-Down-3",
+                            "L-Stick-Right": "Stick-Right-3",
+                            "L-Stick-Left": "Stick-Left-3",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-3",
+                            "L-Stick-Up-Left": "Stick-Up-Left-3",
+                            "L-Stick-Down-Right": "Stick-Down-Right-3",
+                            "L-Stick-Down-Left": "Stick-Down-Left-3"
+                        }
+                    },
+                    "break": true
+                }
+            },
+            "frames": {
+                "Frame-0": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-16x16", "D-Pad"
+                        ],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [0, 0]
+                    }
+                ],
+                "Frame-1": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-16x16", "D-Pad"
+                        ],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [1, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-1, 1]
+                    }
+                ],
+                "Frame-2": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-16x16", "D-Pad"
+                        ],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [2, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-2, 2]
+                    }
+                ],
+                "Frame-3": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-16x16", "D-Pad"
+                        ],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [3, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-3, 3]
+                    }
+                ]
+            },
+            "templates": {
+                "Normal": {
+                    "frames": [
+                        ["Input-0", "Frame-0"]
+                    ]
+                },
+                "Pressed": {
+                    "frames": [
+                        ["Input-3", "Frame-3"]
+                    ]
+                },
+                "Animated": {
+                    "frames": [
+                        ["Input-0", "Frame-0"],
+                        ["Input-1", "Frame-1"],
+                        ["Input-2", "Frame-2"],
+                        ["Input-3", "Frame-3"]
+                    ]
+                }
+            }
+        },
+        "joypad_steam": {
+            "paths": [
+                "./input/joypad_template.ora",
+                "./input/joypad_variants.ora",
+                "./input/joypad_variants_steam.ora"
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#3E3546",
+                "input_3": "#694F62",
+
+                "white_1": "#C7DCD0",
+                "white_2": "#7F708A"
+            },
+            "groups": {
+                "Buttons-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "A", "B", "X", "Y"
+                    ],
+                    "references": {
+                        "Input-0": "Button-16x16-0",
+                        "Input-1": "Button-16x16-1",
+                        "Input-2": "Button-16x16-2",
+                        "Input-3": "Button-16x16-3"
+                    }
+                },
+                "Buttons-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "View", "Menu"
+                    ],
+                    "references": {
+                        "Input-0": "Button-24x16-0",
+                        "Input-1": "Button-24x16-1",
+                        "Input-2": "Button-24x16-2",
+                        "Input-3": "Button-24x16-3"
+                    }
+                },
+                "Shoulder-Buttons-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "R1", "L1"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R1": "R-Button-0",
+                            "L1": "L-Button-0"
+                        },
+                        "Input-1": {
+                            "R1": "R-Button-1",
+                            "L1": "L-Button-1"
+                        },
+                        "Input-2": {
+                            "R1": "R-Button-2",
+                            "L1": "L-Button-2"
+                        },
+                        "Input-3": {
+                            "R1": "R-Button-3",
+                            "L1": "L-Button-3"
+                        }
+                    }
+                },
+                "Triggers-20x16": {
+                    "size": [20, 16],
+                    "variants": [
+                        "R2", "L2"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R2": "R-Trigger-0",
+                            "L2": "L-Trigger-0"
+                        },
+                        "Input-1": {
+                            "R2": "R-Trigger-1",
+                            "L2": "L-Trigger-1"
+                        },
+                        "Input-2": {
+                            "R2": "R-Trigger-2",
+                            "L2": "L-Trigger-2"
+                        },
+                        "Input-3": {
+                            "R2": "R-Trigger-3",
+                            "L2": "L-Trigger-3"
+                        }
+                    }
+                },
+                "Buttons-Square-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "R3", "R4", "R5",
+                        "L3", "L4", "L5"
+                    ],
+                    "references": {
+                        "Input-0": "Button-Square-24x16-0",
+                        "Input-1": "Button-Square-24x16-1",
+                        "Input-2": "Button-Square-24x16-2",
+                        "Input-3": "Button-Square-24x16-3"
+                    },
+                    "break": true
+                },
+                "Trackpads-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "RP", "LP"
+                    ],
+                    "references": {
+                        "Input-0": "Trackpad-16x16-0",
+                        "Input-1": "Trackpad-16x16-1",
+                        "Input-2": "Trackpad-16x16-2",
+                        "Input-3": "Trackpad-16x16-3"
+                    }
+                },
+                "D-Pad": {
+                    "size": [16, 16],
+                    "variants": [
+                        "D-Pad-Up", "D-Pad-Down",
+                        "D-Pad-Right", "D-Pad-Left"
+                    ],
+                    "references": {
+                        "Input-0": "D-Pad",
+                        "Input-1": {
+                            "D-Pad-Up": "D-Pad-Up-1",
+                            "D-Pad-Down": "D-Pad-Down-1",
+                            "D-Pad-Left": "D-Pad-Left-1",
+                            "D-Pad-Right": "D-Pad-Right-1"
+                        },
+                        "Input-2": {
+                            "D-Pad-Up": "D-Pad-Up-2",
+                            "D-Pad-Down": "D-Pad-Down-2",
+                            "D-Pad-Left": "D-Pad-Left-2",
+                            "D-Pad-Right": "D-Pad-Right-2"
+                        },
+                        "Input-3": {
+                            "D-Pad-Up": "D-Pad-Up-3",
+                            "D-Pad-Down": "D-Pad-Down-3",
+                            "D-Pad-Left": "D-Pad-Left-3",
+                            "D-Pad-Right": "D-Pad-Right-3"
+                        }
+                    }
+                },
+                "Sticks": {
+                    "size": [16, 16],
+                    "variants": [
+                        "R-Stick-Up", "R-Stick-Down",
+                        "R-Stick-Right", "R-Stick-Left",
+                        "R-Stick-Up-Right", "R-Stick-Up-Left",
+                        "R-Stick-Down-Right", "R-Stick-Down-Left",
+
+                        "L-Stick-Up", "L-Stick-Down",
+                        "L-Stick-Right", "L-Stick-Left",
+                        "L-Stick-Up-Right", "L-Stick-Up-Left",
+                        "L-Stick-Down-Right", "L-Stick-Down-Left"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R-Stick-Up": "Stick-Up-0",
+                            "R-Stick-Down": "Stick-Down-0",
+                            "R-Stick-Right": "Stick-Right-0",
+                            "R-Stick-Left": "Stick-Left-0",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-0",
+                            "R-Stick-Up-Left": "Stick-Up-Left-0",
+                            "R-Stick-Down-Right": "Stick-Down-Right-0",
+                            "R-Stick-Down-Left": "Stick-Down-Left-0",
+
+                            "L-Stick-Up": "Stick-Up-0",
+                            "L-Stick-Down": "Stick-Down-0",
+                            "L-Stick-Right": "Stick-Right-0",
+                            "L-Stick-Left": "Stick-Left-0",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-0",
+                            "L-Stick-Up-Left": "Stick-Up-Left-0",
+                            "L-Stick-Down-Right": "Stick-Down-Right-0",
+                            "L-Stick-Down-Left": "Stick-Down-Left-0"
+                        },
+                        "Input-1": {
+                            "R-Stick-Up": "Stick-Up-1",
+                            "R-Stick-Down": "Stick-Down-1",
+                            "R-Stick-Right": "Stick-Right-1",
+                            "R-Stick-Left": "Stick-Left-1",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-1",
+                            "R-Stick-Up-Left": "Stick-Up-Left-1",
+                            "R-Stick-Down-Right": "Stick-Down-Right-1",
+                            "R-Stick-Down-Left": "Stick-Down-Left-1",
+
+                            "L-Stick-Up": "Stick-Up-1",
+                            "L-Stick-Down": "Stick-Down-1",
+                            "L-Stick-Right": "Stick-Right-1",
+                            "L-Stick-Left": "Stick-Left-1",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-1",
+                            "L-Stick-Up-Left": "Stick-Up-Left-1",
+                            "L-Stick-Down-Right": "Stick-Down-Right-1",
+                            "L-Stick-Down-Left": "Stick-Down-Left-1"
+                        },
+                        "Input-2": {
+                            "R-Stick-Up": "Stick-Up-2",
+                            "R-Stick-Down": "Stick-Down-2",
+                            "R-Stick-Right": "Stick-Right-2",
+                            "R-Stick-Left": "Stick-Left-2",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-2",
+                            "R-Stick-Up-Left": "Stick-Up-Left-2",
+                            "R-Stick-Down-Right": "Stick-Down-Right-2",
+                            "R-Stick-Down-Left": "Stick-Down-Left-2",
+
+                            "L-Stick-Up": "Stick-Up-2",
+                            "L-Stick-Down": "Stick-Down-2",
+                            "L-Stick-Right": "Stick-Right-2",
+                            "L-Stick-Left": "Stick-Left-2",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-2",
+                            "L-Stick-Up-Left": "Stick-Up-Left-2",
+                            "L-Stick-Down-Right": "Stick-Down-Right-2",
+                            "L-Stick-Down-Left": "Stick-Down-Left-2"
+                        },
+                        "Input-3": {
+                            "R-Stick-Up": "Stick-Up-3",
+                            "R-Stick-Down": "Stick-Down-3",
+                            "R-Stick-Right": "Stick-Right-3",
+                            "R-Stick-Left": "Stick-Left-3",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-3",
+                            "R-Stick-Up-Left": "Stick-Up-Left-3",
+                            "R-Stick-Down-Right": "Stick-Down-Right-3",
+                            "R-Stick-Down-Left": "Stick-Down-Left-3",
+
+                            "L-Stick-Up": "Stick-Up-3",
+                            "L-Stick-Down": "Stick-Down-3",
+                            "L-Stick-Right": "Stick-Right-3",
+                            "L-Stick-Left": "Stick-Left-3",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-3",
+                            "L-Stick-Up-Left": "Stick-Up-Left-3",
+                            "L-Stick-Down-Right": "Stick-Down-Right-3",
+                            "L-Stick-Down-Left": "Stick-Down-Left-3"
+                        }
+                    },
+                    "break": true
+                }
+            },
+            "frames": {
+                "Frame-0": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-24x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-16x16", "D-Pad"
+                        ],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [0, 0]
+                    }
+                ],
+                "Frame-1": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-24x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-16x16", "D-Pad"
+                        ],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [1, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-1, 1]
+                    }
+                ],
+                "Frame-2": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-24x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-16x16", "D-Pad"
+                        ],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [2, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-2, 2]
+                    }
+                ],
+                "Frame-3": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-24x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-16x16", "D-Pad"
+                        ],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [3, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-3, 3]
+                    }
+                ]
+            },
+            "templates": {
+                "Normal": {
+                    "frames": [
+                        ["Input-0", "Frame-0"]
+                    ]
+                },
+                "Pressed": {
+                    "frames": [
+                        ["Input-3", "Frame-3"]
+                    ]
+                },
+                "Animated": {
+                    "frames": [
+                        ["Input-0", "Frame-0"],
+                        ["Input-1", "Frame-1"],
+                        ["Input-2", "Frame-2"],
+                        ["Input-3", "Frame-3"]
+                    ]
+                }
+            }
+        },
+        "joypad_xbox": {
+            "paths": [
+                "./input/joypad_template.ora",
+                "./input/joypad_variants.ora",
+                "./input/joypad_variants_xbox.ora"
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#3E3546",
+                "input_3": "#694F62",
+
+                "white_1": "#C7DCD0",
+                "white_2": "#7F708A",
+
+                "green_1": "#D5E04B",
+                "green_2": "#A2A947",
+
+                "red_1": "#E83B3B",
+                "red_2": "#AE2334",
+
+                "blue_1": "#4D9BE6",
+                "blue_2": "#4D65B4",
+
+                "yellow_1": "#F9C22B",
+                "yellow_2": "#F79617"
+            },
+            "groups": {
+                "Buttons-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "A", "B", "X", "Y", "Home", "View", "Menu"
+                    ],
+                    "references": {
+                        "Input-0": "Button-16x16-0",
+                        "Input-1": "Button-16x16-1",
+                        "Input-2": "Button-16x16-2",
+                        "Input-3": "Button-16x16-3"
+                    }
+                },
+                "Buttons-20x16": {
+                    "size": [20, 16],
+                    "variants": [
+                        "Share"
+                    ],
+                    "references": {
+                        "Input-0": "Button-20x16-0",
+                        "Input-1": "Button-20x16-1",
+                        "Input-2": "Button-20x16-2",
+                        "Input-3": "Button-20x16-3"
+                    }
+                },
+                "Shoulder-Buttons-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "RB", "LB"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "RB": "R-Button-0",
+                            "LB": "L-Button-0"
+                        },
+                        "Input-1": {
+                            "RB": "R-Button-1",
+                            "LB": "L-Button-1"
+                        },
+                        "Input-2": {
+                            "RB": "R-Button-2",
+                            "LB": "L-Button-2"
+                        },
+                        "Input-3": {
+                            "RB": "R-Button-3",
+                            "LB": "L-Button-3"
+                        }
+                    },
+                    "break": true
+                },
+                "Triggers-20x16": {
+                    "size": [20, 16],
+                    "variants": [
+                        "RT", "LT"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "RT": "R-Trigger-0",
+                            "LT": "L-Trigger-0"
+                        },
+                        "Input-1": {
+                            "RT": "R-Trigger-1",
+                            "LT": "L-Trigger-1"
+                        },
+                        "Input-2": {
+                            "RT": "R-Trigger-2",
+                            "LT": "L-Trigger-2"
+                        },
+                        "Input-3": {
+                            "RT": "R-Trigger-3",
+                            "LT": "L-Trigger-3"
+                        }
+                    }
+                },
+                "Buttons-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "RS", "LS"
+                    ],
+                    "references": {
+                        "Input-0": "Button-Square-24x16-0",
+                        "Input-1": "Button-Square-24x16-1",
+                        "Input-2": "Button-Square-24x16-2",
+                        "Input-3": "Button-Square-24x16-3"
+                    }
+                },
+                "D-Pad": {
+                    "size": [16, 16],
+                    "variants": [
+                        "D-Pad-Up", "D-Pad-Down",
+                        "D-Pad-Right", "D-Pad-Left"
+                    ],
+                    "references": {
+                        "Input-0": "D-Pad",
+                        "Input-1": {
+                            "D-Pad-Up": "D-Pad-Up-1",
+                            "D-Pad-Down": "D-Pad-Down-1",
+                            "D-Pad-Left": "D-Pad-Left-1",
+                            "D-Pad-Right": "D-Pad-Right-1"
+                        },
+                        "Input-2": {
+                            "D-Pad-Up": "D-Pad-Up-2",
+                            "D-Pad-Down": "D-Pad-Down-2",
+                            "D-Pad-Left": "D-Pad-Left-2",
+                            "D-Pad-Right": "D-Pad-Right-2"
+                        },
+                        "Input-3": {
+                            "D-Pad-Up": "D-Pad-Up-3",
+                            "D-Pad-Down": "D-Pad-Down-3",
+                            "D-Pad-Left": "D-Pad-Left-3",
+                            "D-Pad-Right": "D-Pad-Right-3"
+                        }
+                    }
+                },
+                "Sticks": {
+                    "size": [16, 16],
+                    "variants": [
+                        "R-Stick-Up", "R-Stick-Down",
+                        "R-Stick-Right", "R-Stick-Left",
+                        "R-Stick-Up-Right", "R-Stick-Up-Left",
+                        "R-Stick-Down-Right", "R-Stick-Down-Left",
+
+                        "L-Stick-Up", "L-Stick-Down",
+                        "L-Stick-Right", "L-Stick-Left",
+                        "L-Stick-Up-Right", "L-Stick-Up-Left",
+                        "L-Stick-Down-Right", "L-Stick-Down-Left"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R-Stick-Up": "Stick-Up-0",
+                            "R-Stick-Down": "Stick-Down-0",
+                            "R-Stick-Right": "Stick-Right-0",
+                            "R-Stick-Left": "Stick-Left-0",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-0",
+                            "R-Stick-Up-Left": "Stick-Up-Left-0",
+                            "R-Stick-Down-Right": "Stick-Down-Right-0",
+                            "R-Stick-Down-Left": "Stick-Down-Left-0",
+
+                            "L-Stick-Up": "Stick-Up-0",
+                            "L-Stick-Down": "Stick-Down-0",
+                            "L-Stick-Right": "Stick-Right-0",
+                            "L-Stick-Left": "Stick-Left-0",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-0",
+                            "L-Stick-Up-Left": "Stick-Up-Left-0",
+                            "L-Stick-Down-Right": "Stick-Down-Right-0",
+                            "L-Stick-Down-Left": "Stick-Down-Left-0"
+                        },
+                        "Input-1": {
+                            "R-Stick-Up": "Stick-Up-1",
+                            "R-Stick-Down": "Stick-Down-1",
+                            "R-Stick-Right": "Stick-Right-1",
+                            "R-Stick-Left": "Stick-Left-1",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-1",
+                            "R-Stick-Up-Left": "Stick-Up-Left-1",
+                            "R-Stick-Down-Right": "Stick-Down-Right-1",
+                            "R-Stick-Down-Left": "Stick-Down-Left-1",
+
+                            "L-Stick-Up": "Stick-Up-1",
+                            "L-Stick-Down": "Stick-Down-1",
+                            "L-Stick-Right": "Stick-Right-1",
+                            "L-Stick-Left": "Stick-Left-1",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-1",
+                            "L-Stick-Up-Left": "Stick-Up-Left-1",
+                            "L-Stick-Down-Right": "Stick-Down-Right-1",
+                            "L-Stick-Down-Left": "Stick-Down-Left-1"
+                        },
+                        "Input-2": {
+                            "R-Stick-Up": "Stick-Up-2",
+                            "R-Stick-Down": "Stick-Down-2",
+                            "R-Stick-Right": "Stick-Right-2",
+                            "R-Stick-Left": "Stick-Left-2",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-2",
+                            "R-Stick-Up-Left": "Stick-Up-Left-2",
+                            "R-Stick-Down-Right": "Stick-Down-Right-2",
+                            "R-Stick-Down-Left": "Stick-Down-Left-2",
+
+                            "L-Stick-Up": "Stick-Up-2",
+                            "L-Stick-Down": "Stick-Down-2",
+                            "L-Stick-Right": "Stick-Right-2",
+                            "L-Stick-Left": "Stick-Left-2",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-2",
+                            "L-Stick-Up-Left": "Stick-Up-Left-2",
+                            "L-Stick-Down-Right": "Stick-Down-Right-2",
+                            "L-Stick-Down-Left": "Stick-Down-Left-2"
+                        },
+                        "Input-3": {
+                            "R-Stick-Up": "Stick-Up-3",
+                            "R-Stick-Down": "Stick-Down-3",
+                            "R-Stick-Right": "Stick-Right-3",
+                            "R-Stick-Left": "Stick-Left-3",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-3",
+                            "R-Stick-Up-Left": "Stick-Up-Left-3",
+                            "R-Stick-Down-Right": "Stick-Down-Right-3",
+                            "R-Stick-Down-Left": "Stick-Down-Left-3",
+
+                            "L-Stick-Up": "Stick-Up-3",
+                            "L-Stick-Down": "Stick-Down-3",
+                            "L-Stick-Right": "Stick-Right-3",
+                            "L-Stick-Left": "Stick-Left-3",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-3",
+                            "L-Stick-Up-Left": "Stick-Up-Left-3",
+                            "L-Stick-Down-Right": "Stick-Down-Right-3",
+                            "L-Stick-Down-Left": "Stick-Down-Left-3"
+                        }
+                    },
+                    "break": true
+                }
+            },
+            "frames": {
+                "Frame-0": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-20x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-24x16",
+                            "Trackpads-16x16", "D-Pad"
+                        ],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [0, 0]
+                    }
+                ],
+                "Frame-1": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-20x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-24x16",
+                            "Trackpads-16x16", "D-Pad"
+                        ],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [1, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-1, 1]
+                    }
+                ],
+                "Frame-2": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-20x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-24x16",
+                            "Trackpads-16x16", "D-Pad"
+                        ],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [2, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-2, 2]
+                    }
+                ],
+                "Frame-3": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-20x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-24x16",
+                            "Trackpads-16x16", "D-Pad"
+                        ],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [3, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-3, 3]
+                    }
+                ]
+            },
+            "templates": {
+                "Normal": {
+                    "frames": [
+                        ["Input-0", "Frame-0"]
+                    ]
+                },
+                "Pressed": {
+                    "frames": [
+                        ["Input-3", "Frame-3"]
+                    ]
+                },
+                "Animated": {
+                    "frames": [
+                        ["Input-0", "Frame-0"],
+                        ["Input-1", "Frame-1"],
+                        ["Input-2", "Frame-2"],
+                        ["Input-3", "Frame-3"]
+                    ]
+                }
+            }
+        },
+        "joypad_ps4": {
+            "paths": [
+                "./input/joypad_template.ora",
+                "./input/joypad_variants.ora",
+                "./input/joypad_variants_ps4.ora"
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#3E3546",
+                "input_3": "#694F62",
+
+                "white_1": "#C7DCD0",
+                "white_2": "#7F708A",
+
+                "blue_1": "#4D9BE6",
+                "blue_2": "#4D65B4",
+
+                "red_1": "#E83B3B",
+                "red_2": "#AE2334",
+
+                "purple_1": "#A884F3",
+                "purple_2": "#905EA9",
+
+                "green_1": "#D5E04B",
+                "green_2": "#A2A947"
+            },
+            "groups": {
+                "Buttons-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "Cross", "Circle", "Square", "Triangle", "Home"
+                    ],
+                    "references": {
+                        "Input-0": "Button-16x16-0",
+                        "Input-1": "Button-16x16-1",
+                        "Input-2": "Button-16x16-2",
+                        "Input-3": "Button-16x16-3"
+                    }
+                },
+                "Buttons-12x16": {
+                    "size": [12, 16],
+                    "variants": [
+                        "Share", "Options"
+                    ],
+                    "references": {
+                        "Input-0": "Button-12x16-0",
+                        "Input-1": "Button-12x16-1",
+                        "Input-2": "Button-12x16-2",
+                        "Input-3": "Button-12x16-3"
+                    }
+                },
+                "Trackpads-28x16": {
+                    "size": [28, 16],
+                    "variants": [
+                        "Trackpad"
+                    ],
+                    "references": {
+                        "Input-0": "Trackpad-28x16-0",
+                        "Input-1": "Trackpad-28x16-1",
+                        "Input-2": "Trackpad-28x16-2",
+                        "Input-3": "Trackpad-28x16-3"
+                    }
+                },
+                "Shoulder-Buttons-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "R1", "L1"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R1": "R-Button-0",
+                            "L1": "L-Button-0"
+                        },
+                        "Input-1": {
+                            "R1": "R-Button-1",
+                            "L1": "L-Button-1"
+                        },
+                        "Input-2": {
+                            "R1": "R-Button-2",
+                            "L1": "L-Button-2"
+                        },
+                        "Input-3": {
+                            "R1": "R-Button-3",
+                            "L1": "L-Button-3"
+                        }
+                    },
+                    "break": true
+                },
+                "Triggers-20x16": {
+                    "size": [20, 16],
+                    "variants": [
+                        "R2", "L2"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R2": "R-Trigger-0",
+                            "L2": "L-Trigger-0"
+                        },
+                        "Input-1": {
+                            "R2": "R-Trigger-1",
+                            "L2": "L-Trigger-1"
+                        },
+                        "Input-2": {
+                            "R2": "R-Trigger-2",
+                            "L2": "L-Trigger-2"
+                        },
+                        "Input-3": {
+                            "R2": "R-Trigger-3",
+                            "L2": "L-Trigger-3"
+                        }
+                    }
+                },
+                "Buttons-Square-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "R3", "L3"
+                    ],
+                    "references": {
+                        "Input-0": "Button-Square-24x16-0",
+                        "Input-1": "Button-Square-24x16-1",
+                        "Input-2": "Button-Square-24x16-2",
+                        "Input-3": "Button-Square-24x16-3"
+                    }
+                },
+                "D-Pad": {
+                    "size": [16, 16],
+                    "variants": [
+                        "D-Pad-Up", "D-Pad-Down",
+                        "D-Pad-Right", "D-Pad-Left"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "D-Pad-Up": "D-Pad-Button-Up-0",
+                            "D-Pad-Down": "D-Pad-Button-Down-0",
+                            "D-Pad-Left": "D-Pad-Button-Left-0",
+                            "D-Pad-Right": "D-Pad-Button-Right-0"
+                        },
+                        "Input-1": {
+                            "D-Pad-Up": "D-Pad-Button-Up-1",
+                            "D-Pad-Down": "D-Pad-Button-Down-1",
+                            "D-Pad-Left": "D-Pad-Button-Left-1",
+                            "D-Pad-Right": "D-Pad-Button-Right-1"
+                        },
+                        "Input-2": {
+                            "D-Pad-Up": "D-Pad-Button-Up-2",
+                            "D-Pad-Down": "D-Pad-Button-Down-2",
+                            "D-Pad-Left": "D-Pad-Button-Left-2",
+                            "D-Pad-Right": "D-Pad-Button-Right-2"
+                        },
+                        "Input-3": {
+                            "D-Pad-Up": "D-Pad-Button-Up-3",
+                            "D-Pad-Down": "D-Pad-Button-Down-3",
+                            "D-Pad-Left": "D-Pad-Button-Left-3",
+                            "D-Pad-Right": "D-Pad-Button-Right-3"
+                        }
+                    }
+                },
+                "Sticks": {
+                    "size": [16, 16],
+                    "variants": [
+                        "R-Stick-Up", "R-Stick-Down",
+                        "R-Stick-Right", "R-Stick-Left",
+                        "R-Stick-Up-Right", "R-Stick-Up-Left",
+                        "R-Stick-Down-Right", "R-Stick-Down-Left",
+
+                        "L-Stick-Up", "L-Stick-Down",
+                        "L-Stick-Right", "L-Stick-Left",
+                        "L-Stick-Up-Right", "L-Stick-Up-Left",
+                        "L-Stick-Down-Right", "L-Stick-Down-Left"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R-Stick-Up": "Stick-Up-0",
+                            "R-Stick-Down": "Stick-Down-0",
+                            "R-Stick-Right": "Stick-Right-0",
+                            "R-Stick-Left": "Stick-Left-0",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-0",
+                            "R-Stick-Up-Left": "Stick-Up-Left-0",
+                            "R-Stick-Down-Right": "Stick-Down-Right-0",
+                            "R-Stick-Down-Left": "Stick-Down-Left-0",
+
+                            "L-Stick-Up": "Stick-Up-0",
+                            "L-Stick-Down": "Stick-Down-0",
+                            "L-Stick-Right": "Stick-Right-0",
+                            "L-Stick-Left": "Stick-Left-0",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-0",
+                            "L-Stick-Up-Left": "Stick-Up-Left-0",
+                            "L-Stick-Down-Right": "Stick-Down-Right-0",
+                            "L-Stick-Down-Left": "Stick-Down-Left-0"
+                        },
+                        "Input-1": {
+                            "R-Stick-Up": "Stick-Up-1",
+                            "R-Stick-Down": "Stick-Down-1",
+                            "R-Stick-Right": "Stick-Right-1",
+                            "R-Stick-Left": "Stick-Left-1",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-1",
+                            "R-Stick-Up-Left": "Stick-Up-Left-1",
+                            "R-Stick-Down-Right": "Stick-Down-Right-1",
+                            "R-Stick-Down-Left": "Stick-Down-Left-1",
+
+                            "L-Stick-Up": "Stick-Up-1",
+                            "L-Stick-Down": "Stick-Down-1",
+                            "L-Stick-Right": "Stick-Right-1",
+                            "L-Stick-Left": "Stick-Left-1",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-1",
+                            "L-Stick-Up-Left": "Stick-Up-Left-1",
+                            "L-Stick-Down-Right": "Stick-Down-Right-1",
+                            "L-Stick-Down-Left": "Stick-Down-Left-1"
+                        },
+                        "Input-2": {
+                            "R-Stick-Up": "Stick-Up-2",
+                            "R-Stick-Down": "Stick-Down-2",
+                            "R-Stick-Right": "Stick-Right-2",
+                            "R-Stick-Left": "Stick-Left-2",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-2",
+                            "R-Stick-Up-Left": "Stick-Up-Left-2",
+                            "R-Stick-Down-Right": "Stick-Down-Right-2",
+                            "R-Stick-Down-Left": "Stick-Down-Left-2",
+
+                            "L-Stick-Up": "Stick-Up-2",
+                            "L-Stick-Down": "Stick-Down-2",
+                            "L-Stick-Right": "Stick-Right-2",
+                            "L-Stick-Left": "Stick-Left-2",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-2",
+                            "L-Stick-Up-Left": "Stick-Up-Left-2",
+                            "L-Stick-Down-Right": "Stick-Down-Right-2",
+                            "L-Stick-Down-Left": "Stick-Down-Left-2"
+                        },
+                        "Input-3": {
+                            "R-Stick-Up": "Stick-Up-3",
+                            "R-Stick-Down": "Stick-Down-3",
+                            "R-Stick-Right": "Stick-Right-3",
+                            "R-Stick-Left": "Stick-Left-3",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-3",
+                            "R-Stick-Up-Left": "Stick-Up-Left-3",
+                            "R-Stick-Down-Right": "Stick-Down-Right-3",
+                            "R-Stick-Down-Left": "Stick-Down-Left-3",
+
+                            "L-Stick-Up": "Stick-Up-3",
+                            "L-Stick-Down": "Stick-Down-3",
+                            "L-Stick-Right": "Stick-Right-3",
+                            "L-Stick-Left": "Stick-Left-3",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-3",
+                            "L-Stick-Up-Left": "Stick-Up-Left-3",
+                            "L-Stick-Down-Right": "Stick-Down-Right-3",
+                            "L-Stick-Down-Left": "Stick-Down-Left-3"
+                        }
+                    },
+                    "break": true
+                }
+            },
+            "frames": {
+                "Frame-0": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-12x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-28x16", "D-Pad"
+                        ],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [0, 0]
+                    }
+                ],
+                "Frame-1": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-12x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-28x16", "D-Pad"
+                        ],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [1, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-1, 1]
+                    }
+                ],
+                "Frame-2": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-12x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-28x16", "D-Pad"
+                        ],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [2, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-2, 2]
+                    }
+                ],
+                "Frame-3": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-12x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-28x16", "D-Pad"
+                        ],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [3, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-3, 3]
+                    }
+                ]
+            },
+            "templates": {
+                "Normal": {
+                    "frames": [
+                        ["Input-0", "Frame-0"]
+                    ]
+                },
+                "Pressed": {
+                    "frames": [
+                        ["Input-3", "Frame-3"]
+                    ]
+                },
+                "Animated": {
+                    "frames": [
+                        ["Input-0", "Frame-0"],
+                        ["Input-1", "Frame-1"],
+                        ["Input-2", "Frame-2"],
+                        ["Input-3", "Frame-3"]
+                    ]
+                }
+            }
+        },
+        "joypad_ps5": {
+            "paths": [
+                "./input/joypad_template.ora",
+                "./input/joypad_variants.ora",
+                "./input/joypad_variants_ps5.ora"
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#3E3546",
+                "input_3": "#694F62",
+
+                "white_1": "#C7DCD0",
+                "white_2": "#7F708A"
+            },
+            "groups": {
+                "Buttons-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "Cross", "Circle", "Square", "Triangle", "Home"
+                    ],
+                    "references": {
+                        "Input-0": "Button-16x16-0",
+                        "Input-1": "Button-16x16-1",
+                        "Input-2": "Button-16x16-2",
+                        "Input-3": "Button-16x16-3"
+                    }
+                },
+                "Buttons-12x16": {
+                    "size": [12, 16],
+                    "variants": [
+                        "Create", "Options"
+                    ],
+                    "references": {
+                        "Input-0": "Button-12x16-0",
+                        "Input-1": "Button-12x16-1",
+                        "Input-2": "Button-12x16-2",
+                        "Input-3": "Button-12x16-3"
+                    }
+                },
+                "Trackpads-28x16": {
+                    "size": [28, 16],
+                    "variants": [
+                        "Trackpad"
+                    ],
+                    "references": {
+                        "Input-0": "Trackpad-Curved-28x16-0",
+                        "Input-1": "Trackpad-Curved-28x16-1",
+                        "Input-2": "Trackpad-Curved-28x16-2",
+                        "Input-3": "Trackpad-Curved-28x16-3"
+                    }
+                },
+                "Shoulder-Buttons-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "R1", "L1"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R1": "R-Button-0",
+                            "L1": "L-Button-0"
+                        },
+                        "Input-1": {
+                            "R1": "R-Button-1",
+                            "L1": "L-Button-1"
+                        },
+                        "Input-2": {
+                            "R1": "R-Button-2",
+                            "L1": "L-Button-2"
+                        },
+                        "Input-3": {
+                            "R1": "R-Button-3",
+                            "L1": "L-Button-3"
+                        }
+                    },
+                    "break": true
+                },
+                "Triggers-20x16": {
+                    "size": [20, 16],
+                    "variants": [
+                        "R2", "L2"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R2": "R-Trigger-0",
+                            "L2": "L-Trigger-0"
+                        },
+                        "Input-1": {
+                            "R2": "R-Trigger-1",
+                            "L2": "L-Trigger-1"
+                        },
+                        "Input-2": {
+                            "R2": "R-Trigger-2",
+                            "L2": "L-Trigger-2"
+                        },
+                        "Input-3": {
+                            "R2": "R-Trigger-3",
+                            "L2": "L-Trigger-3"
+                        }
+                    }
+                },
+                "Buttons-Square-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "R3", "L3"
+                    ],
+                    "references": {
+                        "Input-0": "Button-Square-24x16-0",
+                        "Input-1": "Button-Square-24x16-1",
+                        "Input-2": "Button-Square-24x16-2",
+                        "Input-3": "Button-Square-24x16-3"
+                    }
+                },
+                "D-Pad": {
+                    "size": [16, 16],
+                    "variants": [
+                        "D-Pad-Up", "D-Pad-Down",
+                        "D-Pad-Right", "D-Pad-Left"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "D-Pad-Up": "D-Pad-Button-Up-0",
+                            "D-Pad-Down": "D-Pad-Button-Down-0",
+                            "D-Pad-Left": "D-Pad-Button-Left-0",
+                            "D-Pad-Right": "D-Pad-Button-Right-0"
+                        },
+                        "Input-1": {
+                            "D-Pad-Up": "D-Pad-Button-Up-1",
+                            "D-Pad-Down": "D-Pad-Button-Down-1",
+                            "D-Pad-Left": "D-Pad-Button-Left-1",
+                            "D-Pad-Right": "D-Pad-Button-Right-1"
+                        },
+                        "Input-2": {
+                            "D-Pad-Up": "D-Pad-Button-Up-2",
+                            "D-Pad-Down": "D-Pad-Button-Down-2",
+                            "D-Pad-Left": "D-Pad-Button-Left-2",
+                            "D-Pad-Right": "D-Pad-Button-Right-2"
+                        },
+                        "Input-3": {
+                            "D-Pad-Up": "D-Pad-Button-Up-3",
+                            "D-Pad-Down": "D-Pad-Button-Down-3",
+                            "D-Pad-Left": "D-Pad-Button-Left-3",
+                            "D-Pad-Right": "D-Pad-Button-Right-3"
+                        }
+                    }
+                },
+                "Sticks": {
+                    "size": [16, 16],
+                    "variants": [
+                        "R-Stick-Up", "R-Stick-Down",
+                        "R-Stick-Right", "R-Stick-Left",
+                        "R-Stick-Up-Right", "R-Stick-Up-Left",
+                        "R-Stick-Down-Right", "R-Stick-Down-Left",
+
+                        "L-Stick-Up", "L-Stick-Down",
+                        "L-Stick-Right", "L-Stick-Left",
+                        "L-Stick-Up-Right", "L-Stick-Up-Left",
+                        "L-Stick-Down-Right", "L-Stick-Down-Left"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R-Stick-Up": "Stick-Up-0",
+                            "R-Stick-Down": "Stick-Down-0",
+                            "R-Stick-Right": "Stick-Right-0",
+                            "R-Stick-Left": "Stick-Left-0",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-0",
+                            "R-Stick-Up-Left": "Stick-Up-Left-0",
+                            "R-Stick-Down-Right": "Stick-Down-Right-0",
+                            "R-Stick-Down-Left": "Stick-Down-Left-0",
+
+                            "L-Stick-Up": "Stick-Up-0",
+                            "L-Stick-Down": "Stick-Down-0",
+                            "L-Stick-Right": "Stick-Right-0",
+                            "L-Stick-Left": "Stick-Left-0",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-0",
+                            "L-Stick-Up-Left": "Stick-Up-Left-0",
+                            "L-Stick-Down-Right": "Stick-Down-Right-0",
+                            "L-Stick-Down-Left": "Stick-Down-Left-0"
+                        },
+                        "Input-1": {
+                            "R-Stick-Up": "Stick-Up-1",
+                            "R-Stick-Down": "Stick-Down-1",
+                            "R-Stick-Right": "Stick-Right-1",
+                            "R-Stick-Left": "Stick-Left-1",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-1",
+                            "R-Stick-Up-Left": "Stick-Up-Left-1",
+                            "R-Stick-Down-Right": "Stick-Down-Right-1",
+                            "R-Stick-Down-Left": "Stick-Down-Left-1",
+
+                            "L-Stick-Up": "Stick-Up-1",
+                            "L-Stick-Down": "Stick-Down-1",
+                            "L-Stick-Right": "Stick-Right-1",
+                            "L-Stick-Left": "Stick-Left-1",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-1",
+                            "L-Stick-Up-Left": "Stick-Up-Left-1",
+                            "L-Stick-Down-Right": "Stick-Down-Right-1",
+                            "L-Stick-Down-Left": "Stick-Down-Left-1"
+                        },
+                        "Input-2": {
+                            "R-Stick-Up": "Stick-Up-2",
+                            "R-Stick-Down": "Stick-Down-2",
+                            "R-Stick-Right": "Stick-Right-2",
+                            "R-Stick-Left": "Stick-Left-2",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-2",
+                            "R-Stick-Up-Left": "Stick-Up-Left-2",
+                            "R-Stick-Down-Right": "Stick-Down-Right-2",
+                            "R-Stick-Down-Left": "Stick-Down-Left-2",
+
+                            "L-Stick-Up": "Stick-Up-2",
+                            "L-Stick-Down": "Stick-Down-2",
+                            "L-Stick-Right": "Stick-Right-2",
+                            "L-Stick-Left": "Stick-Left-2",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-2",
+                            "L-Stick-Up-Left": "Stick-Up-Left-2",
+                            "L-Stick-Down-Right": "Stick-Down-Right-2",
+                            "L-Stick-Down-Left": "Stick-Down-Left-2"
+                        },
+                        "Input-3": {
+                            "R-Stick-Up": "Stick-Up-3",
+                            "R-Stick-Down": "Stick-Down-3",
+                            "R-Stick-Right": "Stick-Right-3",
+                            "R-Stick-Left": "Stick-Left-3",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-3",
+                            "R-Stick-Up-Left": "Stick-Up-Left-3",
+                            "R-Stick-Down-Right": "Stick-Down-Right-3",
+                            "R-Stick-Down-Left": "Stick-Down-Left-3",
+
+                            "L-Stick-Up": "Stick-Up-3",
+                            "L-Stick-Down": "Stick-Down-3",
+                            "L-Stick-Right": "Stick-Right-3",
+                            "L-Stick-Left": "Stick-Left-3",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-3",
+                            "L-Stick-Up-Left": "Stick-Up-Left-3",
+                            "L-Stick-Down-Right": "Stick-Down-Right-3",
+                            "L-Stick-Down-Left": "Stick-Down-Left-3"
+                        }
+                    },
+                    "break": true
+                }
+            },
+            "frames": {
+                "Frame-0": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-12x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-28x16", "D-Pad"
+                        ],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [0, 0]
+                    }
+                ],
+                "Frame-1": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-12x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-28x16", "D-Pad"
+                        ],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [1, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-1, 1]
+                    }
+                ],
+                "Frame-2": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-12x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-28x16", "D-Pad"
+                        ],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [2, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-2, 2]
+                    }
+                ],
+                "Frame-3": [
+                    {
+                        "groups": [
+                            "Buttons-16x16", "Buttons-12x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16", "Buttons-Square-24x16",
+                            "Trackpads-28x16", "D-Pad"
+                        ],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [3, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-3, 3]
+                    }
+                ]
+            },
+            "templates": {
+                "Normal": {
+                    "frames": [
+                        ["Input-0", "Frame-0"]
+                    ]
+                },
+                "Pressed": {
+                    "frames": [
+                        ["Input-3", "Frame-3"]
+                    ]
+                },
+                "Animated": {
+                    "frames": [
+                        ["Input-0", "Frame-0"],
+                        ["Input-1", "Frame-1"],
+                        ["Input-2", "Frame-2"],
+                        ["Input-3", "Frame-3"]
+                    ]
+                }
+            }
+        },
+        "joypad_nintendo_joycons": {
+            "paths": [
+                "./input/joypad_template.ora",
+                "./input/joypad_variants.ora",
+                "./input/joypad_variants_nintendo_joycons.ora"
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#3E3546",
+                "input_3": "#694F62",
+
+                "white_1": "#C7DCD0",
+                "white_2": "#7F708A"
+            },
+            "groups": {
+                "Buttons-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "B", "A", "Y", "X", "Home"
+                    ],
+                    "references": {
+                        "Input-0": "Button-16x16-0",
+                        "Input-1": "Button-16x16-1",
+                        "Input-2": "Button-16x16-2",
+                        "Input-3": "Button-16x16-3"
+                    }
+                },
+                "Buttons-Plus": {
+                    "size": [16, 16],
+                    "variants": [
+                        "Plus"
+                    ],
+                    "references": {
+                        "Input-0": "Button-Plus-0",
+                        "Input-1": "Button-Plus-1",
+                        "Input-2": "Button-Plus-2",
+                        "Input-3": "Button-Plus-3"
+                    }
+                },
+                "Buttons-Minus": {
+                    "size": [16, 16],
+                    "variants": [
+                        "Minus"
+                    ],
+                    "references": {
+                        "Input-0": "Button-Minus-0",
+                        "Input-1": "Button-Minus-1",
+                        "Input-2": "Button-Minus-2",
+                        "Input-3": "Button-Minus-3"
+                    }
+                },
+                "Buttons-Square-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "Capture", "Chat"
+                    ],
+                    "references": {
+                        "Input-0": "Button-Square-16x16-0",
+                        "Input-1": "Button-Square-16x16-1",
+                        "Input-2": "Button-Square-16x16-2",
+                        "Input-3": "Button-Square-16x16-3"
+                    }
+                },
+                "D-Pad": {
+                    "size": [16, 16],
+                    "variants": [
+                        "D-Pad-Up", "D-Pad-Down",
+                        "D-Pad-Right", "D-Pad-Left"
+                    ],
+                    "references": {
+                        "Input-0": "Button-16x16-0",
+                        "Input-1": "Button-16x16-1",
+                        "Input-2": "Button-16x16-2",
+                        "Input-3": "Button-16x16-3"
+                    }
+                },
+                "Shoulder-Buttons-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "R1", "L1"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R1": "R-Button-0",
+                            "L1": "L-Button-0"
+                        },
+                        "Input-1": {
+                            "R1": "R-Button-1",
+                            "L1": "L-Button-1"
+                        },
+                        "Input-2": {
+                            "R1": "R-Button-2",
+                            "L1": "L-Button-2"
+                        },
+                        "Input-3": {
+                            "R1": "R-Button-3",
+                            "L1": "L-Button-3"
+                        }
+                    },
+                    "break": true
+                },
+                "Triggers-20x16": {
+                    "size": [20, 16],
+                    "variants": [
+                        "R2", "L2"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R2": "R-Trigger-0",
+                            "L2": "L-Trigger-0"
+                        },
+                        "Input-1": {
+                            "R2": "R-Trigger-1",
+                            "L2": "L-Trigger-1"
+                        },
+                        "Input-2": {
+                            "R2": "R-Trigger-2",
+                            "L2": "L-Trigger-2"
+                        },
+                        "Input-3": {
+                            "R2": "R-Trigger-3",
+                            "L2": "L-Trigger-3"
+                        }
+                    }
+                },
+                "Buttons-Square-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "R3", "L3"
+                    ],
+                    "references": {
+                        "Input-0": "Button-Square-24x16-0",
+                        "Input-1": "Button-Square-24x16-1",
+                        "Input-2": "Button-Square-24x16-2",
+                        "Input-3": "Button-Square-24x16-3"
+                    }
+                },
+                "Sticks": {
+                    "size": [16, 16],
+                    "variants": [
+                        "R-Stick-Up", "R-Stick-Down",
+                        "R-Stick-Right", "R-Stick-Left",
+                        "R-Stick-Up-Right", "R-Stick-Up-Left",
+                        "R-Stick-Down-Right", "R-Stick-Down-Left",
+
+                        "L-Stick-Up", "L-Stick-Down",
+                        "L-Stick-Right", "L-Stick-Left",
+                        "L-Stick-Up-Right", "L-Stick-Up-Left",
+                        "L-Stick-Down-Right", "L-Stick-Down-Left"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R-Stick-Up": "Stick-Up-0",
+                            "R-Stick-Down": "Stick-Down-0",
+                            "R-Stick-Right": "Stick-Right-0",
+                            "R-Stick-Left": "Stick-Left-0",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-0",
+                            "R-Stick-Up-Left": "Stick-Up-Left-0",
+                            "R-Stick-Down-Right": "Stick-Down-Right-0",
+                            "R-Stick-Down-Left": "Stick-Down-Left-0",
+
+                            "L-Stick-Up": "Stick-Up-0",
+                            "L-Stick-Down": "Stick-Down-0",
+                            "L-Stick-Right": "Stick-Right-0",
+                            "L-Stick-Left": "Stick-Left-0",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-0",
+                            "L-Stick-Up-Left": "Stick-Up-Left-0",
+                            "L-Stick-Down-Right": "Stick-Down-Right-0",
+                            "L-Stick-Down-Left": "Stick-Down-Left-0"
+                        },
+                        "Input-1": {
+                            "R-Stick-Up": "Stick-Up-1",
+                            "R-Stick-Down": "Stick-Down-1",
+                            "R-Stick-Right": "Stick-Right-1",
+                            "R-Stick-Left": "Stick-Left-1",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-1",
+                            "R-Stick-Up-Left": "Stick-Up-Left-1",
+                            "R-Stick-Down-Right": "Stick-Down-Right-1",
+                            "R-Stick-Down-Left": "Stick-Down-Left-1",
+
+                            "L-Stick-Up": "Stick-Up-1",
+                            "L-Stick-Down": "Stick-Down-1",
+                            "L-Stick-Right": "Stick-Right-1",
+                            "L-Stick-Left": "Stick-Left-1",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-1",
+                            "L-Stick-Up-Left": "Stick-Up-Left-1",
+                            "L-Stick-Down-Right": "Stick-Down-Right-1",
+                            "L-Stick-Down-Left": "Stick-Down-Left-1"
+                        },
+                        "Input-2": {
+                            "R-Stick-Up": "Stick-Up-2",
+                            "R-Stick-Down": "Stick-Down-2",
+                            "R-Stick-Right": "Stick-Right-2",
+                            "R-Stick-Left": "Stick-Left-2",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-2",
+                            "R-Stick-Up-Left": "Stick-Up-Left-2",
+                            "R-Stick-Down-Right": "Stick-Down-Right-2",
+                            "R-Stick-Down-Left": "Stick-Down-Left-2",
+
+                            "L-Stick-Up": "Stick-Up-2",
+                            "L-Stick-Down": "Stick-Down-2",
+                            "L-Stick-Right": "Stick-Right-2",
+                            "L-Stick-Left": "Stick-Left-2",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-2",
+                            "L-Stick-Up-Left": "Stick-Up-Left-2",
+                            "L-Stick-Down-Right": "Stick-Down-Right-2",
+                            "L-Stick-Down-Left": "Stick-Down-Left-2"
+                        },
+                        "Input-3": {
+                            "R-Stick-Up": "Stick-Up-3",
+                            "R-Stick-Down": "Stick-Down-3",
+                            "R-Stick-Right": "Stick-Right-3",
+                            "R-Stick-Left": "Stick-Left-3",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-3",
+                            "R-Stick-Up-Left": "Stick-Up-Left-3",
+                            "R-Stick-Down-Right": "Stick-Down-Right-3",
+                            "R-Stick-Down-Left": "Stick-Down-Left-3",
+
+                            "L-Stick-Up": "Stick-Up-3",
+                            "L-Stick-Down": "Stick-Down-3",
+                            "L-Stick-Right": "Stick-Right-3",
+                            "L-Stick-Left": "Stick-Left-3",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-3",
+                            "L-Stick-Up-Left": "Stick-Up-Left-3",
+                            "L-Stick-Down-Right": "Stick-Down-Right-3",
+                            "L-Stick-Down-Left": "Stick-Down-Left-3"
+                        }
+                    },
+                    "break": true
+                }
+            },
+            "frames": {
+                "Frame-0": [
+                    {
+                        "groups": [
+                            "Buttons-16x16",
+                            "Buttons-Square-16x16",
+                            "Buttons-Square-24x16",
+                            "Buttons-Plus",
+                            "Buttons-Minus",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16",
+                            "D-Pad"
+                        ],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [0, 0]
+                    }
+                ],
+                "Frame-1": [
+                    {
+                        "groups": [
+                            "Buttons-16x16",
+                            "Buttons-Square-16x16",
+                            "Buttons-Square-24x16",
+                            "Buttons-Plus",
+                            "Buttons-Minus",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16",
+                            "D-Pad"
+                        ],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [1, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-1, 1]
+                    }
+                ],
+                "Frame-2": [
+                    {
+                        "groups": [
+                            "Buttons-16x16",
+                            "Buttons-Square-16x16",
+                            "Buttons-Square-24x16",
+                            "Buttons-Plus",
+                            "Buttons-Minus",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16",
+                            "D-Pad"
+                        ],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [2, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-2, 2]
+                    }
+                ],
+                "Frame-3": [
+                    {
+                        "groups": [
+                            "Buttons-16x16",
+                            "Buttons-Square-16x16",
+                            "Buttons-Square-24x16",
+                            "Buttons-Plus",
+                            "Buttons-Minus",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16",
+                            "D-Pad"
+                        ],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [3, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-3, 3]
+                    }
+                ]
+            },
+            "templates": {
+                "Normal": {
+                    "frames": [
+                        ["Input-0", "Frame-0"]
+                    ]
+                },
+                "Pressed": {
+                    "frames": [
+                        ["Input-3", "Frame-3"]
+                    ]
+                },
+                "Animated": {
+                    "frames": [
+                        ["Input-0", "Frame-0"],
+                        ["Input-1", "Frame-1"],
+                        ["Input-2", "Frame-2"],
+                        ["Input-3", "Frame-3"]
+                    ]
+                }
+            }
+        },
+        "joypad_nintendo_pro": {
+            "paths": [
+                "./input/joypad_template.ora",
+                "./input/joypad_variants.ora",
+                "./input/joypad_variants_nintendo_pro.ora"
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#3E3546",
+                "input_3": "#694F62",
+
+                "white_1": "#C7DCD0",
+                "white_2": "#7F708A"
+            },
+            "groups": {
+                "Buttons-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "B", "A", "Y", "X", "Home", "Plus", "Minus"
+                    ],
+                    "references": {
+                        "Input-0": "Button-16x16-0",
+                        "Input-1": "Button-16x16-1",
+                        "Input-2": "Button-16x16-2",
+                        "Input-3": "Button-16x16-3"
+                    }
+                },
+                "Buttons-Square-16x16": {
+                    "size": [16, 16],
+                    "variants": [
+                        "Capture"
+                    ],
+                    "references": {
+                        "Input-0": "Button-Square-16x16-0",
+                        "Input-1": "Button-Square-16x16-1",
+                        "Input-2": "Button-Square-16x16-2",
+                        "Input-3": "Button-Square-16x16-3"
+                    }
+                },
+                "D-Pad": {
+                    "size": [16, 16],
+                    "variants": [
+                        "D-Pad-Up", "D-Pad-Down",
+                        "D-Pad-Right", "D-Pad-Left"
+                    ],
+                    "references": {
+                        "Input-0": "D-Pad",
+                        "Input-1": {
+                            "D-Pad-Up": "D-Pad-Up-1",
+                            "D-Pad-Down": "D-Pad-Down-1",
+                            "D-Pad-Left": "D-Pad-Left-1",
+                            "D-Pad-Right": "D-Pad-Right-1"
+                        },
+                        "Input-2": {
+                            "D-Pad-Up": "D-Pad-Up-2",
+                            "D-Pad-Down": "D-Pad-Down-2",
+                            "D-Pad-Left": "D-Pad-Left-2",
+                            "D-Pad-Right": "D-Pad-Right-2"
+                        },
+                        "Input-3": {
+                            "D-Pad-Up": "D-Pad-Up-3",
+                            "D-Pad-Down": "D-Pad-Down-3",
+                            "D-Pad-Left": "D-Pad-Left-3",
+                            "D-Pad-Right": "D-Pad-Right-3"
+                        }
+                    }
+                },
+                "Shoulder-Buttons-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "R1", "L1"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R1": "R-Button-0",
+                            "L1": "L-Button-0"
+                        },
+                        "Input-1": {
+                            "R1": "R-Button-1",
+                            "L1": "L-Button-1"
+                        },
+                        "Input-2": {
+                            "R1": "R-Button-2",
+                            "L1": "L-Button-2"
+                        },
+                        "Input-3": {
+                            "R1": "R-Button-3",
+                            "L1": "L-Button-3"
+                        }
+                    },
+                    "break": true
+                },
+                "Triggers-20x16": {
+                    "size": [20, 16],
+                    "variants": [
+                        "R2", "L2"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R2": "R-Trigger-0",
+                            "L2": "L-Trigger-0"
+                        },
+                        "Input-1": {
+                            "R2": "R-Trigger-1",
+                            "L2": "L-Trigger-1"
+                        },
+                        "Input-2": {
+                            "R2": "R-Trigger-2",
+                            "L2": "L-Trigger-2"
+                        },
+                        "Input-3": {
+                            "R2": "R-Trigger-3",
+                            "L2": "L-Trigger-3"
+                        }
+                    }
+                },
+                "Buttons-Square-24x16": {
+                    "size": [24, 16],
+                    "variants": [
+                        "R3", "L3"
+                    ],
+                    "references": {
+                        "Input-0": "Button-Square-24x16-0",
+                        "Input-1": "Button-Square-24x16-1",
+                        "Input-2": "Button-Square-24x16-2",
+                        "Input-3": "Button-Square-24x16-3"
+                    }
+                },
+                "Sticks": {
+                    "size": [16, 16],
+                    "variants": [
+                        "R-Stick-Up", "R-Stick-Down",
+                        "R-Stick-Right", "R-Stick-Left",
+                        "R-Stick-Up-Right", "R-Stick-Up-Left",
+                        "R-Stick-Down-Right", "R-Stick-Down-Left",
+
+                        "L-Stick-Up", "L-Stick-Down",
+                        "L-Stick-Right", "L-Stick-Left",
+                        "L-Stick-Up-Right", "L-Stick-Up-Left",
+                        "L-Stick-Down-Right", "L-Stick-Down-Left"
+                    ],
+                    "references": {
+                        "Input-0": {
+                            "R-Stick-Up": "Stick-Up-0",
+                            "R-Stick-Down": "Stick-Down-0",
+                            "R-Stick-Right": "Stick-Right-0",
+                            "R-Stick-Left": "Stick-Left-0",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-0",
+                            "R-Stick-Up-Left": "Stick-Up-Left-0",
+                            "R-Stick-Down-Right": "Stick-Down-Right-0",
+                            "R-Stick-Down-Left": "Stick-Down-Left-0",
+
+                            "L-Stick-Up": "Stick-Up-0",
+                            "L-Stick-Down": "Stick-Down-0",
+                            "L-Stick-Right": "Stick-Right-0",
+                            "L-Stick-Left": "Stick-Left-0",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-0",
+                            "L-Stick-Up-Left": "Stick-Up-Left-0",
+                            "L-Stick-Down-Right": "Stick-Down-Right-0",
+                            "L-Stick-Down-Left": "Stick-Down-Left-0"
+                        },
+                        "Input-1": {
+                            "R-Stick-Up": "Stick-Up-1",
+                            "R-Stick-Down": "Stick-Down-1",
+                            "R-Stick-Right": "Stick-Right-1",
+                            "R-Stick-Left": "Stick-Left-1",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-1",
+                            "R-Stick-Up-Left": "Stick-Up-Left-1",
+                            "R-Stick-Down-Right": "Stick-Down-Right-1",
+                            "R-Stick-Down-Left": "Stick-Down-Left-1",
+
+                            "L-Stick-Up": "Stick-Up-1",
+                            "L-Stick-Down": "Stick-Down-1",
+                            "L-Stick-Right": "Stick-Right-1",
+                            "L-Stick-Left": "Stick-Left-1",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-1",
+                            "L-Stick-Up-Left": "Stick-Up-Left-1",
+                            "L-Stick-Down-Right": "Stick-Down-Right-1",
+                            "L-Stick-Down-Left": "Stick-Down-Left-1"
+                        },
+                        "Input-2": {
+                            "R-Stick-Up": "Stick-Up-2",
+                            "R-Stick-Down": "Stick-Down-2",
+                            "R-Stick-Right": "Stick-Right-2",
+                            "R-Stick-Left": "Stick-Left-2",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-2",
+                            "R-Stick-Up-Left": "Stick-Up-Left-2",
+                            "R-Stick-Down-Right": "Stick-Down-Right-2",
+                            "R-Stick-Down-Left": "Stick-Down-Left-2",
+
+                            "L-Stick-Up": "Stick-Up-2",
+                            "L-Stick-Down": "Stick-Down-2",
+                            "L-Stick-Right": "Stick-Right-2",
+                            "L-Stick-Left": "Stick-Left-2",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-2",
+                            "L-Stick-Up-Left": "Stick-Up-Left-2",
+                            "L-Stick-Down-Right": "Stick-Down-Right-2",
+                            "L-Stick-Down-Left": "Stick-Down-Left-2"
+                        },
+                        "Input-3": {
+                            "R-Stick-Up": "Stick-Up-3",
+                            "R-Stick-Down": "Stick-Down-3",
+                            "R-Stick-Right": "Stick-Right-3",
+                            "R-Stick-Left": "Stick-Left-3",
+
+                            "R-Stick-Up-Right": "Stick-Up-Right-3",
+                            "R-Stick-Up-Left": "Stick-Up-Left-3",
+                            "R-Stick-Down-Right": "Stick-Down-Right-3",
+                            "R-Stick-Down-Left": "Stick-Down-Left-3",
+
+                            "L-Stick-Up": "Stick-Up-3",
+                            "L-Stick-Down": "Stick-Down-3",
+                            "L-Stick-Right": "Stick-Right-3",
+                            "L-Stick-Left": "Stick-Left-3",
+
+                            "L-Stick-Up-Right": "Stick-Up-Right-3",
+                            "L-Stick-Up-Left": "Stick-Up-Left-3",
+                            "L-Stick-Down-Right": "Stick-Down-Right-3",
+                            "L-Stick-Down-Left": "Stick-Down-Left-3"
+                        }
+                    },
+                    "break": true
+                }
+            },
+            "frames": {
+                "Frame-0": [
+                    {
+                        "groups": [
+                            "Buttons-16x16",
+                            "Buttons-Square-16x16",
+                            "Buttons-Square-24x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16",
+                            "D-Pad"
+                        ],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [0, 0]
+                    },
+                    {
+                        "groups": ["Sticks"],
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [0, 0]
+                    }
+                ],
+                "Frame-1": [
+                    {
+                        "groups": [
+                            "Buttons-16x16",
+                            "Buttons-Square-16x16",
+                            "Buttons-Square-24x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16",
+                            "D-Pad"
+                        ],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-1, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-1, -1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [1, 1]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-1, 1]
+                    }
+                ],
+                "Frame-2": [
+                    {
+                        "groups": [
+                            "Buttons-16x16",
+                            "Buttons-Square-16x16",
+                            "Buttons-Square-24x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16",
+                            "D-Pad"
+                        ],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-2, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-2, -2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [2, 2]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-2, 2]
+                    }
+                ],
+                "Frame-3": [
+                    {
+                        "groups": [
+                            "Buttons-16x16",
+                            "Buttons-Square-16x16",
+                            "Buttons-Square-24x16",
+                            "Shoulder-Buttons-24x16",
+                            "Triggers-20x16",
+                            "D-Pad"
+                        ],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up", "L-Stick-Up"],
+                        "offset": [0, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down", "L-Stick-Down"],
+                        "offset": [0, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Right", "L-Stick-Right"],
+                        "offset": [3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Left", "L-Stick-Left"],
+                        "offset": [-3, 0]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Right", "L-Stick-Up-Right"],
+                        "offset": [3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Up-Left", "L-Stick-Up-Left"],
+                        "offset": [-3, -3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Right", "L-Stick-Down-Right"],
+                        "offset": [3, 3]
+                    },
+                    {
+                        "variants": ["R-Stick-Down-Left", "L-Stick-Down-Left"],
+                        "offset": [-3, 3]
+                    }
+                ]
+            },
+            "templates": {
+                "Normal": {
+                    "frames": [
+                        ["Input-0", "Frame-0"]
+                    ]
+                },
+                "Pressed": {
+                    "frames": [
+                        ["Input-3", "Frame-3"]
+                    ]
+                },
+                "Animated": {
+                    "frames": [
+                        ["Input-0", "Frame-0"],
+                        ["Input-1", "Frame-1"],
+                        ["Input-2", "Frame-2"],
+                        ["Input-3", "Frame-3"]
+                    ]
+                }
+            }
+        }
+    },
+    "outputs": {
+        "Images": {
+            "inputs": [
+                "keyboard",
+                "mouse",
+                "joypad",
+                "joypad_steam",
+                "joypad_xbox",
+                "joypad_ps4",
+                "joypad_ps5",
+                "joypad_nintendo_joycons",
+                "joypad_nintendo_pro"
+            ],
+            "themes": [
+                "dark",
+                "light"
+            ],
+            "path": "./output/[[theme]]/[[input]]",
+            "configs": [
+                {
+                    "template": "Normal",
+                    "path": "/[[template]]_[[direction]]/[[variant]]",
+                    "direction": "horizontal"
+                },
+                {
+                    "template": "Pressed",
+                    "path": "/[[template]]_[[direction]]/[[variant]]",
+                    "direction": "horizontal"
+                },
+                {
+                    "template": "Animated",
+                    "path": "/[[template]]_[[direction]]/[[variant]]",
+                    "direction": "horizontal"
+                },
+                {
+                    "template": "Normal",
+                    "path": "/[[template]]_[[direction]]/[[variant]]",
+                    "direction": "vertical"
+                },
+                {
+                    "template": "Pressed",
+                    "path": "/[[template]]_[[direction]]/[[variant]]",
+                    "direction": "vertical"
+                },
+                {
+                    "template": "Animated",
+                    "path": "/[[template]]_[[direction]]/[[variant]]",
+                    "direction": "vertical"
+                }
+            ]
+        },
+        "Frames": {
+            "inputs": [
+                "keyboard",
+                "mouse",
+                "joypad",
+                "joypad_steam",
+                "joypad_xbox",
+                "joypad_ps4",
+                "joypad_ps5",
+                "joypad_nintendo_joycons",
+                "joypad_nintendo_pro"
+            ],
+            "themes": [
+                "dark",
+                "light"
+            ],
+            "path": "./output/[[theme]]/[[input]]",
+            "configs": [
+                {
+                    "mode": "frames",
+                    "template": "Animated",
+                    "path": "/[[template]]_frames/[[variant]]_[[frame]]",
+                    "start_index": 0
+                }
+            ]
+        },
+        "Sheet Directional": {
+            "inputs": [
+                "keyboard",
+                "mouse",
+                "joypad",
+                "joypad_steam",
+                "joypad_xbox",
+                "joypad_ps4",
+                "joypad_ps5",
+                "joypad_nintendo_joycons",
+                "joypad_nintendo_pro"
+            ],
+            "themes": [
+                "dark",
+                "light"
+            ],
+            "path": "./output/[[theme]]/[[input]]",
+            "configs": [
+                {
+                    "mode": "sheet",
+                    "template": "Normal",
+                    "path": "/[[template]]_[[direction]]_[[group]]",
+                    "direction": "horizontal"
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Pressed",
+                    "path": "/[[template]]_[[direction]]_[[group]]",
+                    "direction": "horizontal"
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Animated",
+                    "path": "/[[template]]_[[direction]]_[[group]]",
+                    "direction": "horizontal"
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Normal",
+                    "path": "/[[template]]_[[direction]]_[[group]]",
+                    "direction": "vertical"
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Pressed",
+                    "path": "/[[template]]_[[direction]]_[[group]]",
+                    "direction": "vertical"
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Animated",
+                    "path": "/[[template]]_[[direction]]_[[group]]",
+                    "direction": "vertical"
+                }
+            ]
+        },
+        "Sheet Tiled Keyboard and Mouse": {
+            "inputs": [
+                "keyboard",
+                "mouse"
+            ],
+            "themes": [
+                "dark",
+                "light"
+            ],
+            "path": "./output/[[theme]]/[[input]]",
+            "configs": [
+                {
+                    "mode": "sheet",
+                    "template": "Normal",
+                    "path": "/[[template]]_[[direction]]",
+                    "direction": "horizontal",
+                    "rows": 12,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Pressed",
+                    "path": "/[[template]]_[[direction]]",
+                    "direction": "horizontal",
+                    "rows": 12,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Animated",
+                    "path": "/[[template]]_[[direction]]",
+                    "direction": "horizontal",
+                    "rows": 12,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Normal",
+                    "path": "/[[template]]_[[direction]]",
+                    "direction": "vertical",
+                    "cols": 12,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Pressed",
+                    "path": "/[[template]]_[[direction]]",
+                    "direction": "vertical",
+                    "cols": 12,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Animated",
+                    "path": "/[[template]]_[[direction]]",
+                    "direction": "vertical",
+                    "cols": 24,
+                    "continuous": ["Keys-40x16", "Wheel-16x16"],
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet_frames",
+                    "template": "Animated",
+                    "path": "/[[template]]_[[direction]]_frames/[[frame]]",
+                    "direction": "horizontal",
+                    "rows": 12,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet_frames",
+                    "template": "Animated",
+                    "path": "/[[template]]_[[direction]]_frames/[[frame]]",
+                    "direction": "vertical",
+                    "cols": 12,
+                    "continuous": true,
+                    "group_padding": true
+                }
+            ]
+        },
+        "Sheet Tiled Joypads": {
+            "inputs": [
+                "joypad",
+                "joypad_steam",
+                "joypad_xbox",
+                "joypad_ps4",
+                "joypad_ps5",
+                "joypad_nintendo_joycons",
+                "joypad_nintendo_pro"
+            ],
+            "themes": [
+                "dark",
+                "light"
+            ],
+            "path": "./output/[[theme]]/[[input]]",
+            "configs": [
+                {
+                    "mode": "sheet",
+                    "template": "Normal",
+                    "path": "/[[template]]_[[direction]]",
+                    "direction": "horizontal",
+                    "rows": 16,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Pressed",
+                    "path": "/[[template]]_[[direction]]",
+                    "direction": "horizontal",
+                    "rows": 16,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Animated",
+                    "path": "/[[template]]_[[direction]]",
+                    "direction": "horizontal",
+                    "rows": 16,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Normal",
+                    "path": "/[[template]]_[[direction]]",
+                    "direction": "vertical",
+                    "cols": 16,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Pressed",
+                    "path": "/[[template]]_[[direction]]",
+                    "direction": "vertical",
+                    "cols": 16,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet",
+                    "template": "Animated",
+                    "path": "/[[template]]_[[direction]]",
+                    "direction": "vertical",
+                    "cols": 16,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet_frames",
+                    "template": "Animated",
+                    "path": "/[[template]]_[[direction]]_frames/[[frame]]",
+                    "direction": "horizontal",
+                    "rows": 16,
+                    "continuous": true,
+                    "group_padding": true
+                },
+                {
+                    "mode": "sheet_frames",
+                    "template": "Animated",
+                    "path": "/[[template]]_[[direction]]_frames/[[frame]]",
+                    "direction": "vertical",
+                    "cols": 16,
+                    "continuous": true,
+                    "group_padding": true
+                }
+            ]
+        }
+    }
+}

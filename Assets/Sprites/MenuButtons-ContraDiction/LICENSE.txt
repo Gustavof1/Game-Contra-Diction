@@ -1,0 +1,14 @@
+You are allowed to use these assets in commercial and non-commercial projects.
+You are NOT allowed to resell or redistribute the pack or any modified versions.
+Copyright © 2025 Uryon Games. All rights reserved.
+
+You ARE allowed to:
+- Use these assets in commercial and non-commercial projects.
+- Modify the assets for use in your own projects.
+
+You are NOT allowed to:
+- Resell, redistribute, or sublicense the assets, even if modified.
+- Include the assets in any asset pack, template, or distribution.
+- Use the assets for training AI models or datasets.
+
+By downloading this pack, you agree to the terms above.

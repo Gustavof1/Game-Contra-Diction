@@ -1,0 +1,1051 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "generic_alien_soldier_shapeshifting_default.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 1024
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "shapeshifting",
+        "from": 0,
+        "to": 47,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 51,
+      "y": 127,
+      "normalized": {
+        "x": 0.504950495049505,
+        "y": 0.9921875
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 88,
+        "height": 128
+      },
+      "frameBounds": {
+        "width": 101,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "generic_alien_soldier_shapeshifting_default_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_001.png": {
+      "frame": {
+        "x": 101,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_002.png": {
+      "frame": {
+        "x": 202,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_003.png": {
+      "frame": {
+        "x": 303,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_004.png": {
+      "frame": {
+        "x": 404,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_005.png": {
+      "frame": {
+        "x": 505,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_006.png": {
+      "frame": {
+        "x": 606,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_007.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_008.png": {
+      "frame": {
+        "x": 101,
+        "y": 128,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_009.png": {
+      "frame": {
+        "x": 202,
+        "y": 128,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_010.png": {
+      "frame": {
+        "x": 303,
+        "y": 128,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_011.png": {
+      "frame": {
+        "x": 404,
+        "y": 128,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_012.png": {
+      "frame": {
+        "x": 505,
+        "y": 128,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_013.png": {
+      "frame": {
+        "x": 606,
+        "y": 128,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_014.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_015.png": {
+      "frame": {
+        "x": 101,
+        "y": 256,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_016.png": {
+      "frame": {
+        "x": 202,
+        "y": 256,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_017.png": {
+      "frame": {
+        "x": 303,
+        "y": 256,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_018.png": {
+      "frame": {
+        "x": 404,
+        "y": 256,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_019.png": {
+      "frame": {
+        "x": 505,
+        "y": 256,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_020.png": {
+      "frame": {
+        "x": 606,
+        "y": 256,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_021.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_022.png": {
+      "frame": {
+        "x": 101,
+        "y": 384,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_023.png": {
+      "frame": {
+        "x": 202,
+        "y": 384,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_024.png": {
+      "frame": {
+        "x": 303,
+        "y": 384,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_025.png": {
+      "frame": {
+        "x": 404,
+        "y": 384,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_026.png": {
+      "frame": {
+        "x": 505,
+        "y": 384,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_027.png": {
+      "frame": {
+        "x": 606,
+        "y": 384,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_028.png": {
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_029.png": {
+      "frame": {
+        "x": 101,
+        "y": 512,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_030.png": {
+      "frame": {
+        "x": 202,
+        "y": 512,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_031.png": {
+      "frame": {
+        "x": 303,
+        "y": 512,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_032.png": {
+      "frame": {
+        "x": 404,
+        "y": 512,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_033.png": {
+      "frame": {
+        "x": 505,
+        "y": 512,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_034.png": {
+      "frame": {
+        "x": 606,
+        "y": 512,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_035.png": {
+      "frame": {
+        "x": 0,
+        "y": 640,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_036.png": {
+      "frame": {
+        "x": 101,
+        "y": 640,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_037.png": {
+      "frame": {
+        "x": 202,
+        "y": 640,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_038.png": {
+      "frame": {
+        "x": 303,
+        "y": 640,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_039.png": {
+      "frame": {
+        "x": 404,
+        "y": 640,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_040.png": {
+      "frame": {
+        "x": 505,
+        "y": 640,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_041.png": {
+      "frame": {
+        "x": 606,
+        "y": 640,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_042.png": {
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_043.png": {
+      "frame": {
+        "x": 101,
+        "y": 768,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_044.png": {
+      "frame": {
+        "x": 202,
+        "y": 768,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_045.png": {
+      "frame": {
+        "x": 303,
+        "y": 768,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_046.png": {
+      "frame": {
+        "x": 404,
+        "y": 768,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_shapeshifting_default_047.png": {
+      "frame": {
+        "x": 505,
+        "y": 768,
+        "w": 101,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 101,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 101,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

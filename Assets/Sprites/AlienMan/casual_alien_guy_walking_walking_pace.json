@@ -1,0 +1,1051 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "casual_alien_guy_walking_walking_pace.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 1024
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "walking",
+        "from": 0,
+        "to": 47,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 48,
+      "y": 126,
+      "normalized": {
+        "x": 0.5,
+        "y": 0.984375
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 90,
+        "height": 126
+      },
+      "frameBounds": {
+        "width": 96,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "casual_alien_guy_walking_walking_pace_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_001.png": {
+      "frame": {
+        "x": 96,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_002.png": {
+      "frame": {
+        "x": 192,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_003.png": {
+      "frame": {
+        "x": 288,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_004.png": {
+      "frame": {
+        "x": 384,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_005.png": {
+      "frame": {
+        "x": 480,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_006.png": {
+      "frame": {
+        "x": 576,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_007.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_008.png": {
+      "frame": {
+        "x": 96,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_009.png": {
+      "frame": {
+        "x": 192,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_010.png": {
+      "frame": {
+        "x": 288,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_011.png": {
+      "frame": {
+        "x": 384,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_012.png": {
+      "frame": {
+        "x": 480,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_013.png": {
+      "frame": {
+        "x": 576,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_014.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_015.png": {
+      "frame": {
+        "x": 96,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_016.png": {
+      "frame": {
+        "x": 192,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_017.png": {
+      "frame": {
+        "x": 288,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_018.png": {
+      "frame": {
+        "x": 384,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_019.png": {
+      "frame": {
+        "x": 480,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_020.png": {
+      "frame": {
+        "x": 576,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_021.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_022.png": {
+      "frame": {
+        "x": 96,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_023.png": {
+      "frame": {
+        "x": 192,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_024.png": {
+      "frame": {
+        "x": 288,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_025.png": {
+      "frame": {
+        "x": 384,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_026.png": {
+      "frame": {
+        "x": 480,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_027.png": {
+      "frame": {
+        "x": 576,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_028.png": {
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_029.png": {
+      "frame": {
+        "x": 96,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_030.png": {
+      "frame": {
+        "x": 192,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_031.png": {
+      "frame": {
+        "x": 288,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_032.png": {
+      "frame": {
+        "x": 384,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_033.png": {
+      "frame": {
+        "x": 480,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_034.png": {
+      "frame": {
+        "x": 576,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_035.png": {
+      "frame": {
+        "x": 0,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_036.png": {
+      "frame": {
+        "x": 96,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_037.png": {
+      "frame": {
+        "x": 192,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_038.png": {
+      "frame": {
+        "x": 288,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_039.png": {
+      "frame": {
+        "x": 384,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_040.png": {
+      "frame": {
+        "x": 480,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_041.png": {
+      "frame": {
+        "x": 576,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_042.png": {
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_043.png": {
+      "frame": {
+        "x": 96,
+        "y": 768,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_044.png": {
+      "frame": {
+        "x": 192,
+        "y": 768,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_045.png": {
+      "frame": {
+        "x": 288,
+        "y": 768,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_046.png": {
+      "frame": {
+        "x": 384,
+        "y": 768,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_walking_walking_pace_047.png": {
+      "frame": {
+        "x": 480,
+        "y": 768,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

@@ -1,0 +1,1051 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "casual_alien_guy_death_default.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 1024
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "death",
+        "from": 0,
+        "to": 47,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 48,
+      "y": 125,
+      "normalized": {
+        "x": 0.5,
+        "y": 0.9765625
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 41,
+        "height": 126
+      },
+      "frameBounds": {
+        "width": 96,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "casual_alien_guy_death_default_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_001.png": {
+      "frame": {
+        "x": 96,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_002.png": {
+      "frame": {
+        "x": 192,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_003.png": {
+      "frame": {
+        "x": 288,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_004.png": {
+      "frame": {
+        "x": 384,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_005.png": {
+      "frame": {
+        "x": 480,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_006.png": {
+      "frame": {
+        "x": 576,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_007.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_008.png": {
+      "frame": {
+        "x": 96,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_009.png": {
+      "frame": {
+        "x": 192,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_010.png": {
+      "frame": {
+        "x": 288,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_011.png": {
+      "frame": {
+        "x": 384,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_012.png": {
+      "frame": {
+        "x": 480,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_013.png": {
+      "frame": {
+        "x": 576,
+        "y": 128,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_014.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_015.png": {
+      "frame": {
+        "x": 96,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_016.png": {
+      "frame": {
+        "x": 192,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_017.png": {
+      "frame": {
+        "x": 288,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_018.png": {
+      "frame": {
+        "x": 384,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_019.png": {
+      "frame": {
+        "x": 480,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_020.png": {
+      "frame": {
+        "x": 576,
+        "y": 256,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_021.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_022.png": {
+      "frame": {
+        "x": 96,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_023.png": {
+      "frame": {
+        "x": 192,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_024.png": {
+      "frame": {
+        "x": 288,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_025.png": {
+      "frame": {
+        "x": 384,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_026.png": {
+      "frame": {
+        "x": 480,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_027.png": {
+      "frame": {
+        "x": 576,
+        "y": 384,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_028.png": {
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_029.png": {
+      "frame": {
+        "x": 96,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_030.png": {
+      "frame": {
+        "x": 192,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_031.png": {
+      "frame": {
+        "x": 288,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_032.png": {
+      "frame": {
+        "x": 384,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_033.png": {
+      "frame": {
+        "x": 480,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_034.png": {
+      "frame": {
+        "x": 576,
+        "y": 512,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_035.png": {
+      "frame": {
+        "x": 0,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_036.png": {
+      "frame": {
+        "x": 96,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_037.png": {
+      "frame": {
+        "x": 192,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_038.png": {
+      "frame": {
+        "x": 288,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_039.png": {
+      "frame": {
+        "x": 384,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_040.png": {
+      "frame": {
+        "x": 480,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_041.png": {
+      "frame": {
+        "x": 576,
+        "y": 640,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_042.png": {
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_043.png": {
+      "frame": {
+        "x": 96,
+        "y": 768,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_044.png": {
+      "frame": {
+        "x": 192,
+        "y": 768,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_045.png": {
+      "frame": {
+        "x": 288,
+        "y": 768,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_046.png": {
+      "frame": {
+        "x": 384,
+        "y": 768,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_death_default_047.png": {
+      "frame": {
+        "x": 480,
+        "y": 768,
+        "w": 96,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 96,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

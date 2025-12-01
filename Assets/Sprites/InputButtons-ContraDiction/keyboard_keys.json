@@ -1,0 +1,336 @@
+{
+    "themes": {
+        "dark": {
+            "input_1": "#2E222F",
+            "input_2": "#694F62",
+            "input_3": "#3E3546",
+
+            "text_1": "#C7DCD0",
+            "text_2": "#7F708A",
+
+            "white_1": "#FFFFFF",
+            "white_2": "#9BABB2",
+
+            "green_1": "#D5E04B",
+            "green_2": "#A2A947",
+
+            "red_1": "#E83B3B",
+            "red_2": "#AE2334",
+
+            "blue_1": "#4D9BE6",
+            "blue_2": "#4D65B4",
+
+            "yellow_1": "#F9C22B",
+            "yellow_2": "#F79617",
+
+            "purple_1": "#A884F3",
+            "purple_2": "#905EA9"
+        },
+        "light": {
+            "input_1": "#2E222F",
+            "input_2": "#694F62",
+            "input_3": "#3E3546",
+
+            "text_1": "#C7DCD0",
+            "text_2": "#7F708A",
+
+            "white_1": "#FFFFFF",
+            "white_2": "#9BABB2",
+
+            "green_1": "#D5E04B",
+            "green_2": "#A2A947",
+
+            "red_1": "#E83B3B",
+            "red_2": "#AE2334",
+
+            "blue_1": "#4D9BE6",
+            "blue_2": "#4D65B4",
+
+            "yellow_1": "#F9C22B",
+            "yellow_2": "#F79617",
+
+            "purple_1": "#A884F3",
+            "purple_2": "#905EA9"
+        },
+        "hotdog": {
+            "input_1": "#2E222F",
+            "input_2": "#694F62",
+            "input_3": "#3E3546",
+
+            "text_1": "#C7DCD0",
+            "text_2": "#7F708A",
+
+            "white_1": "#FFFFFF",
+            "white_2": "#9BABB2",
+
+            "green_1": "#D5E04B",
+            "green_2": "#A2A947",
+
+            "red_1": "#E83B3B",
+            "red_2": "#AE2334",
+
+            "blue_1": "#4D9BE6",
+            "blue_2": "#4D65B4",
+
+            "yellow_1": "#F9C22B",
+            "yellow_2": "#F79617",
+
+            "purple_1": "#A884F3",
+            "purple_2": "#905EA9"
+        }
+    },
+    "inputs": {
+        "keyboard": {
+            "paths": [
+                "./input/keyboard_16.ora",
+                "./input/keyboard_32.ora",
+                "./input/keyboard_40.ora",
+                "./input/keyboard_48.ora"
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#694F62",
+                "input_3": "#3E3546",
+                "text_1": "#C7DCD0",
+                "text_2": "#7F708A"
+            },
+            "skip": [
+                "Key-0",
+                "Key-1",
+                "Key-2",
+                "Key-3"
+            ],
+            "templates": {
+                "normal": {
+                    "frames": [
+                        {
+                            "layers": [
+                                {"layer": "Key-0", "offset": [0, 0]},
+                                {"layer": "*", "offset": [0, 0]}
+                            ]
+                        }
+                    ]
+                },
+                "pressed": {
+                    "frames": [
+                        {
+                            "layers": [
+                                {"layer": "Key-3", "offset": [0, 0]},
+                                {"layer": "*", "offset": [0, 3]}
+                            ]
+                        }
+                    ]
+                },
+                "animated": {
+                    "frames": [
+                        {
+                            "layers": [
+                                {"layer": "Key-0", "offset": [0, 0]},
+                                {"layer": "*", "offset": [0, 0]}
+                            ]
+                        },
+                        {
+                            "layers": [
+                                {"layer": "Key-1", "offset": [0, 0]},
+                                {"layer": "*", "offset": [0, 1]}
+                            ]
+                        },
+                        {
+                            "layers": [
+                                {"layer": "Key-2", "offset": [0, 0]},
+                                {"layer": "*", "offset": [0, 2]}
+                            ]
+                        },
+                        {
+                            "layers": [
+                                {"layer": "Key-3", "offset": [0, 0]},
+                                {"layer": "*", "offset": [0, 3]}
+                            ]
+                        }
+                    ]
+                }
+            }
+        },
+        "mouse": {
+            "paths": [
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#694F62",
+                "input_3": "#3E3546",
+
+                "green_1": "#D5E04B",
+                "green_2": "#A2A947",
+
+                "red_1": "#E83B3B",
+                "red_2": "#AE2334",
+
+                "blue_1": "#4D9BE6",
+                "blue_2": "#4D65B4"
+            }
+        },
+        "joypad": {
+            "paths": [
+
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#694F62",
+                "input_3": "#3E3546",
+
+                "text_1": "#C7DCD0",
+                "text_2": "#7F708A"
+            }
+        },
+        "joypad_steam_deck": {
+            "paths": [
+            ],
+            "colors": {
+            }
+        },
+        "joypad_xbox": {
+            "paths": [
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#694F62",
+                "input_3": "#3E3546",
+
+                "green_1": "#D5E04B",
+                "green_2": "#A2A947",
+
+                "red_1": "#E83B3B",
+                "red_2": "#AE2334",
+
+                "blue_1": "#4D9BE6",
+                "blue_2": "#4D65B4",
+
+                "yellow_1": "#F9C22B",
+                "yellow_2": "#F79617"
+            }
+        },
+        "joypad_playstation": {
+            "paths": [
+            ],
+            "colors": {
+                "input_1": "#2E222F",
+                "input_2": "#694F62",
+                "input_3": "#3E3546",
+
+                "blue_1": "#4D9BE6",
+                "blue_2": "#4D65B4",
+
+                "red_1": "#E83B3B",
+                "red_2": "#AE2334",
+
+                "purple_1": "#A884F3",
+                "purple_2": "#905EA9",
+
+                "green_1": "#D5E04B",
+                "green_2": "#A2A947"
+            }
+        },
+        "joypad_nintendo_joycon": {
+            "paths": [
+            ],
+            "colors": {
+                "white_1": "#FFFFFF",
+                "white_2": "#9BABB2"
+            }
+        },
+        "joypad_nintendo_pro": {
+            "paths": [
+            ],
+            "colors": {
+                "white_1": "#FFFFFF",
+                "white_2": "#9BABB2"
+            }
+        }
+    },
+    "outputs": {
+        "release_keyboard": {
+            "inputs": [
+                "keyboard"
+            ],
+            "themes": [
+                "dark",
+                "light",
+                "hotdog"
+            ],
+            "path": "./output/[[theme]]",
+            "configs": [
+                {
+                    "template": "normal",
+                    "path": "/[[input]]_[[template]]/[[layer]]"
+                },
+                {
+                    "template": "pressed",
+                    "path": "/[[input]]_[[template]]/[[layer]]"
+                },
+                {
+                    "template": "animated",
+                    "path": "/[[input]]_[[template]]_horizontal/[[layer]]",
+                    "direction": "horizontal"
+
+                },
+                {
+                    "template": "animated",
+                    "path": "/[[input]]_[[template]]_vertical/[[layer]]",
+                    "direction": "vertical"
+                },
+                {
+                    "mode": "frames",
+                    "template": "animated",
+                    "path": "/[[input]]_[[template]]_frames_0/[[layer]]/[[frame]]",
+                    "start_index": 0
+                },
+                {
+                    "mode": "frames",
+                    "template": "animated",
+                    "path": "/[[input]]_[[template]]_frames_1/[[layer]]/[[frame]]",
+                    "start_index": 1
+                },
+                {
+                    "mode": "sheet",
+                    "template": "normal",
+                    "path": "[[image]]_normal_horizontal",
+                    "direction": "horizontal",
+                    "cols": 12
+                },
+                {
+                    "mode": "sheet",
+                    "template": "pressed",
+                    "path": "[[image]]_pressed_horizontal",
+                    "direction": "horizontal",
+                    "cols": 12
+                },
+                {
+                    "mode": "sheet",
+                    "template": "normal",
+                    "path": "[[image]]_normal_vertical",
+                    "direction": "vertical",
+                    "rows": 12
+                },
+                {
+                    "mode": "sheet",
+                    "template": "pressed",
+                    "path": "[[image]]_pressed_vertical",
+                    "direction": "vertical",
+                    "rows": 12
+                },
+                {
+                    "mode": "sheet",
+                    "template": "animated",
+                    "path": "[[image]]_animated_horizontal",
+                    "direction": "horizontal"
+                },
+                {
+                    "mode": "sheet",
+                    "template": "animated",
+                    "path": "[[image]]_animated_vertical",
+                    "direction": "vertical"
+                }
+            ]
+        }
+    }
+}

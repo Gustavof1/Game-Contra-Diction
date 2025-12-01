@@ -1,0 +1,316 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "space_dandy_side_jump_no_weapon.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 512,
+      "h": 1024
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "side jump",
+        "from": 0,
+        "to": 12,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 61,
+      "y": 255,
+      "normalized": {
+        "x": 0.5041322314049587,
+        "y": 0.99609375
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 97,
+        "height": 212
+      },
+      "frameBounds": {
+        "width": 121,
+        "height": 256
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "space_dandy_side_jump_no_weapon_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_no_weapon_001.png": {
+      "frame": {
+        "x": 121,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_no_weapon_002.png": {
+      "frame": {
+        "x": 242,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_no_weapon_003.png": {
+      "frame": {
+        "x": 363,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_no_weapon_004.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_no_weapon_005.png": {
+      "frame": {
+        "x": 121,
+        "y": 256,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_no_weapon_006.png": {
+      "frame": {
+        "x": 242,
+        "y": 256,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_no_weapon_007.png": {
+      "frame": {
+        "x": 363,
+        "y": 256,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_no_weapon_008.png": {
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_no_weapon_009.png": {
+      "frame": {
+        "x": 121,
+        "y": 512,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_no_weapon_010.png": {
+      "frame": {
+        "x": 242,
+        "y": 512,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_no_weapon_011.png": {
+      "frame": {
+        "x": 363,
+        "y": 512,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_no_weapon_012.png": {
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 121,
+        "h": 256
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 121,
+        "h": 256
+      },
+      "sourceSize": {
+        "w": 121,
+        "h": 256
+      },
+      "duration": 83
+    }
+  }
+}

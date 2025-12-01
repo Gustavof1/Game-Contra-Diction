@@ -1,0 +1,526 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "space_dandy_crouching_crouching.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 512,
+      "h": 1024
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "crouching",
+        "from": 0,
+        "to": 22,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 35,
+      "y": 127,
+      "normalized": {
+        "x": 0.5,
+        "y": 0.9921875
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 54,
+        "height": 123
+      },
+      "frameBounds": {
+        "width": 70,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "space_dandy_crouching_crouching_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_001.png": {
+      "frame": {
+        "x": 70,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_002.png": {
+      "frame": {
+        "x": 140,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_003.png": {
+      "frame": {
+        "x": 210,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_004.png": {
+      "frame": {
+        "x": 280,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_005.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_006.png": {
+      "frame": {
+        "x": 70,
+        "y": 128,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_007.png": {
+      "frame": {
+        "x": 140,
+        "y": 128,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_008.png": {
+      "frame": {
+        "x": 210,
+        "y": 128,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_009.png": {
+      "frame": {
+        "x": 280,
+        "y": 128,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_010.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_011.png": {
+      "frame": {
+        "x": 70,
+        "y": 256,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_012.png": {
+      "frame": {
+        "x": 140,
+        "y": 256,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_013.png": {
+      "frame": {
+        "x": 210,
+        "y": 256,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_014.png": {
+      "frame": {
+        "x": 280,
+        "y": 256,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_015.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_016.png": {
+      "frame": {
+        "x": 70,
+        "y": 384,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_017.png": {
+      "frame": {
+        "x": 140,
+        "y": 384,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_018.png": {
+      "frame": {
+        "x": 210,
+        "y": 384,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_019.png": {
+      "frame": {
+        "x": 280,
+        "y": 384,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_020.png": {
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_021.png": {
+      "frame": {
+        "x": 70,
+        "y": 512,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouching_crouching_022.png": {
+      "frame": {
+        "x": 140,
+        "y": 512,
+        "w": 70,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 70,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 70,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

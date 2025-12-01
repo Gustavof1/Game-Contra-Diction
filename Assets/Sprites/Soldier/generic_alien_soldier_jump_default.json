@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "generic_alien_soldier_jump_default.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 512,
+      "h": 512
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "jump",
+        "from": 0,
+        "to": 15,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 52,
+      "y": 123,
+      "normalized": {
+        "x": 0.5048543689320388,
+        "y": 0.9609375
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 101,
+        "height": 96
+      },
+      "frameBounds": {
+        "width": 103,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "generic_alien_soldier_jump_default_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_001.png": {
+      "frame": {
+        "x": 103,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_002.png": {
+      "frame": {
+        "x": 206,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_003.png": {
+      "frame": {
+        "x": 309,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_004.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_005.png": {
+      "frame": {
+        "x": 103,
+        "y": 128,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_006.png": {
+      "frame": {
+        "x": 206,
+        "y": 128,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_007.png": {
+      "frame": {
+        "x": 309,
+        "y": 128,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_008.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_009.png": {
+      "frame": {
+        "x": 103,
+        "y": 256,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_010.png": {
+      "frame": {
+        "x": 206,
+        "y": 256,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_011.png": {
+      "frame": {
+        "x": 309,
+        "y": 256,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_012.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_013.png": {
+      "frame": {
+        "x": 103,
+        "y": 384,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_014.png": {
+      "frame": {
+        "x": 206,
+        "y": 384,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "generic_alien_soldier_jump_default_015.png": {
+      "frame": {
+        "x": 309,
+        "y": 384,
+        "w": 103,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 103,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 103,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

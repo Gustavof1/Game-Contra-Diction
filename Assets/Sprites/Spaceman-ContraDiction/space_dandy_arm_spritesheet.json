@@ -1,0 +1,175 @@
+{
+  "frames": {
+    "pistol_bend-0": {
+      "frame": {
+        "x": 0,
+        "y": 25,
+        "w": 70,
+        "h": 44
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 25,
+        "w": 70,
+        "h": 44
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 150
+      }
+    },
+    "pistol_bend-1": {
+      "frame": {
+        "x": 70,
+        "y": 25,
+        "w": 70,
+        "h": 44
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 70,
+        "y": 25,
+        "w": 70,
+        "h": 44
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 150
+      }
+    },
+    "pistol_straight-0": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 25
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 96,
+        "h": 25
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 150
+      }
+    },
+    "pistol_straight-1": {
+      "frame": {
+        "x": 96,
+        "y": 0,
+        "w": 96,
+        "h": 25
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 96,
+        "y": 0,
+        "w": 96,
+        "h": 25
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 150
+      }
+    },
+    "alien_straight-0": {
+      "frame": {
+        "x": 0,
+        "y": 67,
+        "w": 96,
+        "h": 31
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 67,
+        "w": 96,
+        "h": 31
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 150
+      }
+    },
+    "alien_straight-1": {
+      "frame": {
+        "x": 96,
+        "y": 67,
+        "w": 96,
+        "h": 31
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 96,
+        "y": 67,
+        "w": 96,
+        "h": 31
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 150
+      }
+    },
+    "alien_bend-0": {
+      "frame": {
+        "x": 0,
+        "y": 97,
+        "w": 70,
+        "h": 44
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 97,
+        "w": 70,
+        "h": 44
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 150
+      }
+    },
+    "alien_bend-1": {
+      "frame": {
+        "x": 70,
+        "y": 97,
+        "w": 70,
+        "h": 44
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 70,
+        "y": 97,
+        "w": 70,
+        "h": 44
+      },
+      "sourceSize": {
+        "w": 192,
+        "h": 150
+      }
+    }
+  },
+  "meta": {
+    "app": "sprite-sheet-to-json",
+    "version": "1.0.0",
+    "image": "space_dandy_arm_spritesheet.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 192,
+      "h": 150
+    },
+    "scale": "1"
+  }
+}

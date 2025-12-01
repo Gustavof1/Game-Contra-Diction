@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "space_dandy_crouch_walking_crouch_walking.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 512,
+      "h": 512
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "crouch walking",
+        "from": 0,
+        "to": 13,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 55,
+      "y": 127,
+      "normalized": {
+        "x": 0.5045871559633027,
+        "y": 0.9921875
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 93,
+        "height": 120
+      },
+      "frameBounds": {
+        "width": 109,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "space_dandy_crouch_walking_crouch_walking_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_001.png": {
+      "frame": {
+        "x": 109,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_002.png": {
+      "frame": {
+        "x": 218,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_003.png": {
+      "frame": {
+        "x": 327,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_004.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_005.png": {
+      "frame": {
+        "x": 109,
+        "y": 128,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_006.png": {
+      "frame": {
+        "x": 218,
+        "y": 128,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_007.png": {
+      "frame": {
+        "x": 327,
+        "y": 128,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_008.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_009.png": {
+      "frame": {
+        "x": 109,
+        "y": 256,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_010.png": {
+      "frame": {
+        "x": 218,
+        "y": 256,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_011.png": {
+      "frame": {
+        "x": 327,
+        "y": 256,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_012.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_crouch_walking_crouch_walking_013.png": {
+      "frame": {
+        "x": 109,
+        "y": 384,
+        "w": 109,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 109,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 109,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

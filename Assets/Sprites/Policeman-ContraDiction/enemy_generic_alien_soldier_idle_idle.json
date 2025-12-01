@@ -1,0 +1,1051 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "enemy_generic_alien_soldier_idle_idle.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 1024
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "idle",
+        "from": 0,
+        "to": 47,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 64,
+      "y": 127,
+      "normalized": {
+        "x": 0.5039370078740157,
+        "y": 0.9921875
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 84,
+        "height": 128
+      },
+      "frameBounds": {
+        "width": 127,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "enemy_generic_alien_soldier_idle_idle_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_001.png": {
+      "frame": {
+        "x": 127,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_002.png": {
+      "frame": {
+        "x": 254,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_003.png": {
+      "frame": {
+        "x": 381,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_004.png": {
+      "frame": {
+        "x": 508,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_005.png": {
+      "frame": {
+        "x": 635,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_006.png": {
+      "frame": {
+        "x": 762,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_007.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_008.png": {
+      "frame": {
+        "x": 127,
+        "y": 128,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_009.png": {
+      "frame": {
+        "x": 254,
+        "y": 128,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_010.png": {
+      "frame": {
+        "x": 381,
+        "y": 128,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_011.png": {
+      "frame": {
+        "x": 508,
+        "y": 128,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_012.png": {
+      "frame": {
+        "x": 635,
+        "y": 128,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_013.png": {
+      "frame": {
+        "x": 762,
+        "y": 128,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_014.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_015.png": {
+      "frame": {
+        "x": 127,
+        "y": 256,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_016.png": {
+      "frame": {
+        "x": 254,
+        "y": 256,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_017.png": {
+      "frame": {
+        "x": 381,
+        "y": 256,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_018.png": {
+      "frame": {
+        "x": 508,
+        "y": 256,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_019.png": {
+      "frame": {
+        "x": 635,
+        "y": 256,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_020.png": {
+      "frame": {
+        "x": 762,
+        "y": 256,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_021.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_022.png": {
+      "frame": {
+        "x": 127,
+        "y": 384,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_023.png": {
+      "frame": {
+        "x": 254,
+        "y": 384,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_024.png": {
+      "frame": {
+        "x": 381,
+        "y": 384,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_025.png": {
+      "frame": {
+        "x": 508,
+        "y": 384,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_026.png": {
+      "frame": {
+        "x": 635,
+        "y": 384,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_027.png": {
+      "frame": {
+        "x": 762,
+        "y": 384,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_028.png": {
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_029.png": {
+      "frame": {
+        "x": 127,
+        "y": 512,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_030.png": {
+      "frame": {
+        "x": 254,
+        "y": 512,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_031.png": {
+      "frame": {
+        "x": 381,
+        "y": 512,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_032.png": {
+      "frame": {
+        "x": 508,
+        "y": 512,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_033.png": {
+      "frame": {
+        "x": 635,
+        "y": 512,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_034.png": {
+      "frame": {
+        "x": 762,
+        "y": 512,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_035.png": {
+      "frame": {
+        "x": 0,
+        "y": 640,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_036.png": {
+      "frame": {
+        "x": 127,
+        "y": 640,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_037.png": {
+      "frame": {
+        "x": 254,
+        "y": 640,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_038.png": {
+      "frame": {
+        "x": 381,
+        "y": 640,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_039.png": {
+      "frame": {
+        "x": 508,
+        "y": 640,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_040.png": {
+      "frame": {
+        "x": 635,
+        "y": 640,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_041.png": {
+      "frame": {
+        "x": 762,
+        "y": 640,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_042.png": {
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_043.png": {
+      "frame": {
+        "x": 127,
+        "y": 768,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_044.png": {
+      "frame": {
+        "x": 254,
+        "y": 768,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_045.png": {
+      "frame": {
+        "x": 381,
+        "y": 768,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_046.png": {
+      "frame": {
+        "x": 508,
+        "y": 768,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "enemy_generic_alien_soldier_idle_idle_047.png": {
+      "frame": {
+        "x": 635,
+        "y": 768,
+        "w": 127,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 127,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 127,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

@@ -1,0 +1,1051 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "casual_alien_guy_idle_side_idle_walking.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 512,
+      "h": 1024
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "idle_side",
+        "from": 0,
+        "to": 47,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 27,
+      "y": 127,
+      "normalized": {
+        "x": 0.5,
+        "y": 0.9921875
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 41,
+        "height": 128
+      },
+      "frameBounds": {
+        "width": 54,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "casual_alien_guy_idle_side_idle_walking_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_001.png": {
+      "frame": {
+        "x": 54,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_002.png": {
+      "frame": {
+        "x": 108,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_003.png": {
+      "frame": {
+        "x": 162,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_004.png": {
+      "frame": {
+        "x": 216,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_005.png": {
+      "frame": {
+        "x": 270,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_006.png": {
+      "frame": {
+        "x": 324,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_007.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_008.png": {
+      "frame": {
+        "x": 54,
+        "y": 128,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_009.png": {
+      "frame": {
+        "x": 108,
+        "y": 128,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_010.png": {
+      "frame": {
+        "x": 162,
+        "y": 128,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_011.png": {
+      "frame": {
+        "x": 216,
+        "y": 128,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_012.png": {
+      "frame": {
+        "x": 270,
+        "y": 128,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_013.png": {
+      "frame": {
+        "x": 324,
+        "y": 128,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_014.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_015.png": {
+      "frame": {
+        "x": 54,
+        "y": 256,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_016.png": {
+      "frame": {
+        "x": 108,
+        "y": 256,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_017.png": {
+      "frame": {
+        "x": 162,
+        "y": 256,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_018.png": {
+      "frame": {
+        "x": 216,
+        "y": 256,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_019.png": {
+      "frame": {
+        "x": 270,
+        "y": 256,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_020.png": {
+      "frame": {
+        "x": 324,
+        "y": 256,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_021.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_022.png": {
+      "frame": {
+        "x": 54,
+        "y": 384,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_023.png": {
+      "frame": {
+        "x": 108,
+        "y": 384,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_024.png": {
+      "frame": {
+        "x": 162,
+        "y": 384,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_025.png": {
+      "frame": {
+        "x": 216,
+        "y": 384,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_026.png": {
+      "frame": {
+        "x": 270,
+        "y": 384,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_027.png": {
+      "frame": {
+        "x": 324,
+        "y": 384,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_028.png": {
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_029.png": {
+      "frame": {
+        "x": 54,
+        "y": 512,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_030.png": {
+      "frame": {
+        "x": 108,
+        "y": 512,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_031.png": {
+      "frame": {
+        "x": 162,
+        "y": 512,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_032.png": {
+      "frame": {
+        "x": 216,
+        "y": 512,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_033.png": {
+      "frame": {
+        "x": 270,
+        "y": 512,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_034.png": {
+      "frame": {
+        "x": 324,
+        "y": 512,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_035.png": {
+      "frame": {
+        "x": 0,
+        "y": 640,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_036.png": {
+      "frame": {
+        "x": 54,
+        "y": 640,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_037.png": {
+      "frame": {
+        "x": 108,
+        "y": 640,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_038.png": {
+      "frame": {
+        "x": 162,
+        "y": 640,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_039.png": {
+      "frame": {
+        "x": 216,
+        "y": 640,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_040.png": {
+      "frame": {
+        "x": 270,
+        "y": 640,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_041.png": {
+      "frame": {
+        "x": 324,
+        "y": 640,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_042.png": {
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_043.png": {
+      "frame": {
+        "x": 54,
+        "y": 768,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_044.png": {
+      "frame": {
+        "x": 108,
+        "y": 768,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_045.png": {
+      "frame": {
+        "x": 162,
+        "y": 768,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_046.png": {
+      "frame": {
+        "x": 216,
+        "y": 768,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_idle_side_idle_walking_047.png": {
+      "frame": {
+        "x": 270,
+        "y": 768,
+        "w": 54,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 54,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 54,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

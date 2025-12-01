@@ -1,0 +1,1051 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "alien_child_running_default.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 1024
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "running",
+        "from": 0,
+        "to": 47,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 49,
+      "y": 126,
+      "normalized": {
+        "x": 0.5051546391752577,
+        "y": 0.984375
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 87,
+        "height": 125
+      },
+      "frameBounds": {
+        "width": 97,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "alien_child_running_default_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_001.png": {
+      "frame": {
+        "x": 97,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_002.png": {
+      "frame": {
+        "x": 194,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_003.png": {
+      "frame": {
+        "x": 291,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_004.png": {
+      "frame": {
+        "x": 388,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_005.png": {
+      "frame": {
+        "x": 485,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_006.png": {
+      "frame": {
+        "x": 582,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_007.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_008.png": {
+      "frame": {
+        "x": 97,
+        "y": 128,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_009.png": {
+      "frame": {
+        "x": 194,
+        "y": 128,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_010.png": {
+      "frame": {
+        "x": 291,
+        "y": 128,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_011.png": {
+      "frame": {
+        "x": 388,
+        "y": 128,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_012.png": {
+      "frame": {
+        "x": 485,
+        "y": 128,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_013.png": {
+      "frame": {
+        "x": 582,
+        "y": 128,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_014.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_015.png": {
+      "frame": {
+        "x": 97,
+        "y": 256,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_016.png": {
+      "frame": {
+        "x": 194,
+        "y": 256,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_017.png": {
+      "frame": {
+        "x": 291,
+        "y": 256,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_018.png": {
+      "frame": {
+        "x": 388,
+        "y": 256,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_019.png": {
+      "frame": {
+        "x": 485,
+        "y": 256,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_020.png": {
+      "frame": {
+        "x": 582,
+        "y": 256,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_021.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_022.png": {
+      "frame": {
+        "x": 97,
+        "y": 384,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_023.png": {
+      "frame": {
+        "x": 194,
+        "y": 384,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_024.png": {
+      "frame": {
+        "x": 291,
+        "y": 384,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_025.png": {
+      "frame": {
+        "x": 388,
+        "y": 384,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_026.png": {
+      "frame": {
+        "x": 485,
+        "y": 384,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_027.png": {
+      "frame": {
+        "x": 582,
+        "y": 384,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_028.png": {
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_029.png": {
+      "frame": {
+        "x": 97,
+        "y": 512,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_030.png": {
+      "frame": {
+        "x": 194,
+        "y": 512,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_031.png": {
+      "frame": {
+        "x": 291,
+        "y": 512,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_032.png": {
+      "frame": {
+        "x": 388,
+        "y": 512,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_033.png": {
+      "frame": {
+        "x": 485,
+        "y": 512,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_034.png": {
+      "frame": {
+        "x": 582,
+        "y": 512,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_035.png": {
+      "frame": {
+        "x": 0,
+        "y": 640,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_036.png": {
+      "frame": {
+        "x": 97,
+        "y": 640,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_037.png": {
+      "frame": {
+        "x": 194,
+        "y": 640,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_038.png": {
+      "frame": {
+        "x": 291,
+        "y": 640,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_039.png": {
+      "frame": {
+        "x": 388,
+        "y": 640,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_040.png": {
+      "frame": {
+        "x": 485,
+        "y": 640,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_041.png": {
+      "frame": {
+        "x": 582,
+        "y": 640,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_042.png": {
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_043.png": {
+      "frame": {
+        "x": 97,
+        "y": 768,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_044.png": {
+      "frame": {
+        "x": 194,
+        "y": 768,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_045.png": {
+      "frame": {
+        "x": 291,
+        "y": 768,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_046.png": {
+      "frame": {
+        "x": 388,
+        "y": 768,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "alien_child_running_default_047.png": {
+      "frame": {
+        "x": 485,
+        "y": 768,
+        "w": 97,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 97,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 97,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

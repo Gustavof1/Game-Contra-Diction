@@ -1,0 +1,505 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "space_dandy_death_default.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 1024
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "death",
+        "from": 0,
+        "to": 21,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 63,
+      "y": 118,
+      "normalized": {
+        "x": 0.5,
+        "y": 0.921875
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 69,
+        "height": 113
+      },
+      "frameBounds": {
+        "width": 126,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "space_dandy_death_default_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_001.png": {
+      "frame": {
+        "x": 126,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_002.png": {
+      "frame": {
+        "x": 252,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_003.png": {
+      "frame": {
+        "x": 378,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_004.png": {
+      "frame": {
+        "x": 504,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_005.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_006.png": {
+      "frame": {
+        "x": 126,
+        "y": 128,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_007.png": {
+      "frame": {
+        "x": 252,
+        "y": 128,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_008.png": {
+      "frame": {
+        "x": 378,
+        "y": 128,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_009.png": {
+      "frame": {
+        "x": 504,
+        "y": 128,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_010.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_011.png": {
+      "frame": {
+        "x": 126,
+        "y": 256,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_012.png": {
+      "frame": {
+        "x": 252,
+        "y": 256,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_013.png": {
+      "frame": {
+        "x": 378,
+        "y": 256,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_014.png": {
+      "frame": {
+        "x": 504,
+        "y": 256,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_015.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_016.png": {
+      "frame": {
+        "x": 126,
+        "y": 384,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_017.png": {
+      "frame": {
+        "x": 252,
+        "y": 384,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_018.png": {
+      "frame": {
+        "x": 378,
+        "y": 384,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_019.png": {
+      "frame": {
+        "x": 504,
+        "y": 384,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_020.png": {
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_death_default_021.png": {
+      "frame": {
+        "x": 126,
+        "y": 512,
+        "w": 126,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 126,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 126,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

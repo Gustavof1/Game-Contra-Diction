@@ -1,0 +1,1051 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "a_mini_bee_flying_on_a_flower_death_default.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 1024
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "death",
+        "from": 0,
+        "to": 47,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 61,
+      "y": 127,
+      "normalized": {
+        "x": 0.5,
+        "y": 0.9921875
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 74,
+        "height": 116
+      },
+      "frameBounds": {
+        "width": 122,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "a_mini_bee_flying_on_a_flower_death_default_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_001.png": {
+      "frame": {
+        "x": 122,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_002.png": {
+      "frame": {
+        "x": 244,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_003.png": {
+      "frame": {
+        "x": 366,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_004.png": {
+      "frame": {
+        "x": 488,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_005.png": {
+      "frame": {
+        "x": 610,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_006.png": {
+      "frame": {
+        "x": 732,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_007.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_008.png": {
+      "frame": {
+        "x": 122,
+        "y": 128,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_009.png": {
+      "frame": {
+        "x": 244,
+        "y": 128,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_010.png": {
+      "frame": {
+        "x": 366,
+        "y": 128,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_011.png": {
+      "frame": {
+        "x": 488,
+        "y": 128,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_012.png": {
+      "frame": {
+        "x": 610,
+        "y": 128,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_013.png": {
+      "frame": {
+        "x": 732,
+        "y": 128,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_014.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_015.png": {
+      "frame": {
+        "x": 122,
+        "y": 256,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_016.png": {
+      "frame": {
+        "x": 244,
+        "y": 256,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_017.png": {
+      "frame": {
+        "x": 366,
+        "y": 256,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_018.png": {
+      "frame": {
+        "x": 488,
+        "y": 256,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_019.png": {
+      "frame": {
+        "x": 610,
+        "y": 256,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_020.png": {
+      "frame": {
+        "x": 732,
+        "y": 256,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_021.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_022.png": {
+      "frame": {
+        "x": 122,
+        "y": 384,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_023.png": {
+      "frame": {
+        "x": 244,
+        "y": 384,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_024.png": {
+      "frame": {
+        "x": 366,
+        "y": 384,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_025.png": {
+      "frame": {
+        "x": 488,
+        "y": 384,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_026.png": {
+      "frame": {
+        "x": 610,
+        "y": 384,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_027.png": {
+      "frame": {
+        "x": 732,
+        "y": 384,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_028.png": {
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_029.png": {
+      "frame": {
+        "x": 122,
+        "y": 512,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_030.png": {
+      "frame": {
+        "x": 244,
+        "y": 512,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_031.png": {
+      "frame": {
+        "x": 366,
+        "y": 512,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_032.png": {
+      "frame": {
+        "x": 488,
+        "y": 512,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_033.png": {
+      "frame": {
+        "x": 610,
+        "y": 512,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_034.png": {
+      "frame": {
+        "x": 732,
+        "y": 512,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_035.png": {
+      "frame": {
+        "x": 0,
+        "y": 640,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_036.png": {
+      "frame": {
+        "x": 122,
+        "y": 640,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_037.png": {
+      "frame": {
+        "x": 244,
+        "y": 640,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_038.png": {
+      "frame": {
+        "x": 366,
+        "y": 640,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_039.png": {
+      "frame": {
+        "x": 488,
+        "y": 640,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_040.png": {
+      "frame": {
+        "x": 610,
+        "y": 640,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_041.png": {
+      "frame": {
+        "x": 732,
+        "y": 640,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_042.png": {
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_043.png": {
+      "frame": {
+        "x": 122,
+        "y": 768,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_044.png": {
+      "frame": {
+        "x": 244,
+        "y": 768,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_045.png": {
+      "frame": {
+        "x": 366,
+        "y": 768,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_046.png": {
+      "frame": {
+        "x": 488,
+        "y": 768,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "a_mini_bee_flying_on_a_flower_death_default_047.png": {
+      "frame": {
+        "x": 610,
+        "y": 768,
+        "w": 122,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 122,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 122,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

@@ -1,0 +1,1051 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "casual_alien_guy_running_default.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 1024
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "running",
+        "from": 0,
+        "to": 47,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 46,
+      "y": 127,
+      "normalized": {
+        "x": 0.5054945054945055,
+        "y": 0.9921875
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 41,
+        "height": 128
+      },
+      "frameBounds": {
+        "width": 91,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "casual_alien_guy_running_default_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_001.png": {
+      "frame": {
+        "x": 91,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_002.png": {
+      "frame": {
+        "x": 182,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_003.png": {
+      "frame": {
+        "x": 273,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_004.png": {
+      "frame": {
+        "x": 364,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_005.png": {
+      "frame": {
+        "x": 455,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_006.png": {
+      "frame": {
+        "x": 546,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_007.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_008.png": {
+      "frame": {
+        "x": 91,
+        "y": 128,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_009.png": {
+      "frame": {
+        "x": 182,
+        "y": 128,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_010.png": {
+      "frame": {
+        "x": 273,
+        "y": 128,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_011.png": {
+      "frame": {
+        "x": 364,
+        "y": 128,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_012.png": {
+      "frame": {
+        "x": 455,
+        "y": 128,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_013.png": {
+      "frame": {
+        "x": 546,
+        "y": 128,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_014.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_015.png": {
+      "frame": {
+        "x": 91,
+        "y": 256,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_016.png": {
+      "frame": {
+        "x": 182,
+        "y": 256,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_017.png": {
+      "frame": {
+        "x": 273,
+        "y": 256,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_018.png": {
+      "frame": {
+        "x": 364,
+        "y": 256,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_019.png": {
+      "frame": {
+        "x": 455,
+        "y": 256,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_020.png": {
+      "frame": {
+        "x": 546,
+        "y": 256,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_021.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_022.png": {
+      "frame": {
+        "x": 91,
+        "y": 384,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_023.png": {
+      "frame": {
+        "x": 182,
+        "y": 384,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_024.png": {
+      "frame": {
+        "x": 273,
+        "y": 384,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_025.png": {
+      "frame": {
+        "x": 364,
+        "y": 384,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_026.png": {
+      "frame": {
+        "x": 455,
+        "y": 384,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_027.png": {
+      "frame": {
+        "x": 546,
+        "y": 384,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_028.png": {
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_029.png": {
+      "frame": {
+        "x": 91,
+        "y": 512,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_030.png": {
+      "frame": {
+        "x": 182,
+        "y": 512,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_031.png": {
+      "frame": {
+        "x": 273,
+        "y": 512,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_032.png": {
+      "frame": {
+        "x": 364,
+        "y": 512,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_033.png": {
+      "frame": {
+        "x": 455,
+        "y": 512,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_034.png": {
+      "frame": {
+        "x": 546,
+        "y": 512,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_035.png": {
+      "frame": {
+        "x": 0,
+        "y": 640,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_036.png": {
+      "frame": {
+        "x": 91,
+        "y": 640,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_037.png": {
+      "frame": {
+        "x": 182,
+        "y": 640,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_038.png": {
+      "frame": {
+        "x": 273,
+        "y": 640,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_039.png": {
+      "frame": {
+        "x": 364,
+        "y": 640,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_040.png": {
+      "frame": {
+        "x": 455,
+        "y": 640,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_041.png": {
+      "frame": {
+        "x": 546,
+        "y": 640,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_042.png": {
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_043.png": {
+      "frame": {
+        "x": 91,
+        "y": 768,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_044.png": {
+      "frame": {
+        "x": 182,
+        "y": 768,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_045.png": {
+      "frame": {
+        "x": 273,
+        "y": 768,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_046.png": {
+      "frame": {
+        "x": 364,
+        "y": 768,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "casual_alien_guy_running_default_047.png": {
+      "frame": {
+        "x": 455,
+        "y": 768,
+        "w": 91,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 91,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 91,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}

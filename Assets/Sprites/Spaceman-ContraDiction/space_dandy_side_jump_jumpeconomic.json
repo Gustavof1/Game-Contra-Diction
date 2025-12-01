@@ -1,0 +1,505 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "space_dandy_side_jump_jumpeconomic.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 256,
+      "h": 512
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "side jump",
+        "from": 0,
+        "to": 21,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 23,
+      "y": 78,
+      "normalized": {
+        "x": 0.5111111111111111,
+        "y": 0.8125
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 33,
+        "height": 79
+      },
+      "frameBounds": {
+        "width": 45,
+        "height": 96
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "space_dandy_side_jump_jumpeconomic_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_001.png": {
+      "frame": {
+        "x": 45,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_002.png": {
+      "frame": {
+        "x": 90,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_003.png": {
+      "frame": {
+        "x": 135,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_004.png": {
+      "frame": {
+        "x": 180,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_005.png": {
+      "frame": {
+        "x": 0,
+        "y": 96,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_006.png": {
+      "frame": {
+        "x": 45,
+        "y": 96,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_007.png": {
+      "frame": {
+        "x": 90,
+        "y": 96,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_008.png": {
+      "frame": {
+        "x": 135,
+        "y": 96,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_009.png": {
+      "frame": {
+        "x": 180,
+        "y": 96,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_010.png": {
+      "frame": {
+        "x": 0,
+        "y": 192,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_011.png": {
+      "frame": {
+        "x": 45,
+        "y": 192,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_012.png": {
+      "frame": {
+        "x": 90,
+        "y": 192,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_013.png": {
+      "frame": {
+        "x": 135,
+        "y": 192,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_014.png": {
+      "frame": {
+        "x": 180,
+        "y": 192,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_015.png": {
+      "frame": {
+        "x": 0,
+        "y": 288,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_016.png": {
+      "frame": {
+        "x": 45,
+        "y": 288,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_017.png": {
+      "frame": {
+        "x": 90,
+        "y": 288,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_018.png": {
+      "frame": {
+        "x": 135,
+        "y": 288,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_019.png": {
+      "frame": {
+        "x": 180,
+        "y": 288,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_020.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    },
+    "space_dandy_side_jump_jumpeconomic_021.png": {
+      "frame": {
+        "x": 45,
+        "y": 384,
+        "w": 45,
+        "h": 96
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 45,
+        "h": 96
+      },
+      "sourceSize": {
+        "w": 45,
+        "h": 96
+      },
+      "duration": 83
+    }
+  }
+}

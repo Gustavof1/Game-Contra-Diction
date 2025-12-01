@@ -1,0 +1,1051 @@
+{
+  "meta": {
+    "app": "MAKKO Sprite Studio",
+    "version": "1.0.0",
+    "image": "space_dandy_walk_walking128x128.png",
+    "format": "RGBA8888",
+    "size": {
+      "w": 1024,
+      "h": 1024
+    },
+    "scale": 1,
+    "frameTags": [
+      {
+        "name": "walk",
+        "from": 0,
+        "to": 47,
+        "direction": "forward"
+      }
+    ],
+    "anchor": {
+      "x": 39,
+      "y": 126,
+      "normalized": {
+        "x": 0.5064935064935064,
+        "y": 0.984375
+      },
+      "strategy": "bottom-center"
+    },
+    "referenceAlignment": {
+      "referenceBounds": {
+        "width": 56,
+        "height": 127
+      },
+      "frameBounds": {
+        "width": 77,
+        "height": 128
+      },
+      "normalized": true
+    }
+  },
+  "frames": {
+    "space_dandy_walk_walking128x128_000.png": {
+      "frame": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_001.png": {
+      "frame": {
+        "x": 77,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_002.png": {
+      "frame": {
+        "x": 154,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_003.png": {
+      "frame": {
+        "x": 231,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_004.png": {
+      "frame": {
+        "x": 308,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_005.png": {
+      "frame": {
+        "x": 385,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_006.png": {
+      "frame": {
+        "x": 462,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_007.png": {
+      "frame": {
+        "x": 0,
+        "y": 128,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_008.png": {
+      "frame": {
+        "x": 77,
+        "y": 128,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_009.png": {
+      "frame": {
+        "x": 154,
+        "y": 128,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_010.png": {
+      "frame": {
+        "x": 231,
+        "y": 128,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_011.png": {
+      "frame": {
+        "x": 308,
+        "y": 128,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_012.png": {
+      "frame": {
+        "x": 385,
+        "y": 128,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_013.png": {
+      "frame": {
+        "x": 462,
+        "y": 128,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_014.png": {
+      "frame": {
+        "x": 0,
+        "y": 256,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_015.png": {
+      "frame": {
+        "x": 77,
+        "y": 256,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_016.png": {
+      "frame": {
+        "x": 154,
+        "y": 256,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_017.png": {
+      "frame": {
+        "x": 231,
+        "y": 256,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_018.png": {
+      "frame": {
+        "x": 308,
+        "y": 256,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_019.png": {
+      "frame": {
+        "x": 385,
+        "y": 256,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_020.png": {
+      "frame": {
+        "x": 462,
+        "y": 256,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_021.png": {
+      "frame": {
+        "x": 0,
+        "y": 384,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_022.png": {
+      "frame": {
+        "x": 77,
+        "y": 384,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_023.png": {
+      "frame": {
+        "x": 154,
+        "y": 384,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_024.png": {
+      "frame": {
+        "x": 231,
+        "y": 384,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_025.png": {
+      "frame": {
+        "x": 308,
+        "y": 384,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_026.png": {
+      "frame": {
+        "x": 385,
+        "y": 384,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_027.png": {
+      "frame": {
+        "x": 462,
+        "y": 384,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_028.png": {
+      "frame": {
+        "x": 0,
+        "y": 512,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_029.png": {
+      "frame": {
+        "x": 77,
+        "y": 512,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_030.png": {
+      "frame": {
+        "x": 154,
+        "y": 512,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_031.png": {
+      "frame": {
+        "x": 231,
+        "y": 512,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_032.png": {
+      "frame": {
+        "x": 308,
+        "y": 512,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_033.png": {
+      "frame": {
+        "x": 385,
+        "y": 512,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_034.png": {
+      "frame": {
+        "x": 462,
+        "y": 512,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_035.png": {
+      "frame": {
+        "x": 0,
+        "y": 640,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_036.png": {
+      "frame": {
+        "x": 77,
+        "y": 640,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_037.png": {
+      "frame": {
+        "x": 154,
+        "y": 640,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_038.png": {
+      "frame": {
+        "x": 231,
+        "y": 640,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_039.png": {
+      "frame": {
+        "x": 308,
+        "y": 640,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_040.png": {
+      "frame": {
+        "x": 385,
+        "y": 640,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_041.png": {
+      "frame": {
+        "x": 462,
+        "y": 640,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_042.png": {
+      "frame": {
+        "x": 0,
+        "y": 768,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_043.png": {
+      "frame": {
+        "x": 77,
+        "y": 768,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_044.png": {
+      "frame": {
+        "x": 154,
+        "y": 768,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_045.png": {
+      "frame": {
+        "x": 231,
+        "y": 768,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_046.png": {
+      "frame": {
+        "x": 308,
+        "y": 768,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    },
+    "space_dandy_walk_walking128x128_047.png": {
+      "frame": {
+        "x": 385,
+        "y": 768,
+        "w": 77,
+        "h": 128
+      },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": {
+        "x": 0,
+        "y": 0,
+        "w": 77,
+        "h": 128
+      },
+      "sourceSize": {
+        "w": 77,
+        "h": 128
+      },
+      "duration": 83
+    }
+  }
+}
