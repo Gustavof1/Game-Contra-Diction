@@ -27,9 +27,13 @@ public:
     void SetIsVegetation(bool isVegetation) { mIsVegetation = isVegetation; }
     bool IsVegetation() const { return mIsVegetation; }
 
+    void SetAlpha(float alpha) { mAlpha = alpha; }
+    float GetAlpha() const { return mAlpha; }
+
 protected:
     int mDrawOrder;
     bool mIsVisible;
     bool mIsVegetation;
     Vector3 mColor;
+    float mAlpha;
 };

@@ -12,6 +12,7 @@ DrawComponent::DrawComponent(class Actor *owner, int drawOrder)
         , mIsVisible(true)
         , mIsVegetation(false)
         , mColor(Vector3::One)
+        , mAlpha(1.0f)
 {
     mOwner->GetGame()->AddDrawable(this);
 }

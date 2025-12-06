@@ -2,6 +2,7 @@
 
 #include "Actor.h"
 #include "../Inventory.h"
+#include <map>
 
 enum class PlayerPosture
 {
@@ -39,6 +40,7 @@ private:
     void ManageAnimations();
     void TryShoot();
     void StopShoot();
+    void UpdateGasLogic(float deltaTime);
     void PerformJump();
     void SetPosture(PlayerPosture posture);
 
@@ -50,6 +52,9 @@ private:
     // Inventory State
     ItemType mHeadItem;
     ItemType mHandItem;
+
+    // Gas Logic
+    std::map<class Actor*, float> mGasExposureTimers;
 
     float mMoveForce;
     float mJumpImpulse;

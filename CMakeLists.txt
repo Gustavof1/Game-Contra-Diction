@@ -28,6 +28,8 @@ add_executable(${PROJECT_NAME}
         Source/AudioSystem.h
         Source/Actors/Actor.cpp
         Source/Actors/Actor.h
+        Source/Actors/GasCloud.cpp
+        Source/Actors/GasCloud.h
         Source/Actors/ParallaxActor.cpp
         Source/Actors/ParallaxActor.h
         Source/Components/Component.cpp

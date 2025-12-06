@@ -145,7 +145,7 @@ void Renderer::Clear()
 }
 
 void Renderer::Draw(RendererMode mode, const Matrix4 &modelMatrix, const Vector2 &cameraPos, VertexArray *vertices,
-                    const Vector3 &color, Texture *texture, const Vector4 &textureRect, float textureFactor, float alpha, bool isVegetation)
+                    const Vector3 &color, Texture *texture, const Vector4 &textureRect, float textureFactor, float alpha, bool isVegetation, bool isCircle)
 {
     mActiveShader->SetMatrixUniform("uWorldTransform", modelMatrix);
     mActiveShader->SetVectorUniform("uColor", Vector4(color.x, color.y, color.z, 1.0f));
@@ -153,6 +153,7 @@ void Renderer::Draw(RendererMode mode, const Matrix4 &modelMatrix, const Vector2
     mActiveShader->SetVectorUniform("uCameraPos", cameraPos);
     mActiveShader->SetFloatUniform("uGlobalAlpha", alpha);
     mActiveShader->SetFloatUniform("uIsVegetation", isVegetation ? 1.0f : 0.0f);
+    mActiveShader->SetFloatUniform("uIsCircle", isCircle ? 1.0f : 0.0f);
 
     if(vertices)
     {
@@ -191,13 +192,13 @@ void Renderer::DrawRect(const Vector2 &position, const Vector2 &size, float rota
 
 void Renderer::DrawTexture(const Vector2 &position, const Vector2 &size, float rotation, const Vector3 &color,
                            Texture *texture, const Vector4 &textureRect, const Vector2 &cameraPos, const Vector2 &scale,
-                           float textureFactor, float alpha, bool isVegetation)
+                           float textureFactor, float alpha, bool isVegetation, bool isCircle)
 {
     Matrix4 model = Matrix4::CreateScale(Vector3(size.x * scale.x, size.y * scale.y, 1.0f)) *
                     Matrix4::CreateRotationZ(rotation) *
                     Matrix4::CreateTranslation(Vector3(position.x, position.y, 0.0f));
 
-    Draw(RendererMode::TRIANGLES, model, cameraPos, mSpriteVerts, color, texture, textureRect, textureFactor, alpha, isVegetation);
+    Draw(RendererMode::TRIANGLES, model, cameraPos, mSpriteVerts, color, texture, textureRect, textureFactor, alpha, isVegetation, isCircle);
 }
 
 void Renderer::DrawGeometry(const Vector2 &position, const Vector2 &size, float rotation, const Vector3 &color,

@@ -34,7 +34,7 @@ public:
                      const Vector3 &color, Texture *texture,
                      const Vector4 &textureRect = Vector4::UnitRect,
                      const Vector2 &cameraPos = Vector2::Zero, const Vector2 &scale = Vector2(1.0f, 1.0f),
-                     float textureFactor = 1.0f, float alpha = 1.0f, bool isVegetation = false);
+                     float textureFactor = 1.0f, float alpha = 1.0f, bool isVegetation = false, bool isCircle = false);
 
     void DrawGeometry(const Vector2 &position, const Vector2 &size,  float rotation,
                       const Vector3 &color, const Vector2 &cameraPos, VertexArray *vertexArray, RendererMode mode);
@@ -60,7 +60,7 @@ public:
 
 private:
     void Draw(RendererMode mode, const Matrix4 &modelMatrix, const Vector2 &cameraPos, VertexArray *vertices,
-              const Vector3 &color,  Texture *texture = nullptr, const Vector4 &textureRect = Vector4::UnitRect, float textureFactor = 1.0f, float alpha = 1.0f, bool isVegetation = false);
+              const Vector3 &color,  Texture *texture = nullptr, const Vector4 &textureRect = Vector4::UnitRect, float textureFactor = 1.0f, float alpha = 1.0f, bool isVegetation = false, bool isCircle = false);
 
 
 	bool LoadShaders();

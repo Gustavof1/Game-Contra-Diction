@@ -78,6 +78,9 @@ public:
     virtual void OnVerticalCollision(const float minOverlap, class AABBColliderComponent* other);
     virtual void Kill();
 
+    // Gas damage support
+    void ApplyGasExposure();
+
 protected:
     class Game* mGame;
 
@@ -93,6 +96,12 @@ protected:
     Vector2 mPosition;
     Vector2 mScale;
     float mRotation;
+    
+    // Gas logic
+    float mGasExposureAccumulator;
+    bool mIsBeingGassed;
+    Vector3 mOriginalColor;
+    bool mHasStoredOriginalColor;
 
     // Components
     std::vector<class Component*> mComponents;

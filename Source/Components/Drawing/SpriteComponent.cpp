@@ -9,6 +9,7 @@ SpriteComponent::SpriteComponent(Actor* owner, int drawOrder)
     ,mTexWidth(0)
     ,mTexHeight(0)
     ,mUseSrcRect(false) // Por padrão, desenha a imagem toda
+    ,mIsCircle(false)
     ,mDrawOffset(Vector2::Zero)
 {
 }
@@ -19,7 +20,7 @@ SpriteComponent::~SpriteComponent()
 
 void SpriteComponent::Draw(Renderer* renderer)
 {
-    if (mTexture)
+    if (mTexture || mIsCircle)
     {
         Vector2 scale = mOwner->GetScale();
 
@@ -38,7 +39,7 @@ void SpriteComponent::Draw(Renderer* renderer)
 
         // Lógica do Recorte (UVs)
         Vector4 srcRect = Vector4::UnitRect;
-        if (mUseSrcRect) {
+        if (mUseSrcRect && mTexture) {
             float invW = 1.0f / mTexture->GetWidth();
             float invH = 1.0f / mTexture->GetHeight();
             srcRect.x = mSrcRect.x * invW;
@@ -59,8 +60,9 @@ void SpriteComponent::Draw(Renderer* renderer)
             cameraPos,
             mFlipScale,
             1.0f,
-            1.0f,
-            mIsVegetation);
+            mAlpha,
+            mIsVegetation,
+            mIsCircle);
     }
 }
 

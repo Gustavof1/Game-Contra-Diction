@@ -4,12 +4,14 @@
 #include "PolicemanBullet.h"
 #include "EnemyLaser.h"
 #include "Laser.h"
+#include "GasCloud.h"
 #include "Block.h"
 #include "Goomba.h"
 #include "Mushroom.h"
 #include "Coin.h"
 #include "../Game.h"
 #include "../Math.h"
+#include "../Random.h"
 #include "../Components/Drawing/AnimatorComponent.h"
 #include "../Components/Physics/RigidBodyComponent.h"
 #include "../Components/Physics/AABBColliderComponent.h"
@@ -17,6 +19,7 @@
 #include <SDL.h>
 #include <algorithm>
 #include <vector>
+#include <set>
 
 namespace
 {
@@ -580,6 +583,8 @@ void Spaceman::OnUpdate(float deltaTime)
         GetGame()->GetRenderer()->SetFlashlightUniforms(false, Vector2::Zero, Vector2::Zero);
     }
 
+    UpdateGasLogic(deltaTime);
+
     ManageAnimations();
 }
 
@@ -701,12 +706,27 @@ void Spaceman::TryShoot()
     WeaponType weapon = mArm ? mArm->GetWeaponType() : WeaponType::Pistol;
 
     if (weapon == WeaponType::AlienGun) {
-        if (!mIsFiringLaser) {
-             GetGame()->GetAudio()->PlaySound("Beam.wav");
-        }
-        mIsFiringLaser = true;
-        if (mLaser) mLaser->SetActive(true);
-        // Continuous sound?
+        if (mShootTimer > 0.0f) return;
+
+        // Gas Particle System
+        // Spawn GasCloud with cone spread
+        Vector2 spawnPos = GetPosition() + mShootDirection * 40.0f;
+        
+        // Add random spread to direction (+- 15 degrees)
+        float angle = Math::Atan2(mShootDirection.y, mShootDirection.x);
+        float spread = Math::ToRadians(15.0f);
+        float randomAngle = Random::GetFloatRange(-spread, spread);
+        float finalAngle = angle + randomAngle;
+        
+        Vector2 spreadDir(Math::Cos(finalAngle), Math::Sin(finalAngle));
+        
+        GasCloud* gas = new GasCloud(GetGame(), spreadDir);
+        gas->SetPosition(spawnPos);
+        
+        // Play sound occasionally or loop?
+        // For now, play sound every shot (might be too frequent if 0.05s)
+        // Let's use 0.05s for denser cloud
+        mShootTimer = 0.05f;
         return;
     }
 
@@ -733,6 +753,13 @@ void Spaceman::StopShoot()
         mIsFiringLaser = false;
         if (mLaser) mLaser->SetActive(false);
     }
+}
+
+void Spaceman::UpdateGasLogic(float deltaTime)
+{
+    // Deprecated: Gas logic is now handled by individual GasCloud collisions
+    // This function is kept empty to satisfy interface or can be removed if header is updated.
+    // We rely on GasCloud::OnHorizontalCollision calling Actor::ApplyGasExposure
 }
 
 void Spaceman::OnHorizontalCollision(const float minOverlap, AABBColliderComponent* other)

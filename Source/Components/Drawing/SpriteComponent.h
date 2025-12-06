@@ -27,6 +27,8 @@ public:
     
     void SetColor(const Vector3& color) { mColor = color; }
 
+    void SetIsCircle(bool isCircle) { mIsCircle = isCircle; }
+
 protected:
     class Texture* mTexture;
     Vector2 mDrawOffset;
@@ -38,5 +40,6 @@ protected:
     SDL_Rect mSrcRect; 
     // Flag para saber se usamos o recorte ou a imagem toda
     bool mUseSrcRect;
+    bool mIsCircle;
     Vector2 mFlipScale { 1.0f, 1.0f };
 };
