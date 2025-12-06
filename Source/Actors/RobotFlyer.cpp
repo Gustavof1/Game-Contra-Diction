@@ -55,10 +55,13 @@ RobotFlyer::RobotFlyer(Game* game)
         Vector2(16.0f, 16.0f) // Shift for 64x64
     );
 
-    mLaserParticleSystem->SetCollisionCallback([](AABBColliderComponent* other) {
+    mLaserParticleSystem->SetCollisionCallback([this](AABBColliderComponent* other) {
         if (other->GetLayer() == ColliderLayer::Player) {
             auto player = dynamic_cast<Spaceman*>(other->GetOwner());
-            if (player) player->Kill();
+            if (player) {
+                GetGame()->SetGameOverInfo(this);
+                player->Kill();
+            }
         }
     });
 

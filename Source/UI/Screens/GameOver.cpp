@@ -21,20 +21,22 @@ GameOver::GameOver(class Game* game, const std::string& fontName, GameScene leve
 {
 
     Vector2 screenCenter(Game::WINDOW_WIDTH/2.0f, Game::WINDOW_HEIGHT/2.0f);
+    float leftColumnX = Game::WINDOW_WIDTH * 0.25f;
+    float rightColumnX = Game::WINDOW_WIDTH * 0.75f;
     
     auto bg = AddImage("../Assets/Menus/GameOver.png", screenCenter, 1.0f, 0.0f, 50);
     
     bg->SetSize(Vector2(static_cast<float>(Game::WINDOW_WIDTH), static_cast<float>(Game::WINDOW_HEIGHT)));
 
-    // Killer Info
+    // Killer Info (Left Side)
     const auto& info = game->GetGameOverInfo();
     if (!info.killerName.empty())
     {
-        AddText("You have been killed by:", Vector2(screenCenter.x, screenCenter.y - 150.0f), 1.0f);
+        AddText("You have been killed by:", Vector2(leftColumnX, screenCenter.y - 100.0f), 1.0f);
 
         if (info.isBlock)
         {
-            mKillerImage = AddImage(info.killerSpritePath, Vector2(screenCenter.x, screenCenter.y - 50.0f), 2.0f, 0.0f, 150);
+            mKillerImage = AddImage(info.killerSpritePath, Vector2(leftColumnX, screenCenter.y), 2.0f, 0.0f, 150);
             if (info.useSrcRect)
             {
                 mKillerImage->SetTextureRect(info.srcX, info.srcY, info.srcW, info.srcH);
@@ -102,7 +104,7 @@ GameOver::GameOver(class Game* game, const std::string& fontName, GameScene leve
             }
             
             if (!mIdleRects.empty()) {
-                mKillerImage = AddImage(info.killerSpritePath, Vector2(screenCenter.x, screenCenter.y - 50.0f), 2.0f, 0.0f, 150);
+                mKillerImage = AddImage(info.killerSpritePath, Vector2(leftColumnX, screenCenter.y), 2.0f, 0.0f, 150);
                 mKillerImage->SetTextureRect(mIdleRects[0].x, mIdleRects[0].y, mIdleRects[0].w, mIdleRects[0].h);
             }
         }
@@ -111,6 +113,7 @@ GameOver::GameOver(class Game* game, const std::string& fontName, GameScene leve
     mFadeRect = AddRect(screenCenter, Vector2(static_cast<float>(Game::WINDOW_WIDTH), static_cast<float>(Game::WINDOW_HEIGHT)), 1.0f, 0.0f, 200);
     mFadeRect->SetColor(Vector4(0.0f, 0.0f, 0.0f, 1.0f));
 
+    // Buttons (Right Side)
     auto restartBtn = AddButton("", [this]() {
         if (mFadeState != FadeState::None) return;
         mFadeState = FadeState::FadingOut;
@@ -119,7 +122,7 @@ GameOver::GameOver(class Game* game, const std::string& fontName, GameScene leve
             Close();
             mGame->SetScene(mlevel);
         };
-    }, Vector2(Game::WINDOW_WIDTH/2.0f, Game::WINDOW_HEIGHT * 0.65f), 0.5f); 
+    }, Vector2(rightColumnX, screenCenter.y - 50.0f), 0.5f); 
     
     restartBtn->SetTextures("../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/retry_normal.png",
                             "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/retry_hover.png",
@@ -133,7 +136,7 @@ GameOver::GameOver(class Game* game, const std::string& fontName, GameScene leve
             Close();
             mGame->SetScene(GameScene::MainMenu);
         };
-    }, Vector2(Game::WINDOW_WIDTH/2.0f, Game::WINDOW_HEIGHT * 0.75f), 0.5f);
+    }, Vector2(rightColumnX, screenCenter.y + 50.0f), 0.5f);
     
     menuBtn->SetTextures("../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/back_normal.png",
                          "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/back_hover.png",
@@ -142,7 +145,7 @@ GameOver::GameOver(class Game* game, const std::string& fontName, GameScene leve
     auto exitBtn = AddButton("", [this]() {
         if (mFadeState != FadeState::None) return;
         mGame->Quit();
-    }, Vector2(Game::WINDOW_WIDTH/2.0f, Game::WINDOW_HEIGHT * 0.85f), 0.5f);
+    }, Vector2(rightColumnX, screenCenter.y + 150.0f), 0.5f);
     
     exitBtn->SetTextures("../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/exit_normal.png",
                          "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/exit_hover.png",

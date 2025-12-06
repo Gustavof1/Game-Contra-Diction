@@ -91,6 +91,7 @@ void UIButton::Draw(class Shader* shader)
         shader->SetMatrixUniform("uWorldTransform", world);
         shader->SetFloatUniform("uTextureFactor", 1.0f); // Use texture
         shader->SetVectorUniform("uColor", Vector4(1.0f, 1.0f, 1.0f, 1.0f)); // White tint
+        shader->SetVectorUniform("uTexRect", Vector4(0.0f, 0.0f, 1.0f, 1.0f)); // Reset texture rect
 
         tex->SetActive();
         glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
