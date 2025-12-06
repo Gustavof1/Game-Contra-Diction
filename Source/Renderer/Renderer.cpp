@@ -31,6 +31,9 @@ Renderer::~Renderer()
 
 bool Renderer::Initialize(float width, float height)
 {
+    mScreenWidth = width;
+    mScreenHeight = height;
+
     // Specify version 3.3 (core profile)
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
 	SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 3);
@@ -117,6 +120,22 @@ void Renderer::Shutdown()
 
     SDL_GL_DeleteContext(mContext);
 	SDL_DestroyWindow(mWindow);
+}
+
+void Renderer::SetZoom(float zoom)
+{
+    float width = mScreenWidth / zoom;
+    float height = mScreenHeight / zoom;
+
+    mOrthoProjection = Matrix4::CreateOrtho(0.0f, width, height, 0.0f, -1.0f, 1.0f);
+
+    mBaseShader->SetActive();
+    mBaseShader->SetMatrixUniform("uOrthoProj", mOrthoProjection);
+
+    mLightShader->SetActive();
+    mLightShader->SetMatrixUniform("uOrthoProj", mOrthoProjection);
+
+    mActiveShader->SetActive();
 }
 
 void Renderer::Clear()

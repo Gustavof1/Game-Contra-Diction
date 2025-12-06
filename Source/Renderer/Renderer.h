@@ -25,6 +25,8 @@ public:
 	bool Initialize(float width, float height);
 	void Shutdown();
 
+    void SetZoom(float zoom);
+
     void DrawRect(const Vector2 &position, const Vector2 &size,  float rotation,
                   const Vector3 &color, const Vector2 &cameraPos, RendererMode mode, float alpha = 1.0f);
 
@@ -83,6 +85,9 @@ private:
 
 	// Ortho projection for 2D shaders
 	Matrix4 mOrthoProjection;
+
+    float mScreenWidth;
+    float mScreenHeight;
 
     // Map of textures loaded
     std::unordered_map<std::string, class Texture*> mTextures;

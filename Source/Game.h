@@ -100,6 +100,10 @@ public:
     // Camera functions
     Vector2& GetCameraPos() { return mCameraPos; };
     void SetCameraPos(const Vector2& position) { mCameraPos = position; };
+    float GetZoomScale() const { return mZoomScale; }
+
+    void AddParallaxActor(class ParallaxActor* actor);
+    void RemoveParallaxActor(class ParallaxActor* actor);
 
     // Game specific
     const class Spaceman* GetPlayer() const { return mPlayer; }
@@ -137,9 +141,13 @@ private:
     // All the actors in the game
     std::vector<class Actor*> mActors;
     std::vector<class Actor*> mPendingActors;
+    std::vector<class ParallaxActor*> mParallaxActors;
 
     // Camera
     Vector2 mCameraPos;
+    float mZoomScale;
+    const float MAX_ZOOM = 2.0f;
+    const float MIN_ZOOM = 1.0f;
 
     // Audio system
     AudioSystem* mAudio;

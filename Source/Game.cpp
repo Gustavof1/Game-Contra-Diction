@@ -65,6 +65,7 @@ Game::Game()
         ,mIsDebugging(false)
         ,mUpdatingActors(false)
         ,mCameraPos(Vector2::Zero)
+        ,mZoomScale(1.0f)
         ,mPlayer(nullptr)
         ,mLevelData(nullptr)
         ,mIsPlayerDead(false)
@@ -468,6 +469,20 @@ void Game::ProcessInput()
                     mUIStack.back()->HandleMouseMove(Vector2(static_cast<float>(event.motion.x), static_cast<float>(event.motion.y)));
                 }
                 break;
+            case SDL_MOUSEWHEEL:
+                if (mState == GameState::Gameplay)
+                {
+                    if (event.wheel.y > 0) // Scroll up
+                    {
+                        mZoomScale += 0.1f;
+                    }
+                    else if (event.wheel.y < 0) // Scroll down
+                    {
+                        mZoomScale -= 0.1f;
+                    }
+                    mZoomScale = std::clamp(mZoomScale, MIN_ZOOM, MAX_ZOOM);
+                }
+                break;
             case SDL_MOUSEBUTTONDOWN:
                 if (!mUIStack.empty())
                 {
@@ -501,6 +516,16 @@ void Game::ProcessInput()
                     {
                         SDL_SetWindowFullscreen(mWindow, SDL_WINDOW_FULLSCREEN_DESKTOP);
                     }
+                }
+                else if ((event.key.keysym.sym == SDLK_EQUALS || event.key.keysym.sym == SDLK_KP_PLUS) && mState == GameState::Gameplay)
+                {
+                    mZoomScale += 0.1f;
+                    mZoomScale = std::clamp(mZoomScale, MIN_ZOOM, MAX_ZOOM);
+                }
+                else if ((event.key.keysym.sym == SDLK_MINUS || event.key.keysym.sym == SDLK_KP_MINUS) && mState == GameState::Gameplay)
+                {
+                    mZoomScale -= 0.1f;
+                    mZoomScale = std::clamp(mZoomScale, MIN_ZOOM, MAX_ZOOM);
                 }
                 break;
         }
@@ -574,6 +599,11 @@ void Game::UpdateGame(float deltaTime)
         }
     }
 
+    float currentZoom = !mUIStack.empty() ? 1.0f : mZoomScale;
+    for (auto pa : mParallaxActors) {
+        pa->UpdateLayout(currentZoom);
+    }
+
     if (!mUIStack.empty()) {
         for (auto ui : mUIStack) {
             ui->Update(deltaTime);
@@ -581,8 +611,8 @@ void Game::UpdateGame(float deltaTime)
     }
     else {
         UpdateActors(deltaTime);
-        UpdateCamera();
     }
+    UpdateCamera();
 }
 
 void Game::UpdateUI(float deltaTime)
@@ -632,12 +662,14 @@ void Game::UpdateCamera()
 {
     if (!mPlayer) return;
 
+    float zoom = mUIStack.empty() ? mZoomScale : 1.0f;
+
     // Use as variáveis que preenchemos no JSON!
     const float levelPixelWidth = mLevelWidth;
     const float levelPixelHeight = mLevelHeight;
 
-    const float viewportWidth = static_cast<float>(WINDOW_WIDTH);
-    const float viewportHeight = static_cast<float>(WINDOW_HEIGHT);
+    const float viewportWidth = static_cast<float>(WINDOW_WIDTH) / zoom;
+    const float viewportHeight = static_cast<float>(WINDOW_HEIGHT) / zoom;
 
     // --- LÓGICA VERTICAL ---
     // Se o mapa for MENOR que a tela (ex: 480px mapa vs 768px tela)
@@ -691,6 +723,20 @@ void Game::RemoveActor(Actor* actor)
     }
 }
 
+void Game::AddParallaxActor(ParallaxActor* actor)
+{
+    mParallaxActors.emplace_back(actor);
+}
+
+void Game::RemoveParallaxActor(ParallaxActor* actor)
+{
+    auto iter = std::find(mParallaxActors.begin(), mParallaxActors.end(), actor);
+    if (iter != mParallaxActors.end())
+    {
+        mParallaxActors.erase(iter);
+    }
+}
+
 void Game::AddDrawable(class DrawComponent *drawable)
 {
     mDrawables.emplace_back(drawable);
@@ -724,6 +770,9 @@ void Game::RemoveCollider(AABBColliderComponent* collider)
 void Game::GenerateOutput()
 {
     mRenderer->Clear();
+
+    float zoom = mUIStack.empty() ? mZoomScale : 1.0f;
+    mRenderer->SetZoom(zoom);
 
     // Setup Lighting
     std::vector<Vector2> lightPositions;
@@ -784,6 +833,8 @@ void Game::GenerateOutput()
         mRenderer->DrawTexture(drawPos, size, 0.0f, Vector3::One, ft.texture, Vector4::UnitRect, mCameraPos);
     }
     
+    mRenderer->SetZoom(1.0f);
+
     if (mHUD && mState == GameState::Gameplay) {
         mHUD->Draw(mRenderer);
     }
