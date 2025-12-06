@@ -66,6 +66,8 @@ add_executable(${PROJECT_NAME}
         Source/UI/Screens/UIScreen.h
         Source/UI/Screens/MainMenu.cpp
         Source/UI/Screens/MainMenu.h
+        Source/UI/Screens/OptionsScreen.cpp
+        Source/UI/Screens/OptionsScreen.h
         Source/UI/Screens/GameOver.cpp
         Source/UI/Screens/GameOver.h
         Source/UI/Screens/PauseMenu.cpp

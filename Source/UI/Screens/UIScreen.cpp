@@ -51,7 +51,81 @@ void UIScreen::Update(float deltaTime)
 
 void UIScreen::HandleKeyPress(int key)
 {
+    if (mButtons.empty()) return;
 
+    int previousIndex = mSelectedButtonIndex;
+
+    if (key == SDLK_UP || key == SDLK_w)
+    {
+        mSelectedButtonIndex--;
+        if (mSelectedButtonIndex < 0)
+        {
+            mSelectedButtonIndex = static_cast<int>(mButtons.size()) - 1;
+        }
+    }
+    else if (key == SDLK_DOWN || key == SDLK_s)
+    {
+        mSelectedButtonIndex++;
+        if (mSelectedButtonIndex >= static_cast<int>(mButtons.size()))
+        {
+            mSelectedButtonIndex = 0;
+        }
+    }
+    else if (key == SDLK_RETURN || key == SDLK_SPACE || key == SDLK_KP_ENTER)
+    {
+        if (mSelectedButtonIndex >= 0 && mSelectedButtonIndex < static_cast<int>(mButtons.size()))
+        {
+            mButtons[mSelectedButtonIndex]->OnClick();
+        }
+    }
+
+    if (mSelectedButtonIndex != previousIndex)
+    {
+        for (int i = 0; i < static_cast<int>(mButtons.size()); i++)
+        {
+            mButtons[i]->SetHighlighted(i == mSelectedButtonIndex);
+        }
+        mGame->GetAudio()->PlaySound("Bump.wav");
+    }
+}
+
+void UIScreen::HandleMouseMove(const Vector2& mousePos)
+{
+    if (mButtons.empty()) return;
+
+    int previousIndex = mSelectedButtonIndex;
+    bool anyHovered = false;
+
+    for (int i = 0; i < static_cast<int>(mButtons.size()); i++)
+    {
+        if (mButtons[i]->ContainsPoint(mousePos))
+        {
+            mSelectedButtonIndex = i;
+            anyHovered = true;
+            break;
+        }
+    }
+
+    if (anyHovered && mSelectedButtonIndex != previousIndex)
+    {
+        for (int i = 0; i < static_cast<int>(mButtons.size()); i++)
+        {
+            mButtons[i]->SetHighlighted(i == mSelectedButtonIndex);
+        }
+        mGame->GetAudio()->PlaySound("Bump.wav");
+    }
+}
+
+void UIScreen::HandleMouseClick(const Vector2& mousePos)
+{
+    for (auto* b : mButtons)
+    {
+        if (b->ContainsPoint(mousePos))
+        {
+            b->OnClick();
+            break;
+        }
+    }
 }
 
 void UIScreen::Close()

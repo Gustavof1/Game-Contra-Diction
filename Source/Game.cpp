@@ -76,6 +76,8 @@ Game::Game()
         ,mIsImmortal(false)
         ,mIsLoading(false)
         ,mNextScene(GameScene::MainMenu)
+        ,mFadeState(FadeState::None)
+        ,mFadeTimer(0.0f)
 {
 
 }
@@ -169,6 +171,12 @@ void Game::UnloadScene()
     mDrawables.clear();
     mColliders.clear();
 
+    // Limpar UI Stack
+    while (!mUIStack.empty()) {
+        delete mUIStack.back();
+        mUIStack.pop_back();
+    }
+
     // 3. Limpar dados do Level (IMPORTANTE para evitar vazamento de memória)
     if (mLevelData)
     {
@@ -195,15 +203,15 @@ void Game::UnloadScene()
 
 void Game::SetScene(GameScene scene)
 {
-    if (scene == GameScene::Level1 || scene == GameScene::Level2 || scene == GameScene::Level3 || scene == GameScene::TestLevel) {
-        mIsLoading = true;
-        mNextScene = scene;
-        UnloadScene();
-        new LoadingScreen(this);
+    // If we are already transitioning to the same scene, do not reset the timer
+    if (mFadeState != FadeState::None && mNextScene == scene)
+    {
         return;
     }
 
-    PerformLoad(scene);
+    mNextScene = scene;
+    mFadeState = FadeState::FadeOut;
+    mFadeTimer = 0.0f;
 }
 
 void Game::PerformLoad(GameScene scene)
@@ -454,6 +462,21 @@ void Game::ProcessInput()
             case SDL_QUIT:
                 Quit();
                 break;
+            case SDL_MOUSEMOTION:
+                if (!mUIStack.empty())
+                {
+                    mUIStack.back()->HandleMouseMove(Vector2(static_cast<float>(event.motion.x), static_cast<float>(event.motion.y)));
+                }
+                break;
+            case SDL_MOUSEBUTTONDOWN:
+                if (!mUIStack.empty())
+                {
+                    if (event.button.button == SDL_BUTTON_LEFT)
+                    {
+                        mUIStack.back()->HandleMouseClick(Vector2(static_cast<float>(event.button.x), static_cast<float>(event.button.y)));
+                    }
+                }
+                break;
             case SDL_KEYDOWN:
                 if (!mUIStack.empty())
                 {
@@ -494,6 +517,33 @@ void Game::ProcessInput()
 
 void Game::UpdateGame(float deltaTime)
 {
+    if (mFadeState == FadeState::FadeOut)
+    {
+        mFadeTimer += deltaTime;
+        if (mFadeTimer >= FADE_TIME)
+        {
+            mFadeState = FadeState::FadeIn;
+            mFadeTimer = 0.0f;
+
+            if (mNextScene == GameScene::Level1 || mNextScene == GameScene::Level2 || mNextScene == GameScene::Level3 || mNextScene == GameScene::TestLevel) {
+                mIsLoading = true;
+                UnloadScene();
+                new LoadingScreen(this);
+                return;
+            } else {
+                PerformLoad(mNextScene);
+            }
+        }
+    }
+    else if (mFadeState == FadeState::FadeIn)
+    {
+        mFadeTimer += deltaTime;
+        if (mFadeTimer >= FADE_TIME)
+        {
+            mFadeState = FadeState::None;
+        }
+    }
+
     if (mIsLoading) {
         PerformLoad(mNextScene);
         mIsLoading = false;
@@ -739,6 +789,24 @@ void Game::GenerateOutput()
     }
 
     mRenderer->DrawUI(mRenderer->GetBaseShader());
+
+    if (mFadeState != FadeState::None)
+    {
+        float alpha = 0.0f;
+        if (mFadeState == FadeState::FadeOut)
+        {
+            alpha = mFadeTimer / FADE_TIME;
+        }
+        else if (mFadeState == FadeState::FadeIn)
+        {
+            alpha = 1.0f - (mFadeTimer / FADE_TIME);
+        }
+        
+        alpha = Math::Clamp(alpha, 0.0f, 1.0f);
+
+        mRenderer->DrawRect(Vector2(WINDOW_WIDTH/2.0f, WINDOW_HEIGHT/2.0f), Vector2(static_cast<float>(WINDOW_WIDTH), static_cast<float>(WINDOW_HEIGHT)), 0.0f, Vector3(0.0f, 0.0f, 0.0f), Vector2::Zero, RendererMode::TRIANGLES, alpha);
+    }
+
     mRenderer->Present();
 }
 
@@ -821,7 +889,7 @@ void Game::PlayMusic(const std::string& musicName)
         mAudio->StopSound(mMusicHandle);
     }
 
-    mMusicHandle = mAudio->PlaySound(musicName, true);
+    mMusicHandle = mAudio->PlaySound(musicName, true, SoundCategory::Music);
 }
 
 void Game::BuildLevelFromJSON(const std::string& fileName)

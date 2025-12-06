@@ -36,7 +36,7 @@ void HUD::Draw(Renderer* renderer)
     Vector2 screenPos1(startX + slotSize.x/2, startY + slotSize.y/2);
     Vector2 pos1 = cameraPos + screenPos1;
     
-    renderer->DrawRect(pos1, slotSize, 0.0f, Vector3(0.5f, 0.5f, 0.5f), cameraPos, RendererMode::TRIANGLES);
+    renderer->DrawRect(pos1, slotSize, 0.0f, Vector3(0.5f, 0.5f, 0.5f), cameraPos, RendererMode::TRIANGLES, 0.5f);
     
     ItemType head = player->GetHeadItem();
     if (head == ItemType::Headphones) {
@@ -47,7 +47,7 @@ void HUD::Draw(Renderer* renderer)
     Vector2 screenPos2(startX + slotSize.x + padding + slotSize.x/2, startY + slotSize.y/2);
     Vector2 pos2 = cameraPos + screenPos2;
     
-    renderer->DrawRect(pos2, slotSize, 0.0f, Vector3(0.5f, 0.5f, 0.5f), cameraPos, RendererMode::TRIANGLES);
+    renderer->DrawRect(pos2, slotSize, 0.0f, Vector3(0.5f, 0.5f, 0.5f), cameraPos, RendererMode::TRIANGLES, 0.5f);
 
     ItemType hand = player->GetHandItem();
     Texture* handTex = nullptr;

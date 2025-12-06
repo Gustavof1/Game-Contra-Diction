@@ -161,13 +161,13 @@ void Renderer::Draw(RendererMode mode, const Matrix4 &modelMatrix, const Vector2
 }
 
 void Renderer::DrawRect(const Vector2 &position, const Vector2 &size, float rotation, const Vector3 &color,
-                        const Vector2 &cameraPos, RendererMode mode)
+                        const Vector2 &cameraPos, RendererMode mode, float alpha)
 {
     Matrix4 model = Matrix4::CreateScale(Vector3(size.x, size.y, 1.0f)) *
                     Matrix4::CreateRotationZ(rotation) *
                     Matrix4::CreateTranslation(Vector3(position.x, position.y, 0.0f));
 
-    Draw(mode, model, cameraPos, mSpriteVerts, color);
+    Draw(mode, model, cameraPos, mSpriteVerts, color, nullptr, Vector4::UnitRect, 1.0f, alpha);
 }
 
 void Renderer::DrawTexture(const Vector2 &position, const Vector2 &size, float rotation, const Vector3 &color,

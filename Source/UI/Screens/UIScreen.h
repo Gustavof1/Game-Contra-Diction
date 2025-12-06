@@ -35,6 +35,8 @@ public:
 	// UIScreen subclasses can override these
 	virtual void Update(float deltaTime);
 	virtual void HandleKeyPress(int key);
+    virtual void HandleMouseMove(const Vector2& mousePos);
+    virtual void HandleMouseClick(const Vector2& mousePos);
 
     // Set state to closing
 	void Close();

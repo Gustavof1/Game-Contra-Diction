@@ -148,25 +148,14 @@ void CutsceneScreen::Update(float deltaTime)
         case CutsceneState::Frame3:
             if (mTimer >= DISPLAY_DURATION)
             {
-                mState = CutsceneState::FadeOut3;
-                mTimer = 0.0f;
-                mFadeTimer = 0.0f;
+                mState = CutsceneState::Finished;
+                mGame->SetScene(mNextScene);
             }
             break;
 
         case CutsceneState::FadeOut3:
-            mFadeTimer += deltaTime;
-            if (mFadeTimer >= FADE_DURATION)
-            {
-                mState = CutsceneState::Finished;
-                Close();
-                mGame->SetScene(mNextScene);
-            }
-            else
-            {
-                float alpha = mFadeTimer / FADE_DURATION;
-                mFadeRect->SetColor(Vector4(0.0f, 0.0f, 0.0f, alpha));
-            }
+            mState = CutsceneState::Finished;
+            mGame->SetScene(mNextScene);
             break;
             
         case CutsceneState::Finished:
@@ -176,7 +165,59 @@ void CutsceneScreen::Update(float deltaTime)
 
 void CutsceneScreen::HandleKeyPress(int key)
 {
-    // Skip cutscene on any key press
-    Close();
-    mGame->SetScene(mNextScene);
+    switch (mState)
+    {
+        case CutsceneState::Frame1:
+            mState = CutsceneState::FadeOut1;
+            mTimer = 0.0f;
+            mFadeTimer = 0.0f;
+            break;
+            
+        case CutsceneState::FadeOut1:
+            mState = CutsceneState::FadeIn2;
+            mFadeTimer = 0.0f;
+            mImage1->SetIsVisible(false);
+            mImage2->SetIsVisible(true);
+            mText->SetText("E nao percebeu a nave quebrando");
+            break;
+
+        case CutsceneState::FadeIn2:
+            mState = CutsceneState::Frame2;
+            mTimer = 0.0f;
+            mFadeRect->SetColor(Vector4(0.0f, 0.0f, 0.0f, 0.0f));
+            break;
+
+        case CutsceneState::Frame2:
+            mState = CutsceneState::FadeOut2;
+            mTimer = 0.0f;
+            mFadeTimer = 0.0f;
+            break;
+
+        case CutsceneState::FadeOut2:
+            mState = CutsceneState::FadeIn3;
+            mFadeTimer = 0.0f;
+            mImage2->SetIsVisible(false);
+            mImage3->SetIsVisible(true);
+            mText->SetText("Ele precisou ejetar e sua nave caiu, agora ele precisa encontrar a os destrocos para pedir resgate e escapar do planeta desconhecido");
+            break;
+
+        case CutsceneState::FadeIn3:
+            mState = CutsceneState::Frame3;
+            mTimer = 0.0f;
+            mFadeRect->SetColor(Vector4(0.0f, 0.0f, 0.0f, 0.0f));
+            break;
+
+        case CutsceneState::Frame3:
+            mState = CutsceneState::Finished;
+            mGame->SetScene(mNextScene);
+            break;
+
+        case CutsceneState::FadeOut3:
+            mState = CutsceneState::Finished;
+            mGame->SetScene(mNextScene);
+            break;
+            
+        default:
+            break;
+    }
 }

@@ -14,6 +14,7 @@ InventoryScreen::InventoryScreen(Game* game)
     , mLastClickedSlotIndex(-1)
     , mHeadSlotPos(810.0f, 90.0f)
     , mHandSlotPos(720.0f, 397.0f)
+    , mSelectedSlotIndex(0)
 {
     mGame->SetState(GameState::Paused);
     mGame->GetAudio()->PauseAllSounds();
@@ -23,6 +24,14 @@ InventoryScreen::InventoryScreen(Game* game)
 InventoryScreen::~InventoryScreen()
 {
     mGame->GetAudio()->ResumeAllSounds();
+    
+    // Check headphones logic
+    if (auto* player = mGame->GetPlayer()) {
+        if (player->GetHeadItem() != ItemType::Headphones) {
+             mGame->GetAudio()->PauseSound(mGame->GetMusicHandle());
+        }
+    }
+
     mGame->SetState(GameState::Gameplay);
 }
 
@@ -48,7 +57,7 @@ void InventoryScreen::SetupUI()
             // Slot background
             UIRect* r = AddRect(slot.pos, Vector2(slotSize, slotSize), 1.0f, 0.0f, 90);
             r->SetColor(Vector4(0.5f, 0.5f, 0.5f, 1.0f));
-            slot.image = nullptr; // We use rect
+            slot.rect = r;
             
             slot.itemImage = nullptr;
             mGridSlots.push_back(slot);
@@ -69,17 +78,19 @@ void InventoryScreen::SetupUI()
     mHeadSlot.pos = mHeadSlotPos; 
     mHeadSlot.item = {ItemType::None, ""};
     mHeadSlot.itemImage = nullptr;
-    mHeadSlot.image = nullptr;
+    mHeadSlot.rect = nullptr;
     UIRect* headRect = AddRect(mHeadSlot.pos, Vector2(60, 60), 1.0f, 0.0f, 110);
     headRect->SetColor(Vector4(1.0f, 0.0f, 0.0f, 0.5f)); // Bright Red for visibility
+    mHeadSlot.rect = headRect;
     
     // Hand Slot
     mHandSlot.pos = mHandSlotPos; 
     mHandSlot.item = {ItemType::None, ""};
     mHandSlot.itemImage = nullptr;
-    mHandSlot.image = nullptr;
+    mHandSlot.rect = nullptr;
     UIRect* handRect = AddRect(mHandSlot.pos, Vector2(60, 60), 1.0f, 0.0f, 110);
     handRect->SetColor(Vector4(0.0f, 1.0f, 0.0f, 0.5f)); // Bright Green for visibility
+    mHandSlot.rect = handRect;
 
     // Sync with current player state
     const Spaceman* player = mGame->GetPlayer();
@@ -103,7 +114,7 @@ void InventoryScreen::SetupUI()
                  if (slot.item.type == hand) {
                      mHandSlot.item = slot.item;
                      float scale = 0.3f;
-                     if (hand == ItemType::Pistol) scale = 0.7f;
+                     if (hand == ItemType::Pistol) scale = 1.5f;
                      else if (hand == ItemType::AlienPistol) scale = 0.5f;
                      mHandSlot.itemImage = AddImage(slot.item.iconPath, mHandSlot.pos, scale);
                      slot.item = {ItemType::None, ""};
@@ -127,99 +138,204 @@ void InventoryScreen::SetupUI()
 
 void InventoryScreen::HandleKeyPress(int key)
 {
-    if (key == SDLK_TAB) {
+    if (key == SDLK_TAB || key == SDLK_ESCAPE) {
         Close();
+        return;
+    }
+
+    int prevIndex = mSelectedSlotIndex;
+
+    if (key == SDLK_RIGHT || key == SDLK_d) {
+        if (mSelectedSlotIndex < 9) { // Grid
+            if ((mSelectedSlotIndex + 1) % 3 != 0) {
+                mSelectedSlotIndex++;
+            } else {
+                // Jump to equipment
+                if (mSelectedSlotIndex == 2) mSelectedSlotIndex = 9; // Top row -> Head
+                else if (mSelectedSlotIndex == 5) mSelectedSlotIndex = 10; // Middle row -> Hand
+                else if (mSelectedSlotIndex == 8) mSelectedSlotIndex = 10; // Bottom row -> Hand
+            }
+        } else if (mSelectedSlotIndex == 9) {
+            // Head -> nothing to right
+        } else if (mSelectedSlotIndex == 10) {
+            // Hand -> nothing to right
+        }
+    }
+    else if (key == SDLK_LEFT || key == SDLK_a) {
+        if (mSelectedSlotIndex < 9) { // Grid
+            if (mSelectedSlotIndex % 3 != 0) {
+                mSelectedSlotIndex--;
+            }
+        } else if (mSelectedSlotIndex == 9) {
+            mSelectedSlotIndex = 2; // Head -> Top row right
+        } else if (mSelectedSlotIndex == 10) {
+            mSelectedSlotIndex = 5; // Hand -> Middle row right
+        }
+    }
+    else if (key == SDLK_UP || key == SDLK_w) {
+        if (mSelectedSlotIndex < 9) {
+            if (mSelectedSlotIndex >= 3) {
+                mSelectedSlotIndex -= 3;
+            }
+        } else if (mSelectedSlotIndex == 10) {
+            mSelectedSlotIndex = 9; // Hand -> Head
+        }
+    }
+    else if (key == SDLK_DOWN || key == SDLK_s) {
+        if (mSelectedSlotIndex < 9) {
+            if (mSelectedSlotIndex < 6) {
+                mSelectedSlotIndex += 3;
+            }
+        } else if (mSelectedSlotIndex == 9) {
+            mSelectedSlotIndex = 10; // Head -> Hand
+        }
+    }
+    else if (key == SDLK_RETURN || key == SDLK_SPACE || key == SDLK_KP_ENTER) {
+        HandleDoubleClick(mSelectedSlotIndex); // Treat enter as double click (equip/unequip)
+    }
+
+    if (prevIndex != mSelectedSlotIndex) {
+        mGame->GetAudio()->PlaySound("Bump.wav");
+    }
+}
+
+void InventoryScreen::HandleMouseMove(const Vector2& mousePos)
+{
+    int prevIndex = mSelectedSlotIndex;
+    int hoveredSlot = -1;
+
+    // Check Grid
+    for (int i = 0; i < mGridSlots.size(); ++i) {
+        Vector2 diff = mousePos - mGridSlots[i].pos;
+        if (Math::Abs(diff.x) < 40 && Math::Abs(diff.y) < 40) {
+            hoveredSlot = i;
+            break;
+        }
+    }
+    // Check Head
+    if (hoveredSlot == -1) {
+        Vector2 diff = mousePos - mHeadSlot.pos;
+        if (Math::Abs(diff.x) < 30 && Math::Abs(diff.y) < 30) {
+            hoveredSlot = 9;
+        }
+    }
+    // Check Hand
+    if (hoveredSlot == -1) {
+        Vector2 diff = mousePos - mHandSlot.pos;
+        if (Math::Abs(diff.x) < 30 && Math::Abs(diff.y) < 30) {
+            hoveredSlot = 10;
+        }
+    }
+
+    if (hoveredSlot != -1) {
+        mSelectedSlotIndex = hoveredSlot;
+    }
+
+    if (prevIndex != mSelectedSlotIndex) {
+        mGame->GetAudio()->PlaySound("Bump.wav");
+    }
+}
+
+void InventoryScreen::HandleMouseClick(const Vector2& mousePos)
+{
+    int clickedSlot = -1;
+    // Check Grid
+    for (int i = 0; i < mGridSlots.size(); ++i) {
+        Vector2 diff = mousePos - mGridSlots[i].pos;
+        if (Math::Abs(diff.x) < 40 && Math::Abs(diff.y) < 40) {
+            clickedSlot = i;
+            break;
+        }
+    }
+    // Check Head
+    if (clickedSlot == -1) {
+        Vector2 diff = mousePos - mHeadSlot.pos;
+        if (Math::Abs(diff.x) < 30 && Math::Abs(diff.y) < 30) {
+            clickedSlot = 9;
+        }
+    }
+    // Check Hand
+    if (clickedSlot == -1) {
+        Vector2 diff = mousePos - mHandSlot.pos;
+        if (Math::Abs(diff.x) < 30 && Math::Abs(diff.y) < 30) {
+            clickedSlot = 10;
+        }
+    }
+
+    if (clickedSlot != -1) {
+        mSelectedSlotIndex = clickedSlot;
+
+        float time = SDL_GetTicks() / 1000.0f;
+        if (clickedSlot == mLastClickedSlotIndex && time - mLastClickTime < 0.5f) {
+            HandleDoubleClick(clickedSlot);
+            mLastClickedSlotIndex = -1;
+            mIsDragging = false;
+            if (mDragImage) {
+                mDragImage = nullptr;
+                mDraggedSlotIndex = -1;
+            }
+            return; 
+        } else {
+            mLastClickedSlotIndex = clickedSlot;
+            mLastClickTime = time;
+        }
+
+        // Start Drag Logic
+        if (clickedSlot < 9) {
+            if (mGridSlots[clickedSlot].item.type != ItemType::None) {
+                mIsDragging = true;
+                mDraggedSlotIndex = clickedSlot;
+                mDragItem = mGridSlots[clickedSlot].item;
+                mDragImage = mGridSlots[clickedSlot].itemImage;
+                mDragOffset = mGridSlots[clickedSlot].pos - mousePos;
+            }
+        } else if (clickedSlot == 9) {
+             if (mHeadSlot.item.type != ItemType::None) {
+                mIsDragging = true;
+                mDraggedSlotIndex = 9;
+                mDragItem = mHeadSlot.item;
+                mDragImage = mHeadSlot.itemImage;
+                mDragOffset = mHeadSlot.pos - mousePos;
+             }
+        } else if (clickedSlot == 10) {
+             if (mHandSlot.item.type != ItemType::None) {
+                mIsDragging = true;
+                mDraggedSlotIndex = 10;
+                mDragItem = mHandSlot.item;
+                mDragImage = mHandSlot.itemImage;
+                mDragOffset = mHandSlot.pos - mousePos;
+             }
+        }
     }
 }
 
 void InventoryScreen::Update(float deltaTime)
 {
     UIScreen::Update(deltaTime);
+
+    // Update highlights
+    for (int i = 0; i < mGridSlots.size(); ++i) {
+        if (i == mSelectedSlotIndex) {
+            mGridSlots[i].rect->SetColor(Vector4(1.0f, 1.0f, 0.0f, 1.0f));
+        } else {
+            mGridSlots[i].rect->SetColor(Vector4(0.5f, 0.5f, 0.5f, 1.0f));
+        }
+    }
+    
+    if (mSelectedSlotIndex == 9) mHeadSlot.rect->SetColor(Vector4(1.0f, 1.0f, 0.0f, 1.0f));
+    else mHeadSlot.rect->SetColor(Vector4(1.0f, 0.0f, 0.0f, 0.5f));
+
+    if (mSelectedSlotIndex == 10) mHandSlot.rect->SetColor(Vector4(1.0f, 1.0f, 0.0f, 1.0f));
+    else mHandSlot.rect->SetColor(Vector4(0.0f, 1.0f, 0.0f, 0.5f));
     
     int mouseX, mouseY;
     Uint32 buttons = SDL_GetMouseState(&mouseX, &mouseY);
     Vector2 mousePos(static_cast<float>(mouseX), static_cast<float>(mouseY));
-
     bool isMouseDown = (buttons & SDL_BUTTON(SDL_BUTTON_LEFT));
-    bool justPressed = isMouseDown && !mWasMouseDown;
-    mWasMouseDown = isMouseDown;
 
-    if (justPressed) {
-        int clickedSlot = -1;
-        // Check Grid
-        for (int i = 0; i < mGridSlots.size(); ++i) {
-            Vector2 diff = mousePos - mGridSlots[i].pos;
-            if (Math::Abs(diff.x) < 40 && Math::Abs(diff.y) < 40) {
-                clickedSlot = i;
-                break;
-            }
-        }
-        // Check Head
-        if (clickedSlot == -1) {
-            Vector2 diff = mousePos - mHeadSlot.pos;
-            if (Math::Abs(diff.x) < 30 && Math::Abs(diff.y) < 30) {
-                clickedSlot = 9;
-            }
-        }
-        // Check Hand
-        if (clickedSlot == -1) {
-            Vector2 diff = mousePos - mHandSlot.pos;
-            if (Math::Abs(diff.x) < 30 && Math::Abs(diff.y) < 30) {
-                clickedSlot = 10;
-            }
-        }
-
-        if (clickedSlot != -1) {
-            float time = SDL_GetTicks() / 1000.0f;
-            if (clickedSlot == mLastClickedSlotIndex && time - mLastClickTime < 0.5f) {
-                HandleDoubleClick(clickedSlot);
-                mLastClickedSlotIndex = -1;
-                return; // Skip drag logic
-            } else {
-                mLastClickedSlotIndex = clickedSlot;
-                mLastClickTime = time;
-            }
-        }
-    }
-
-    if (!mIsDragging && isMouseDown) {
-        // Check clicks
-        for (int i = 0; i < mGridSlots.size(); ++i) {
-            if (mGridSlots[i].item.type != ItemType::None) {
-                Vector2 diff = mousePos - mGridSlots[i].pos;
-                if (Math::Abs(diff.x) < 40 && Math::Abs(diff.y) < 40) {
-                    mIsDragging = true;
-                    mDraggedSlotIndex = i;
-                    mDragItem = mGridSlots[i].item;
-                    mDragImage = mGridSlots[i].itemImage;
-                    mDragOffset = mGridSlots[i].pos - mousePos;
-                    break;
-                }
-            }
-        }
-        
-        if (!mIsDragging) {
-            // Check head slot (index 9)
-            Vector2 diff = mousePos - mHeadSlot.pos;
-            if (Math::Abs(diff.x) < 30 && Math::Abs(diff.y) < 30 && mHeadSlot.item.type != ItemType::None) {
-                mIsDragging = true;
-                mDraggedSlotIndex = 9;
-                mDragItem = mHeadSlot.item;
-                mDragImage = mHeadSlot.itemImage;
-                mDragOffset = mHeadSlot.pos - mousePos;
-            }
-        }
-        
-        if (!mIsDragging) {
-            // Check hand slot (index 10)
-            Vector2 diff = mousePos - mHandSlot.pos;
-            if (Math::Abs(diff.x) < 30 && Math::Abs(diff.y) < 30 && mHandSlot.item.type != ItemType::None) {
-                mIsDragging = true;
-                mDraggedSlotIndex = 10;
-                mDragItem = mHandSlot.item;
-                mDragImage = mHandSlot.itemImage;
-                mDragOffset = mHandSlot.pos - mousePos;
-            }
+    if (mIsDragging && isMouseDown) {
+        if (mDragImage) {
+            mDragImage->SetOffset(mousePos + mDragOffset);
         }
     }
     else if (mIsDragging && !isMouseDown) {
@@ -272,7 +388,7 @@ void InventoryScreen::Update(float deltaTime)
                  mHandSlot.itemImage = mDragImage;
                  mHandSlot.itemImage->SetOffset(mHandSlot.pos);
                  float scale = 0.3f;
-                 if (mDragItem.type == ItemType::Pistol) scale = 0.7f;
+                 if (mDragItem.type == ItemType::Pistol) scale = 1.5f;
                  else if (mDragItem.type == ItemType::AlienPistol) scale = 0.5f;
                  mHandSlot.itemImage->SetScale(scale);
                  
@@ -308,7 +424,7 @@ void InventoryScreen::Update(float deltaTime)
                     
                     float scale = 0.3f;
                     if (mDragItem.type == ItemType::Headphones) scale = 0.2f;
-                    if (mDragItem.type == ItemType::Pistol) scale = 0.7f;
+                    if (mDragItem.type == ItemType::Pistol) scale = 1.5f;
                     else if (mDragItem.type == ItemType::AlienPistol) scale = 0.5f;
                     mGridSlots[i].itemImage->SetScale(scale);
                     
@@ -363,15 +479,17 @@ void InventoryScreen::HandleDoubleClick(int slotIndex)
 {
     // Grid Slot -> Equip
     if (slotIndex < 9) {
-        InventoryItem& item = mGridSlots[slotIndex].item;
-        if (item.type == ItemType::None) return;
+        InventoryItem& itemRef = mGridSlots[slotIndex].item;
+        InventoryItem itemToEquip = itemRef; // Copy it
+        
+        if (itemRef.type == ItemType::None) return;
 
-        if (item.type == ItemType::Headphones) {
+        if (itemRef.type == ItemType::Headphones) {
             // Swap with Head Slot
             InventoryItem temp = mHeadSlot.item;
             UIImage* tempImg = mHeadSlot.itemImage;
 
-            mHeadSlot.item = item;
+            mHeadSlot.item = itemToEquip;
             mHeadSlot.itemImage = mGridSlots[slotIndex].itemImage;
             mHeadSlot.itemImage->SetOffset(mHeadSlot.pos);
             mHeadSlot.itemImage->SetScale(0.2f);
@@ -384,17 +502,17 @@ void InventoryScreen::HandleDoubleClick(int slotIndex)
                 player->EquipHead(ItemType::Headphones);
             }
         }
-        else if (item.type == ItemType::Pistol || item.type == ItemType::AlienPistol || item.type == ItemType::Flashlight) {
+        else if (itemRef.type == ItemType::Pistol || itemRef.type == ItemType::AlienPistol || itemRef.type == ItemType::Flashlight) {
             // Swap with Hand Slot
             InventoryItem temp = mHandSlot.item;
             UIImage* tempImg = mHandSlot.itemImage;
 
-            mHandSlot.item = item;
+            mHandSlot.item = itemToEquip;
             mHandSlot.itemImage = mGridSlots[slotIndex].itemImage;
             mHandSlot.itemImage->SetOffset(mHandSlot.pos);
             float scale = 0.3f;
-            if (item.type == ItemType::Pistol) scale = 0.7f;
-            else if (item.type == ItemType::AlienPistol) scale = 0.5f;
+            if (itemToEquip.type == ItemType::Pistol) scale = 1.5f;
+            else if (itemToEquip.type == ItemType::AlienPistol) scale = 0.5f;
             mHandSlot.itemImage->SetScale(scale);
 
             mGridSlots[slotIndex].item = temp;
@@ -402,7 +520,7 @@ void InventoryScreen::HandleDoubleClick(int slotIndex)
             if (tempImg) tempImg->SetOffset(mGridSlots[slotIndex].pos);
 
             if (auto* player = mGame->GetPlayer()) {
-                player->EquipHand(item.type);
+                player->EquipHand(itemToEquip.type);
             }
         }
     }
@@ -440,7 +558,7 @@ void InventoryScreen::HandleDoubleClick(int slotIndex)
                 mGridSlots[i].itemImage->SetOffset(mGridSlots[i].pos);
                 
                 float scale = 0.3f;
-                if (mGridSlots[i].item.type == ItemType::Pistol) scale = 0.7f;
+                if (mGridSlots[i].item.type == ItemType::Pistol) scale = 1.5f;
                 else if (mGridSlots[i].item.type == ItemType::AlienPistol) scale = 0.5f;
                 mGridSlots[i].itemImage->SetScale(scale);
 

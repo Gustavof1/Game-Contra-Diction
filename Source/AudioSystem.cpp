@@ -47,7 +47,7 @@ void AudioSystem::Update(float deltaTime)
 // NOTE: The soundName is without the "Assets/Sounds/" part of the file
 //       For example, pass in "ChompLoop.wav" rather than
 //       "Assets/Sounds/ChompLoop.wav".
-SoundHandle AudioSystem::PlaySound(const std::string& soundName, bool looping)
+SoundHandle AudioSystem::PlaySound(const std::string& soundName, bool looping, SoundCategory category)
 {
     // Get the sound with the given name
     Mix_Chunk *sound = GetSound(soundName);
@@ -126,10 +126,15 @@ SoundHandle AudioSystem::PlaySound(const std::string& soundName, bool looping)
     info.mChannel = channel;
     info.mIsLooping = looping;
     info.mIsPaused = false;
+    info.mCategory = category;
 
     // Add to the map and the channel vector
     mHandleMap.emplace(mLastHandle, info);
     mChannels[channel] = mLastHandle;
+
+    // Set volume for the channel
+    int vol = (category == SoundCategory::Music) ? mMusicVolume : mSFXVolume;
+    Mix_Volume(channel, vol);
 
     // Play the sound on SDL_Mixer
     // (SDL_Mixer uses -1 for infinite loops, 0 for "play once")
@@ -143,6 +148,28 @@ SoundHandle AudioSystem::PlaySound(const std::string& soundName, bool looping)
     }
 
     return mLastHandle;
+}
+
+void AudioSystem::SetBusVolume(SoundCategory category, int volume)
+{
+    if (volume < 0) volume = 0;
+    if (volume > MIX_MAX_VOLUME) volume = MIX_MAX_VOLUME;
+
+    if (category == SoundCategory::Music) mMusicVolume = volume;
+    else mSFXVolume = volume;
+
+    for (auto& kv : mHandleMap)
+    {
+        if (kv.second.mCategory == category)
+        {
+            Mix_Volume(kv.second.mChannel, volume);
+        }
+    }
+}
+
+int AudioSystem::GetBusVolume(SoundCategory category) const
+{
+    return (category == SoundCategory::Music) ? mMusicVolume : mSFXVolume;
 }
 
 // Stops the sound if it is currently playing

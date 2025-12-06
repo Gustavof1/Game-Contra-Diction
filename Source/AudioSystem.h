@@ -59,6 +59,12 @@ enum class SoundState
     Paused
 };
 
+enum class SoundCategory
+{
+    SFX,
+    Music
+};
+
 // Manages playing audio through SDL_mixer
 class AudioSystem
 {
@@ -80,7 +86,7 @@ public:
     // NOTE: The soundName is without the "Assets/Sounds/" part of the file
     //       For example, pass in "ChompLoop.wav" rather than
     //       "Assets/Sounds/ChompLoop.wav".
-    SoundHandle PlaySound(const std::string& soundName, bool looping = false);
+    SoundHandle PlaySound(const std::string& soundName, bool looping = false, SoundCategory category = SoundCategory::SFX);
 
     // Stops the sound if it is currently playing
     void StopSound(SoundHandle sound);
@@ -96,6 +102,12 @@ public:
 
     // Resumes all channels except the exception handle 
     void ResumeAllSounds(SoundHandle exception = SoundHandle::Invalid);
+
+    // Sets the volume for a specific category (0-128)
+    void SetBusVolume(SoundCategory category, int volume);
+
+    // Gets the volume for a specific category
+    int GetBusVolume(SoundCategory category) const;
 
     // Returns the current state of the sound
     SoundState GetSoundState(SoundHandle sound);
@@ -128,6 +140,7 @@ private:
         int mChannel = -1;
         bool mIsLooping = false;
         bool mIsPaused = false;
+        SoundCategory mCategory = SoundCategory::SFX;
     };
 
     // Tracks the active SoundHandle for each channel
@@ -147,4 +160,7 @@ private:
 
     // Used for debug input in ProcessInput
     bool mLastDebugKey = false;
+
+    int mSFXVolume = 128;
+    int mMusicVolume = 128;
 };

@@ -189,4 +189,14 @@ private:
     // Loading
     bool mIsLoading;
     GameScene mNextScene;
+
+    // Fade Transition
+    enum class FadeState {
+        None,
+        FadeOut,
+        FadeIn
+    };
+    FadeState mFadeState;
+    float mFadeTimer;
+    const float FADE_TIME = 0.25f;
 };

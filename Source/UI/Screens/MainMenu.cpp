@@ -1,6 +1,7 @@
 #include "MainMenu.h"
 #include "CutsceneScreen.h"
 #include "StageSelect.h"
+#include "OptionsScreen.h"
 #include "../../Game.h"
 #include <SDL.h>
 #include <algorithm>
@@ -32,17 +33,24 @@ MainMenu::MainMenu(class Game* game, const std::string& fontName)
     // Posição: Esquerda
     auto startBtn = AddButton("", [this]() {
         mIsFadingOut = true;
-    }, Vector2(Game::WINDOW_WIDTH * 0.25f, Game::WINDOW_HEIGHT * 0.65f), 0.5f); 
+    }, Vector2(Game::WINDOW_WIDTH * 0.25f, Game::WINDOW_HEIGHT * 0.60f), 0.5f); 
     
     startBtn->SetTextures("../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/start_normal.png",
                           "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/start_hover.png",
                           "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/start_pressed.png");
 
+    // 3.5 Botão Options
+    auto optionsBtn = AddButton("Options", [this]() {
+        Close();
+        new OptionsScreen(mGame, "../Assets/Fonts/ALS_Micro_Bold.ttf");
+    }, Vector2(Game::WINDOW_WIDTH * 0.25f, Game::WINDOW_HEIGHT * 0.70f), 0.5f);
+    optionsBtn->SetTextColor(Vector3(1.0f, 1.0f, 1.0f)); // White text
+
     // 4. Botão Quit
     // Posição: Esquerda
     auto exitBtn = AddButton("", [this]() {
         mGame->Quit();
-    }, Vector2(Game::WINDOW_WIDTH * 0.25f, Game::WINDOW_HEIGHT * 0.8f), 0.5f);
+    }, Vector2(Game::WINDOW_WIDTH * 0.25f, Game::WINDOW_HEIGHT * 0.80f), 0.5f);
     
     exitBtn->SetTextures("../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/exit_normal.png",
                          "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/exit_hover.png",

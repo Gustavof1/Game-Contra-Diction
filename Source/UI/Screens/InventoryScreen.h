@@ -11,6 +11,8 @@ public:
 
     void Update(float deltaTime) override;
     void HandleKeyPress(int key) override;
+    void HandleMouseMove(const Vector2& mousePos) override;
+    void HandleMouseClick(const Vector2& mousePos) override;
 
 private:
     void SetupUI();
@@ -20,7 +22,7 @@ private:
     struct Slot {
         Vector2 pos;
         InventoryItem item;
-        class UIImage* image; // The background of the slot
+        class UIRect* rect; // The background of the slot
         class UIImage* itemImage; // The item icon
     };
     std::vector<Slot> mGridSlots;
@@ -46,4 +48,6 @@ private:
     // Configurable Positions
     Vector2 mHeadSlotPos;
     Vector2 mHandSlotPos;
+
+    int mSelectedSlotIndex;
 };

@@ -26,7 +26,7 @@ public:
 	void Shutdown();
 
     void DrawRect(const Vector2 &position, const Vector2 &size,  float rotation,
-                  const Vector3 &color, const Vector2 &cameraPos, RendererMode mode);
+                  const Vector3 &color, const Vector2 &cameraPos, RendererMode mode, float alpha = 1.0f);
 
     void DrawTexture(const Vector2 &position, const Vector2 &size,  float rotation,
                      const Vector3 &color, Texture *texture,

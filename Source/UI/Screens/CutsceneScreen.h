@@ -29,7 +29,7 @@ private:
     GameScene mNextScene;
     float mTimer;
     float mFadeTimer;
-    const float FADE_DURATION = 1.0f;
+    const float FADE_DURATION = 0.5f;
     const float DISPLAY_DURATION = 5.0f;
 
     class UIImage* mImage1;

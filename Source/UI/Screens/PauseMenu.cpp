@@ -75,25 +75,7 @@ void PauseMenu::HandleKeyPress(int key)
 {
     UIScreen::HandleKeyPress(key);
 
-    if (key == SDLK_DOWN || key == SDLK_s) {
-        mButtons[mSelectedButtonIndex]->SetHighlighted(false);
-        mSelectedButtonIndex = (mSelectedButtonIndex + 1) % mButtons.size();
-        mButtons[mSelectedButtonIndex]->SetHighlighted(true);
-    }
-    else if (key == SDLK_UP || key == SDLK_w) {
-        mButtons[mSelectedButtonIndex]->SetHighlighted(false);
-        mSelectedButtonIndex--;
-        if (mSelectedButtonIndex < 0) {
-            mSelectedButtonIndex = mButtons.size() - 1;
-        }
-        mButtons[mSelectedButtonIndex]->SetHighlighted(true);
-    }
-    else if (key == SDLK_RETURN) { 
-        if (mSelectedButtonIndex != -1) {
-            mButtons[mSelectedButtonIndex]->OnClick();
-        }
-    }
-    else if (key == SDLK_ESCAPE)
+    if (key == SDLK_ESCAPE)
     {
         mResuming = true;
         Close();

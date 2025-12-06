@@ -846,7 +846,7 @@ void Spaceman::Kill()
     GetGame()->GetAudio()->PlaySound("Street Fighter II-DeathSound.mp3");
 
     mIsDead = true;
-    mDeathTimer = 1.5f;
+    mDeathTimer = 2.0f;
 
     if (mColliderComponent)
     {
@@ -881,10 +881,14 @@ void Spaceman::PowerDown()
 void Spaceman::EquipHead(ItemType item)
 {
     mHeadItem = item;
-    if (mHeadItem == ItemType::Headphones) {
-        GetGame()->GetAudio()->ResumeSound(GetGame()->GetMusicHandle());
-    } else {
-        GetGame()->GetAudio()->PauseSound(GetGame()->GetMusicHandle());
+    
+    // Only update audio if we are in gameplay (not paused/inventory)
+    if (GetGame()->GetState() == GameState::Gameplay) {
+        if (mHeadItem == ItemType::Headphones) {
+            GetGame()->GetAudio()->ResumeSound(GetGame()->GetMusicHandle());
+        } else {
+            GetGame()->GetAudio()->PauseSound(GetGame()->GetMusicHandle());
+        }
     }
 }
 
