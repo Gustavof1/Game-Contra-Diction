@@ -48,6 +48,9 @@ public:
     // Set size
     void SetSize(float width, float height);
 
+    const std::string& GetTexturePath() const { return mTexturePath; }
+    const std::string& GetDataPath() const { return mDataPath; }
+
     // Match draw width to each frame's native aspect ratio when enabled
     void SetUseFrameAspect(bool enable);
 
@@ -108,5 +111,8 @@ private:
     bool mIsTransitioning = false;
 
     float mTextureFactor;
+
+    std::string mTexturePath;
+    std::string mDataPath;
 };
 

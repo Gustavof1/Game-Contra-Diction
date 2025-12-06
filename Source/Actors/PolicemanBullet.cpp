@@ -4,9 +4,10 @@
 #include "../Components/Physics/RigidBodyComponent.h"
 #include "../Components/Physics/AABBColliderComponent.h"
 
-PolicemanBullet::PolicemanBullet(Game* game, const Vector2& direction)
+PolicemanBullet::PolicemanBullet(Game* game, const Vector2& direction, Actor* shooter)
     : Actor(game)
     , mLifeTime(2.0f)
+    , mShooter(shooter)
 {
     mRectComponent = new RectComponent(this, 10, 10, RendererMode::TRIANGLES, 200);
     mRectComponent->SetColor(Vector3(1.0f, 0.0f, 0.0f)); // Red bullet

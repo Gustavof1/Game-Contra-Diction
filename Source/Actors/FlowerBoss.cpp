@@ -121,7 +121,7 @@ void FlowerBoss::OnUpdate(float deltaTime)
             
             if (mAttackCooldown <= 0.0f) {
                  mAttackCooldown = 1.5f;
-                 auto* bullet = new EnemyLaser(GetGame());
+                 auto* bullet = new EnemyLaser(GetGame(), this);
                  bullet->SetPosition(GetPosition());
                  Vector2 vel = diff;
                  vel.Normalize();
@@ -176,7 +176,7 @@ void FlowerBoss::OnUpdate(float deltaTime)
              if (mAttackCooldown <= 0.0f) {
                  mAttackCooldown = 2.0f;
                  // Shoot
-                 auto* bullet = new EnemyLaser(GetGame());
+                 auto* bullet = new EnemyLaser(GetGame(), this);
                  bullet->SetPosition(GetPosition());
                  Vector2 vel = diff;
                  vel.Normalize();

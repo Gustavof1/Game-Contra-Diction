@@ -18,6 +18,9 @@ Block::Block(Game* game, const std::string &texturePath, bool hasMushroom)
         ,mIsUsed(false)
         ,mHasMushroom(hasMushroom)
         ,mFrameIndex(0)
+        ,mOriginalSrcX(0)
+        ,mOriginalSrcY(0)
+        ,mSize(Game::TILE_SIZE)
 {
     // Extract filename from texture path
     std::string filename = texturePath;
@@ -63,6 +66,7 @@ Block::Block(Game* game, Texture* texture, int srcX, int srcY, int size, bool is
     ,mFrameIndex(0)
     ,mOriginalSrcX(srcX)
     ,mOriginalSrcY(srcY)
+    ,mSize(size)
 {
     // --- 1. VISUAL ---
     // Cria o componente de sprite.

@@ -46,6 +46,7 @@
 #include "Actors/Grass.h"
 #include "Actors/Stone.h"
 #include "Components/Drawing/TutorialDrawComponent.h"
+#include "Components/Drawing/SpriteComponent.h"
 #include "Actors/Soldier.h"
 #include "Actors/FinalFlower.h"
 #include "Actors/FlowerBoss.h"
@@ -1058,6 +1059,7 @@ void Game::BuildLevelFromJSON(const std::string& fileName)
 
                         Block* block = new Block(this, tex, srcX, srcY, mapTileWidth, isCollidable);
                         block->SetPosition(pos);
+                        block->SetTexturePath(finalPathString);
 
                         // 3. CALCULAR ROTAÇÃO E FLIP BASEADO NO TILED
                         float rotation = 0.0f;
@@ -1094,11 +1096,11 @@ void Game::BuildLevelFromJSON(const std::string& fileName)
 
                         // Aplica no bloco
                         block->SetFlipData(rotation, scale);
-                    }
                 }
             }
         }
     }
+}
 
     for (const auto& layer : layers)
     {
@@ -1173,6 +1175,72 @@ void Game::BuildLevelFromJSON(const std::string& fileName)
                     auto* trigger = new EndPhaseTrigger(this, w, h);
                     trigger->SetPosition(finalPos);
                 }
+            }
+        }
+    }
+}
+void Game::SetGameOverInfo(Actor* killer)
+{
+    mGameOverInfo = GameOverInfo(); // Reset
+    if (!killer) return;
+
+    // Check if it's an enemy (has AnimatorComponent usually)
+    auto* anim = killer->GetComponent<AnimatorComponent>();
+    if (anim)
+    {
+        mGameOverInfo.isEnemy = true;
+        mGameOverInfo.killerName = "Enemy"; 
+        mGameOverInfo.killerSpritePath = anim->GetTexturePath();
+        mGameOverInfo.killerJsonPath = anim->GetDataPath();
+        return;
+    }
+
+    // Check if it's an enemy with SpriteComponent (e.g. Turret)
+    auto* sprite = killer->GetComponent<SpriteComponent>();
+    if (sprite && sprite->GetTexture())
+    {
+        mGameOverInfo.isBlock = true; // Treat as simple sprite (like block)
+        mGameOverInfo.killerName = "Enemy";
+        mGameOverInfo.killerSpritePath = sprite->GetTexture()->GetFileName();
+        mGameOverInfo.useSrcRect = false; 
+        return;
+    }
+    
+    // Check if it's a block
+    auto* block = dynamic_cast<Block*>(killer);
+    if (block)
+    {
+        mGameOverInfo.isBlock = true;
+        mGameOverInfo.killerName = "Block";
+        mGameOverInfo.killerSpritePath = block->GetTexturePath();
+        mGameOverInfo.useSrcRect = true;
+        mGameOverInfo.srcX = block->GetOriginalSrcX();
+        mGameOverInfo.srcY = block->GetOriginalSrcY();
+        mGameOverInfo.srcW = block->GetSize();
+        mGameOverInfo.srcH = block->GetSize();
+        return;
+    }
+
+    // Check if it's a Hazard (Trap) - Try to find a block underneath
+    if (dynamic_cast<Hazard*>(killer))
+    {
+        Vector2 killerPos = killer->GetPosition();
+        for (auto* drawable : mDrawables) {
+            auto* b = dynamic_cast<Block*>(drawable->GetOwner());
+            if (b) {
+                 // Check distance (assuming 32x32 blocks)
+                 Vector2 diff = b->GetPosition() - killerPos;
+                 if (diff.LengthSq() < 1600.0f) { // 40x40 distance squared
+                     mGameOverInfo.isBlock = true;
+                     mGameOverInfo.killerName = "Trap";
+                     mGameOverInfo.killerSpritePath = b->GetTexturePath();
+                     mGameOverInfo.useSrcRect = true;
+                     mGameOverInfo.srcX = b->GetOriginalSrcX();
+                     mGameOverInfo.srcY = b->GetOriginalSrcY();
+                     mGameOverInfo.srcW = b->GetSize();
+                     mGameOverInfo.srcH = b->GetSize();
+                     return;
+                 }
             }
         }
     }

@@ -162,7 +162,7 @@ void Policeman::UpdateAggressive(float deltaTime)
 void Policeman::Shoot(const Vector2& direction)
 {
     GetGame()->GetAudio()->PlaySound("Shoot.wav");
-    auto* bullet = new PolicemanBullet(GetGame(), direction);
+    auto* bullet = new PolicemanBullet(GetGame(), direction, this);
     bullet->SetPosition(mPosition + direction * 40.0f);
 }
 

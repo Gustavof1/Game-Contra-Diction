@@ -33,6 +33,18 @@ enum class GameScene
     GameOver
 };
 
+struct GameOverInfo {
+    std::string killerName;
+    std::string killerSpritePath;
+    std::string killerJsonPath;
+    bool isEnemy = false;
+    bool isBlock = false;
+    
+    // For blocks/sprites using texture rects
+    bool useSrcRect = false;
+    int srcX = 0, srcY = 0, srcW = 0, srcH = 0;
+};
+
 struct FloatingText {
     Vector2 pos;
     std::string text;
@@ -71,6 +83,9 @@ public:
     void SetScene(GameScene scene);
     void PerformLoad(GameScene scene);
     void UnloadScene();
+
+    void SetGameOverInfo(class Actor* killer);
+    const GameOverInfo& GetGameOverInfo() const { return mGameOverInfo; }
 
     // Game State
     GameState GetState() const { return mState; }
@@ -193,6 +208,8 @@ private:
     bool mIsImmortal;
 
     std::vector<FloatingText> mFloatingTexts;
+
+    GameOverInfo mGameOverInfo;
 
     // Loading
     bool mIsLoading;

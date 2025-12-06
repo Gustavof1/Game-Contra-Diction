@@ -1,6 +1,8 @@
 #include "Spaceman.h"
 #include "SpacemanArm.h"
 #include "PlayerBullet.h"
+#include "PolicemanBullet.h"
+#include "EnemyLaser.h"
 #include "Laser.h"
 #include "Block.h"
 #include "Goomba.h"
@@ -743,6 +745,7 @@ void Spaceman::OnHorizontalCollision(const float minOverlap, AABBColliderCompone
     }
 
     if (other->GetLayer() == ColliderLayer::Hazard) {
+        GetGame()->SetGameOverInfo(other->GetOwner());
         Kill();
         return;
     }
@@ -763,6 +766,17 @@ void Spaceman::OnHorizontalCollision(const float minOverlap, AABBColliderCompone
             }
         }
 
+        Actor* killer = other->GetOwner();
+        if (auto* bullet = dynamic_cast<PolicemanBullet*>(killer)) {
+            if (bullet->GetShooter()) {
+                killer = bullet->GetShooter();
+            }
+        } else if (auto* laser = dynamic_cast<EnemyLaser*>(killer)) {
+            if (laser->GetShooter()) {
+                killer = laser->GetShooter();
+            }
+        }
+        GetGame()->SetGameOverInfo(killer);
         Kill();
     }
 
@@ -793,6 +807,7 @@ void Spaceman::OnVerticalCollision(const float minOverlap, AABBColliderComponent
     }
 
     if (other->GetLayer() == ColliderLayer::Hazard) {
+        GetGame()->SetGameOverInfo(other->GetOwner());
         Kill();
         return;
     }

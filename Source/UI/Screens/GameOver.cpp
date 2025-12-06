@@ -1,6 +1,12 @@
 #include "GameOver.h"
 #include "../../Game.h"
 #include <SDL.h>
+#include "../../Json.h"
+#include <fstream>
+#include <algorithm>
+#include "../UIImage.h"
+#include "../UIText.h"
+#include "../../Renderer/Texture.h"
 
 GameOver::GameOver(class Game* game, const std::string& fontName, GameScene level)
         :UIScreen(game, fontName)
@@ -8,13 +14,99 @@ GameOver::GameOver(class Game* game, const std::string& fontName, GameScene leve
         ,mFadeState(FadeState::FadingIn)
         ,mFadeTimer(1.0f)
         ,mFadeRect(nullptr)
+        ,mKillerImage(nullptr)
+        ,mKillerTexture(nullptr)
+        ,mAnimTimer(0.0f)
+        ,mCurrentFrameIndex(0)
 {
 
     Vector2 screenCenter(Game::WINDOW_WIDTH/2.0f, Game::WINDOW_HEIGHT/2.0f);
     
-    auto bg = AddImage("../Assets/Menus/GameOver.png", screenCenter, 1.0f);
+    auto bg = AddImage("../Assets/Menus/GameOver.png", screenCenter, 1.0f, 0.0f, 50);
     
     bg->SetSize(Vector2(static_cast<float>(Game::WINDOW_WIDTH), static_cast<float>(Game::WINDOW_HEIGHT)));
+
+    // Killer Info
+    const auto& info = game->GetGameOverInfo();
+    if (!info.killerName.empty())
+    {
+        AddText("You have been killed by:", Vector2(screenCenter.x, screenCenter.y - 150.0f), 1.0f);
+
+        if (info.isBlock)
+        {
+            mKillerImage = AddImage(info.killerSpritePath, Vector2(screenCenter.x, screenCenter.y - 50.0f), 2.0f, 0.0f, 150);
+            if (info.useSrcRect)
+            {
+                mKillerImage->SetTextureRect(info.srcX, info.srcY, info.srcW, info.srcH);
+            }
+        }
+        else if (info.isEnemy)
+        {
+            std::ifstream file(info.killerJsonPath);
+            if (file.is_open())
+            {
+                nlohmann::json json;
+                file >> json;
+                
+                std::vector<int> frameIndices;
+                if (json.contains("meta") && json["meta"].contains("frameTags")) {
+                    for (const auto& tag : json["meta"]["frameTags"]) {
+                        if (tag["name"] == "idle") {
+                            int from = tag["from"];
+                            int to = tag["to"];
+                            for (int i = from; i <= to; ++i) {
+                                frameIndices.push_back(i);
+                            }
+                            break;
+                        }
+                    }
+                }
+                
+                if (frameIndices.empty()) {
+                    frameIndices.push_back(0);
+                }
+
+                if (json.contains("frames")) {
+                    if (json["frames"].is_array()) {
+                        for (int idx : frameIndices) {
+                            if (idx >= 0 && idx < json["frames"].size()) {
+                                auto& frame = json["frames"][idx]["frame"];
+                                SDL_Rect r;
+                                r.x = frame["x"];
+                                r.y = frame["y"];
+                                r.w = frame["w"];
+                                r.h = frame["h"];
+                                mIdleRects.push_back(r);
+                            }
+                        }
+                    } else if (json["frames"].is_object()) {
+                        std::vector<std::string> keys;
+                        for (auto it = json["frames"].begin(); it != json["frames"].end(); ++it) {
+                            keys.push_back(it.key());
+                        }
+                        std::sort(keys.begin(), keys.end());
+
+                        for (int idx : frameIndices) {
+                            if (idx >= 0 && idx < keys.size()) {
+                                auto& frame = json["frames"][keys[idx]]["frame"];
+                                SDL_Rect r;
+                                r.x = frame["x"];
+                                r.y = frame["y"];
+                                r.w = frame["w"];
+                                r.h = frame["h"];
+                                mIdleRects.push_back(r);
+                            }
+                        }
+                    }
+                }
+            }
+            
+            if (!mIdleRects.empty()) {
+                mKillerImage = AddImage(info.killerSpritePath, Vector2(screenCenter.x, screenCenter.y - 50.0f), 2.0f, 0.0f, 150);
+                mKillerImage->SetTextureRect(mIdleRects[0].x, mIdleRects[0].y, mIdleRects[0].w, mIdleRects[0].h);
+            }
+        }
+    }
 
     mFadeRect = AddRect(screenCenter, Vector2(static_cast<float>(Game::WINDOW_WIDTH), static_cast<float>(Game::WINDOW_HEIGHT)), 1.0f, 0.0f, 200);
     mFadeRect->SetColor(Vector4(0.0f, 0.0f, 0.0f, 1.0f));
@@ -106,6 +198,18 @@ void GameOver::HandleKeyPress(int key)
 void GameOver::Update(float deltaTime)
 {
     UIScreen::Update(deltaTime);
+
+    if (!mIdleRects.empty() && mKillerImage)
+    {
+        mAnimTimer += deltaTime;
+        if (mAnimTimer >= 0.1f)
+        {
+            mAnimTimer -= 0.1f;
+            mCurrentFrameIndex = (mCurrentFrameIndex + 1) % mIdleRects.size();
+            const auto& r = mIdleRects[mCurrentFrameIndex];
+            mKillerImage->SetTextureRect(r.x, r.y, r.w, r.h);
+        }
+    }
 
     if (mFadeState == FadeState::FadingIn)
     {

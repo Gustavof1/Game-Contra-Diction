@@ -13,6 +13,7 @@ Texture::~Texture()
 
 bool Texture::Load(const std::string &filePath)
 {
+    mFileName = filePath;
     SDL_Surface* surface = IMG_Load(filePath.c_str());
     if (!surface) {
         SDL_LogError(SDL_LOG_CATEGORY_APPLICATION, "Failed to load image file: %s %s", filePath.c_str(), IMG_GetError());

@@ -16,6 +16,7 @@ UIImage::UIImage(class Game* game, const Vector2 &offset, const float scale, con
         ,mTexture(nullptr)
         ,mSize(Vector2::Zero)
         ,mColor(1.0f, 1.0f, 1.0f, 1.0f)
+        ,mUseSrcRect(false)
 {
 
 }
@@ -24,6 +25,7 @@ UIImage::UIImage(class Game* game, const std::string &imagePath, const Vector2 &
         :UIElement(game, offset, scale, angle)
         ,mSize(Vector2::Zero)
         ,mColor(1.0f, 1.0f, 1.0f, 1.0f)
+        ,mUseSrcRect(false)
 {
     mTexture = GetGame()->GetRenderer()->GetTexture(imagePath);
     if(mTexture)
@@ -54,7 +56,17 @@ void UIImage::Draw(class Shader* shader)
     shader->SetFloatUniform("uTextureFactor", 1.0f);
     shader->SetVectorUniform("uColor", mColor);
 
-    shader->SetVectorUniform("uTexRect", Vector4(0.0f, 0.0f, 1.0f, 1.0f));
+    Vector4 texRect(0.0f, 0.0f, 1.0f, 1.0f);
+    if (mUseSrcRect && mTexture)
+    {
+        float invW = 1.0f / mTexture->GetWidth();
+        float invH = 1.0f / mTexture->GetHeight();
+        texRect.x = mSrcRect.x * invW;
+        texRect.y = mSrcRect.y * invH;
+        texRect.z = mSrcRect.w * invW;
+        texRect.w = mSrcRect.h * invH;
+    }
+    shader->SetVectorUniform("uTexRect", texRect);
     
     mTexture->SetActive();
 
@@ -62,4 +74,14 @@ void UIImage::Draw(class Shader* shader)
     verts->SetActive();
 
     glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, nullptr);
+}
+
+void UIImage::SetTextureRect(int x, int y, int w, int h)
+{
+    mSrcRect.x = x;
+    mSrcRect.y = y;
+    mSrcRect.w = w;
+    mSrcRect.h = h;
+    mUseSrcRect = true;
+    mSize = Vector2(static_cast<float>(w), static_cast<float>(h));
 }

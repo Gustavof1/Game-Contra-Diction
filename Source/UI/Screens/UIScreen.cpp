@@ -94,25 +94,29 @@ void UIScreen::HandleMouseMove(const Vector2& mousePos)
     if (mButtons.empty()) return;
 
     int previousIndex = mSelectedButtonIndex;
-    bool anyHovered = false;
+    int newIndex = -1;
 
     for (int i = 0; i < static_cast<int>(mButtons.size()); i++)
     {
         if (mButtons[i]->ContainsPoint(mousePos))
         {
-            mSelectedButtonIndex = i;
-            anyHovered = true;
+            newIndex = i;
             break;
         }
     }
 
-    if (anyHovered && mSelectedButtonIndex != previousIndex)
+    if (newIndex != previousIndex)
     {
+        mSelectedButtonIndex = newIndex;
         for (int i = 0; i < static_cast<int>(mButtons.size()); i++)
         {
             mButtons[i]->SetHighlighted(i == mSelectedButtonIndex);
         }
-        mGame->GetAudio()->PlaySound("Bump.wav");
+
+        if (mSelectedButtonIndex != -1)
+        {
+            mGame->GetAudio()->PlaySound("Bump.wav");
+        }
     }
 }
 

@@ -21,10 +21,12 @@ public:
 
 	int GetWidth() const { return mWidth; }
 	int GetHeight() const { return mHeight; }
+    const std::string& GetFileName() const { return mFileName; }
 
 	unsigned int GetTextureID() const { return mTextureID; }
 
 private:
+    std::string mFileName;
 	unsigned int mTextureID;
 	int mWidth;
 	int mHeight;

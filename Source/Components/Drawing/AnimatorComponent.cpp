@@ -22,6 +22,8 @@ AnimatorComponent::AnimatorComponent(class Actor* owner, const std::string &texP
     ,mUseFrameAspect(false)
         ,mTextureFactor(1.0f)
         ,mDefaultTexture(nullptr)
+        ,mTexturePath(texPath)
+        ,mDataPath(dataPath)
 {
     if (mOwner && mOwner->GetGame()) {
         mDefaultTexture = mOwner->GetGame()->GetRenderer()->GetTexture(texPath);

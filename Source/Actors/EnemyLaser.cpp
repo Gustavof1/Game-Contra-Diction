@@ -4,10 +4,11 @@
 #include "../Components/Drawing/SpriteComponent.h"
 #include "../Components/Physics/AABBColliderComponent.h"
 
-EnemyLaser::EnemyLaser(Game* game)
+EnemyLaser::EnemyLaser(Game* game, Actor* shooter)
     :Actor(game)
     ,mLifeTime(3.0f)
     ,mVelocity(Vector2::Zero)
+    ,mShooter(shooter)
 {
     // 1. Sprite
     SpriteComponent* sc = new SpriteComponent(this, 200);
@@ -41,6 +42,11 @@ void EnemyLaser::OnHorizontalCollision(float overlap, AABBColliderComponent* oth
     // Se bateu no Player
     Spaceman* player = dynamic_cast<Spaceman*>(other->GetOwner());
     if (player) {
+        Actor* killer = this;
+        if (mShooter) {
+            killer = mShooter;
+        }
+        GetGame()->SetGameOverInfo(killer);
         player->Kill();
         SetState(ActorState::Destroy); // Laser some
     }

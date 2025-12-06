@@ -15,7 +15,12 @@ public:
     void OnUpdate(float deltaTime) override;
     void Bump();
     const std::string& GetTexturePath() const { return mTexturePath; }
+    void SetTexturePath(const std::string& path) { mTexturePath = path; }
     void SetFlipData(float rotation, const Vector2& scale);
+
+    int GetOriginalSrcX() const { return mOriginalSrcX; }
+    int GetOriginalSrcY() const { return mOriginalSrcY; }
+    int GetSize() const { return mSize; }
 
 private:
     std::string mTexturePath;
@@ -32,4 +37,5 @@ private:
 
     int mOriginalSrcX;
     int mOriginalSrcY;
+    int mSize;
 };

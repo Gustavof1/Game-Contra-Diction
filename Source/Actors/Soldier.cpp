@@ -122,7 +122,7 @@ void Soldier::OnUpdate(float deltaTime)
 void Soldier::Shoot(const Vector2& direction)
 {
     GetGame()->GetAudio()->PlaySound("Continuousshooting.wav");
-    auto* bullet = new PolicemanBullet(GetGame(), direction);
+    auto* bullet = new PolicemanBullet(GetGame(), direction, this);
     bullet->SetPosition(mPosition + direction * 40.0f);
 }
 

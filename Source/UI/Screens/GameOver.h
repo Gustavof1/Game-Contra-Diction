@@ -25,4 +25,11 @@ private:
     float mFadeTimer;
     class UIRect* mFadeRect;
     std::function<void()> mNextAction;
+
+    // Killer info
+    class UIImage* mKillerImage;
+    class Texture* mKillerTexture;
+    std::vector<SDL_Rect> mIdleRects;
+    float mAnimTimer;
+    int mCurrentFrameIndex;
 };

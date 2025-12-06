@@ -12,6 +12,7 @@ public:
 
     void Draw(class Renderer* renderer) override;
     virtual void SetTexture(class Texture* texture);
+    class Texture* GetTexture() const { return mTexture; }
 
     // --- A MÁGICA DO TILESET ---
     // Esta função define qual pedaço da textura desenhar

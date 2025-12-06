@@ -42,12 +42,15 @@ RobotTurret::RobotTurret(Game* game)
     );
 
     // 2. Callback de colisão
-    mLaserParticleSystem->SetCollisionCallback([](AABBColliderComponent* other) {
+    mLaserParticleSystem->SetCollisionCallback([this](AABBColliderComponent* other) {
         // Se bater no Player
         if (other->GetLayer() == ColliderLayer::Player)
         {
             auto player = dynamic_cast<Spaceman*>(other->GetOwner());
-            if (player) player->Kill();
+            if (player) {
+                GetGame()->SetGameOverInfo(this);
+                player->Kill();
+            }
         }
     });
 }

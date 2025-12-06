@@ -20,9 +20,12 @@ public:
     
     void SetSize(const Vector2& size) { mSize = size; }
     void SetColor(const Vector4& color) { mColor = color; }
+    void SetTextureRect(int x, int y, int w, int h);
     
 protected:
     class Texture* mTexture;
     Vector2 mSize;
     Vector4 mColor;
+    SDL_Rect mSrcRect;
+    bool mUseSrcRect;
 };
