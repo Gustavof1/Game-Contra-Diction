@@ -79,7 +79,7 @@ public:
     virtual void Kill();
 
     // Gas damage support
-    void ApplyGasExposure();
+    void HitByGas();
 
 protected:
     class Game* mGame;
@@ -98,8 +98,7 @@ protected:
     float mRotation;
     
     // Gas logic
-    float mGasExposureAccumulator;
-    bool mIsBeingGassed;
+    int mGasHitCount;
     Vector3 mOriginalColor;
     bool mHasStoredOriginalColor;
 

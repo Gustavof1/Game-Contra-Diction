@@ -3,6 +3,7 @@
 #include "../Components/Drawing/SpriteComponent.h"
 #include "../Renderer/Renderer.h"
 #include "../Renderer/Font.h"
+#include "../UI/Screens/CutsceneScreen.h"
 
 // --- CLASSE INTERNA PARA DESENHAR O TEXTO ---
 class EndTextComponent : public DrawComponent
@@ -90,7 +91,8 @@ void LevelEndActor::OnUpdate(float deltaTime)
         // Lógica para trocar de fase
         GameScene current = GetGame()->GetCurrentScene();
         if (current == GameScene::Level1) {
-            GetGame()->SetScene(GameScene::Level2);
+            new CutsceneScreen(GetGame(), GameScene::Level2);
+            SetState(ActorState::Paused);
         } else if (current == GameScene::Level2) {
             GetGame()->SetScene(GameScene::Level3);
         } else {

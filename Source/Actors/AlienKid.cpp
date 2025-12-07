@@ -97,6 +97,7 @@ void AlienKid::OnUpdate(float deltaTime)
     } else if (dist < mDetectionRadius) {
         if (!mHasPlayedActiveSound) {
             GetGame()->GetAudio()->PlaySound("Confused.wav");
+            GetGame()->AddFloatingText(mPosition, "Tem joguinho no seu celular tio?", 2.0f);
             mHasPlayedActiveSound = true;
         }
         // Approach

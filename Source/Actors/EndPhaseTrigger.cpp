@@ -20,7 +20,7 @@ EndPhaseTrigger::EndPhaseTrigger(Game* game, float w, float h)
 
             switch (GetGame()->GetCurrentScene()) {
                 case GameScene::Level1:
-                    texPath = "../Assets/Sprites/ParteNave1.png";
+                    texPath = "../Assets/Sprites/Jeep.png";
                     break;
                 case GameScene::Level2:
                     texPath = "../Assets/Sprites/ParteNave2.png";

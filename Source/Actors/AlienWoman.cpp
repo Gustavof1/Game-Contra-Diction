@@ -134,9 +134,9 @@ void AlienWoman::ManageAnimations()
         }
         
         if (vel.x > 0) {
-            SetScale(Vector2(1.0f, 1.0f));
-        } else {
             SetScale(Vector2(-1.0f, 1.0f));
+        } else {
+            SetScale(Vector2(1.0f, 1.0f));
         }
     } else {
         mAnimatorComponent->SetAnimation("idle");

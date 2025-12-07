@@ -77,7 +77,7 @@ void RobotTurret::OnUpdate(float deltaTime)
         Vector2 diff = playerPos - myPos;
         
         // Verifica distância (usando quadrado para performance)
-        if (diff.LengthSq() < mAttackRange * mAttackRange) {
+        if (player->GetPosture() != PlayerPosture::Crouching && diff.LengthSq() < mAttackRange * mAttackRange) {
             
             // Lógica visual: Virar para o player
             if (diff.x < 0) {

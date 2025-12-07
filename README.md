@@ -25,6 +25,13 @@ A narrativa do jogo envolve um astronauta distraído que acabou caindo em um pla
 
 O jogo apresenta um sistema de inventário para gerenciar itens coletados, inicialmente os itens estão todos desbloqueados para fins de teste. A vitória é alcançada ao completar todas as fases e derrotar o chefe final. A derrota ocorre caso o personagem tome um hit. Pode parecer difícil, mas com prática e persistência é possível avançar no jogo sem problemas.
 
+Ferramentas usadas:
+
+Tilesets, sprites e sons de https://itch.io/game-assets/
+Spritesheets e animações de personagens criados no https://www.makko.ai/ (novembro/dezembro 2025)
+Imagens de fundo e cutscenes https://gemini.google.com/
+
+
 ## Funcionalidades a serem testadas
 
 Durante o playtesting, por favor, observem com atenção as seguintes funcionalidades:

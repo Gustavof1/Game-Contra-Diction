@@ -17,26 +17,29 @@ CutsceneScreen::CutsceneScreen(Game* game, GameScene nextScene)
     auto bg = AddRect(Vector2(Game::WINDOW_WIDTH/2.0f, Game::WINDOW_HEIGHT/2.0f), Vector2(Game::WINDOW_WIDTH, Game::WINDOW_HEIGHT), 1.0f, 0.0f, 0);
     bg->SetColor(Vector4(0.0f, 0.0f, 0.0f, 1.0f));
 
-    // Load images
-    // Frame 1 shrunken (scale 0.5f)
-    mImage1 = AddImage("../Assets/Cutscenes/start/frame1.PNG", topCenter, 0.5f);
-    
-    // Frame 2
-    mImage2 = AddImage("../Assets/Cutscenes/start/frame2.PNG", topCenter, 0.5f);
-    mImage2->SetIsVisible(false);
+    std::string text1;
 
-    // Frame 3
-    mImage3 = AddImage("../Assets/Cutscenes/start/frame3.PNG", topCenter, 0.5f);
+    if (mNextScene == GameScene::Level2) {
+        // Transition 1 -> 2
+        mImage1 = AddImage("../Assets/Cutscenes/transition 1 to 2/1.PNG", topCenter, 0.5f);
+        mImage2 = AddImage("../Assets/Cutscenes/transition 1 to 2/2.PNG", topCenter, 0.5f);
+        mImage3 = AddImage("../Assets/Cutscenes/transition 1 to 2/3.PNG", topCenter, 0.5f);
+        text1 = "Ele encontrou um carro, deve pertencer a familia que ele encontrou andando na floresta";
+    } else {
+        // Default / Intro
+        mImage1 = AddImage("../Assets/Cutscenes/start/frame1.PNG", topCenter, 0.5f);
+        mImage2 = AddImage("../Assets/Cutscenes/start/frame2.PNG", topCenter, 0.5f);
+        mImage3 = AddImage("../Assets/Cutscenes/start/frame3.PNG", topCenter, 0.5f);
+        text1 = "Ele estava distraido no jogo do tigrinho";
+    }
+    
+    mImage2->SetIsVisible(false);
     mImage3->SetIsVisible(false);
 
     // Setup Text
     // "write below it"
     Vector2 textPos(Game::WINDOW_WIDTH / 2.0f, Game::WINDOW_HEIGHT * 0.85f);
-    mText = AddText("Ele estava distraido no jogo do tigrinho", textPos, 0.7f);
-    // Assuming AddText centers the text or we rely on default alignment.
-    // If UIText doesn't center, we might need to adjust.
-    // But usually UI systems in these books center text if position is center.
-    // Let's assume it does for now.
+    mText = AddText(text1, textPos, 0.7f);
     
     // Setup Fade Rect
     // Full screen black rect
@@ -76,7 +79,11 @@ void CutsceneScreen::Update(float deltaTime)
                 // Switch content
                 mImage1->SetIsVisible(false);
                 mImage2->SetIsVisible(true);
-                mText->SetText("E nao percebeu a nave quebrando");
+                if (mNextScene == GameScene::Level2) {
+                    mText->SetText("Ele nao pensou 2 vezes e ja roubou");
+                } else {
+                    mText->SetText("E nao percebeu a nave quebrando");
+                }
             }
             else
             {
@@ -120,7 +127,11 @@ void CutsceneScreen::Update(float deltaTime)
                 // Switch content
                 mImage2->SetIsVisible(false);
                 mImage3->SetIsVisible(true);
-                mText->SetText("Ele precisou ejetar e sua nave caiu, agora ele precisa encontrar a os destrocos para pedir resgate e escapar do planeta desconhecido");
+                if (mNextScene == GameScene::Level2) {
+                    mText->SetText("Ele chegou em uma cidade cheia de gente em um carro roubado, e melhor deixar ele pra tras");
+                } else {
+                    mText->SetText("Ele precisou ejetar e sua nave caiu, agora ele precisa encontrar a os destrocos para pedir resgate e escapar do planeta desconhecido");
+                }
             }
             else
             {
@@ -178,7 +189,11 @@ void CutsceneScreen::HandleKeyPress(int key)
             mFadeTimer = 0.0f;
             mImage1->SetIsVisible(false);
             mImage2->SetIsVisible(true);
-            mText->SetText("E nao percebeu a nave quebrando");
+            if (mNextScene == GameScene::Level2) {
+                mText->SetText("Ele nao pensou 2 vezes e ja roubou");
+            } else {
+                mText->SetText("E nao percebeu a nave quebrando");
+            }
             break;
 
         case CutsceneState::FadeIn2:
@@ -198,7 +213,11 @@ void CutsceneScreen::HandleKeyPress(int key)
             mFadeTimer = 0.0f;
             mImage2->SetIsVisible(false);
             mImage3->SetIsVisible(true);
-            mText->SetText("Ele precisou ejetar e sua nave caiu, agora ele precisa encontrar a os destrocos para pedir resgate e escapar do planeta desconhecido");
+            if (mNextScene == GameScene::Level2) {
+                mText->SetText("Ele chegou em uma cidade cheia de gente em um carro roubado, e melhor deixar ele pra tras");
+            } else {
+                mText->SetText("Ele precisou ejetar e sua nave caiu, agora ele precisa encontrar a os destrocos para pedir resgate e escapar do planeta desconhecido");
+            }
             break;
 
         case CutsceneState::FadeIn3:

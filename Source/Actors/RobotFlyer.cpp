@@ -147,7 +147,12 @@ void RobotFlyer::OnUpdate(float deltaTime)
     // =========================================================
 
     // EIXO X: Segue o Player (com o offset aleatório para não ficar grudado)
-    float targetX = playerPos.x + mCurrentOffset.x;
+    float targetX;
+    if (player->GetPosture() == PlayerPosture::Crouching) {
+        targetX = GetPosition().x;
+    } else {
+        targetX = playerPos.x + mCurrentOffset.x;
+    }
 
     // EIXO Y: Usa a Altura Inicial + pequena flutuação (IGNORA O PLAYER)
     // mCurrentOffset.y agora serve apenas para ele "bóiar" um pouco para cima e para baixo
@@ -230,7 +235,7 @@ void RobotFlyer::OnUpdate(float deltaTime)
     Vector2 diff = playerPos - myPos;
 
     // Só atira se estiver perto horizontalmente (não atira se estiver muito longe na tela)
-    if (abs(diff.x) < 500.0f) {
+    if (player->GetPosture() != PlayerPosture::Crouching && abs(diff.x) < 500.0f) {
         if (mShootCooldown <= 0.0f) {
             Shoot();
             mShootCooldown = 2.0f + (rand() % 100) / 100.0f;

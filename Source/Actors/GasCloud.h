@@ -1,5 +1,6 @@
 #pragma once
 #include "Actor.h"
+#include <vector>
 
 class GasCloud : public Actor
 {
@@ -15,4 +16,5 @@ private:
     Vector2 mDirection;
     float mLifeTime;
     float mSpeed;
+    std::vector<class Actor*> mHitActors;
 };

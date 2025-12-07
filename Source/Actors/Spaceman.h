@@ -36,6 +36,8 @@ public:
     ItemType GetHeadItem() const { return mHeadItem; }
     ItemType GetHandItem() const { return mHandItem; }
 
+    PlayerPosture GetPosture() const { return mPosture; }
+
 private:
     void ManageAnimations();
     void TryShoot();
