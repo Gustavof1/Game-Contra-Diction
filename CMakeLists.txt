@@ -14,6 +14,26 @@ find_package(OpenGL REQUIRED)
 
 find_package(GLEW QUIET)
 
+if (NOT TARGET GLEW::GLEW)
+
+    find_path(GLEW_INCLUDE_DIR REQUIRED
+            NAMES GL/glew.h
+            HINTS "C:/Arquivos de Programas/GLEW/include"
+    )
+
+    find_library(GLEW_LIBRARY REQUIRED
+            NAMES glew32
+            HINTS "C:/Arquivos de Programas/GLEW/lib/Release/x64"
+    )
+
+    add_library(GLEW::GLEW UNKNOWN IMPORTED)
+    set_target_properties(GLEW::GLEW PROPERTIES
+            IMPORTED_LOCATION "${GLEW_LIBRARY}"
+            INTERFACE_INCLUDE_DIRECTORIES "${GLEW_INCLUDE_DIR}"
+    )
+
+endif()
+
 add_executable(${PROJECT_NAME}
         Source/Renderer/Shader.cpp
         Source/Renderer/Shader.h

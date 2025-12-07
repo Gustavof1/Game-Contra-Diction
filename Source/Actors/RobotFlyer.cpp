@@ -219,6 +219,19 @@ void RobotFlyer::OnUpdate(float deltaTime)
 
     // Lerp suave towards adjusted target
     Vector2 smoothMove = myPos + (flockAdjustedTarget - myPos) * mSmoothFactor * deltaTime;
+
+    // Limit to screen bounds
+    Vector2 cameraPos = GetGame()->GetCameraPos();
+    float padding = 32.0f; // Keep it slightly inside
+
+    // Limit Left
+    if (smoothMove.x < cameraPos.x + padding) {
+        smoothMove.x = cameraPos.x + padding;
+    }
+    // Limit Top
+    if (smoothMove.y < cameraPos.y + padding) {
+        smoothMove.y = cameraPos.y + padding;
+    }
     
     SetPosition(smoothMove);
 
