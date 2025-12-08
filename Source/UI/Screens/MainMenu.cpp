@@ -40,11 +40,15 @@ MainMenu::MainMenu(class Game* game, const std::string& fontName)
                           "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/start_pressed.png");
 
     // 3.5 Botão Options
-    auto optionsBtn = AddButton("Options", [this]() {
+    // Posição: Esquerda
+     auto optionsBtn = AddButton("", [this]() {
         Close();
         new OptionsScreen(mGame, "../Assets/Fonts/ALS_Micro_Bold.ttf");
     }, Vector2(Game::WINDOW_WIDTH * 0.25f, Game::WINDOW_HEIGHT * 0.70f), 0.5f);
-    optionsBtn->SetTextColor(Vector3(1.0f, 1.0f, 1.0f)); // White text
+    
+    optionsBtn->SetTextures("../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Large/options_normal.png",
+                         "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Large/options_hover.png",
+                         "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Large/options_pressed.png");
 
     // 4. Botão Quit
     // Posição: Esquerda

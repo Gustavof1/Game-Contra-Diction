@@ -44,15 +44,15 @@ OptionsScreen::OptionsScreen(Game* game, const std::string& fontName)
     UpdateKnobPositions();
 
     // Back Button
-    auto backBtn = AddButton("Back", [this]() {
+    auto backBtn = AddButton("", [this]() {
         Close();
         new MainMenu(mGame, "../Assets/Fonts/ALS_Micro_Bold.ttf");
     }, Vector2(Game::WINDOW_WIDTH * 0.5f, Game::WINDOW_HEIGHT * 0.85f), 0.5f);
     
     // Use exit button textures for now as placeholder, or just text if textures not found
-    backBtn->SetTextures("../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/exit_normal.png",
-                         "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/exit_hover.png",
-                         "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/exit_pressed.png");
+    backBtn->SetTextures("../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/back_normal.png",
+                         "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/back_hover.png",
+                         "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/back_pressed.png");
 }
 
 OptionsScreen::~OptionsScreen()
