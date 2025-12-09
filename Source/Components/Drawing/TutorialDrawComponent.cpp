@@ -14,6 +14,9 @@ TutorialDrawComponent::TutorialDrawComponent(Actor* owner)
     , mShowInventory(true)
     , mShowRun(true)
     , mJumpKeyReleased(true)
+    , mPulseInventory(false)
+    , mPulseTimer(0.0f)
+    , mPulseDurationTimer(0.0f)
 {
     Renderer* renderer = owner->GetGame()->GetRenderer();
 
@@ -40,9 +43,10 @@ TutorialDrawComponent::TutorialDrawComponent(Actor* owner)
     mTexDoubleJump = mFont->RenderText("2x JUMP = Double Jump ", Vector3(1.0f, 1.0f, 1.0f), 20);
     mTexMove = mFont->RenderText("Move", Vector3(1.0f, 1.0f, 1.0f), 20);
     mTexCrouch = mFont->RenderText("Crouch", Vector3(1.0f, 1.0f, 1.0f), 20);
-    mTexShoot = mFont->RenderText("Shoot", Vector3(1.0f, 0.0f, 0.0f), 20); // Red for Shoot
+    mTexShoot = mFont->RenderText("Shoot (Equip Weapon)", Vector3(1.0f, 0.0f, 0.0f), 20); // Red for Shoot
     mTexDance = mFont->RenderText("Dance", Vector3(1.0f, 1.0f, 1.0f), 20);
     mTexInventory = mFont->RenderText("Inventory", Vector3(1.0f, 1.0f, 1.0f), 20);
+    mTexInventoryRed = mFont->RenderText("Inventory", Vector3(1.0f, 0.0f, 0.0f), 20);
     mTexRun = mFont->RenderText("Run", Vector3(1.0f, 1.0f, 1.0f), 20);
 }
 
@@ -61,7 +65,22 @@ TutorialDrawComponent::~TutorialDrawComponent()
     if (mTexShoot) delete mTexShoot;
     if (mTexDance) delete mTexDance;
     if (mTexInventory) delete mTexInventory;
+    if (mTexInventoryRed) delete mTexInventoryRed;
     if (mTexRun) delete mTexRun;
+}
+
+void TutorialDrawComponent::Update(float deltaTime)
+{
+    if (mPulseInventory)
+    {
+        mPulseTimer += deltaTime;
+        mPulseDurationTimer += deltaTime;
+
+        if (mPulseDurationTimer >= 2.0f)
+        {
+            mPulseInventory = false;
+        }
+    }
 }
 
 void TutorialDrawComponent::ProcessInput(const uint8_t* keyState)
@@ -113,7 +132,26 @@ void TutorialDrawComponent::ProcessInput(const uint8_t* keyState)
     Uint32 buttons = SDL_GetMouseState(&x, &y);
     if (buttons & SDL_BUTTON(SDL_BUTTON_LEFT))
     {
-        mShowShoot = false;
+        if (spaceman)
+        {
+            if (spaceman->GetHandItem() != ItemType::None)
+            {
+                mShowShoot = false;
+            }
+            else
+            {
+                // Tried to shoot without weapon: Show inventory tutorial and pulse it
+                mShowInventory = true;
+                mPulseInventory = true;
+                mPulseDurationTimer = 0.0f; // Reset duration if they keep clicking
+                mPulseTimer = 0.0f; // Reset pulse phase
+            }
+        }
+        else
+        {
+            // Fallback if not spaceman (shouldn't happen in this context but safe to keep old behavior or just ignore)
+             mShowShoot = false;
+        }
     }
 }
 
@@ -160,10 +198,11 @@ void TutorialDrawComponent::Draw(Renderer* renderer)
         }
         currentX += 70.0f;
 
-        if (mTexInventory)
+        Texture* texToDraw = mPulseInventory ? mTexInventoryRed : mTexInventory;
+        if (texToDraw)
         {
-            Vector2 textSize(mTexInventory->GetWidth() * textScale, mTexInventory->GetHeight() * textScale);
-            renderer->DrawTexture(Vector2(currentX, currentY), textSize, 0.0f, Vector3::One, mTexInventory, Vector4::UnitRect, cameraPos);
+            Vector2 textSize(texToDraw->GetWidth() * textScale, texToDraw->GetHeight() * textScale);
+            renderer->DrawTexture(Vector2(currentX, currentY), textSize, 0.0f, Vector3::One, texToDraw, Vector4::UnitRect, cameraPos);
         }
         currentY += rowSpacing;
     }
@@ -268,13 +307,13 @@ void TutorialDrawComponent::Draw(Renderer* renderer)
     // Row 5: [Mouse] "Shoot"
     if (mShowShoot)
     {
-        float currentX = startX - 20.0f;
+        float currentX = startX - 50.0f;
         if (mTexMouseLeft)
         {
             // Tint mouse red as requested "left button highlighted"
             renderer->DrawTexture(Vector2(currentX, currentY), mouseSize, 0.0f, Vector3(1.0f, 0.5f, 0.5f), mTexMouseLeft, Vector4::UnitRect, cameraPos);
         }
-        currentX += 60.0f;
+        currentX += 120.0f;
 
         if (mTexShoot)
         {

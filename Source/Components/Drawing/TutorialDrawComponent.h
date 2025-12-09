@@ -10,6 +10,7 @@ public:
     ~TutorialDrawComponent();
 
     void Draw(class Renderer* renderer) override;
+    void Update(float deltaTime) override;
     void ProcessInput(const uint8_t* keyState) override;
 
 private:
@@ -33,6 +34,7 @@ private:
     Texture* mTexShoot;
     Texture* mTexDance;
     Texture* mTexInventory;
+    Texture* mTexInventoryRed;
     Texture* mTexRun;
     Texture* mTexDoubleJump;
 
@@ -48,4 +50,8 @@ private:
     bool mShowRun;
     
     bool mJumpKeyReleased;
+
+    bool mPulseInventory;
+    float mPulseTimer;
+    float mPulseDurationTimer;
 };
