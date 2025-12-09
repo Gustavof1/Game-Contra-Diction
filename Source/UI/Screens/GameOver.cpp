@@ -28,6 +28,10 @@ GameOver::GameOver(class Game* game, const std::string& fontName, GameScene leve
     
     bg->SetSize(Vector2(static_cast<float>(Game::WINDOW_WIDTH), static_cast<float>(Game::WINDOW_HEIGHT)));
 
+    // Dark overlay to make foreground elements pop
+    auto darkOverlay = AddRect(screenCenter, Vector2(static_cast<float>(Game::WINDOW_WIDTH), static_cast<float>(Game::WINDOW_HEIGHT)), 1.0f, 0.0f, 100);
+    darkOverlay->SetColor(Vector4(0.0f, 0.0f, 0.0f, 0.7f));
+
     // Killer Info (Left Side)
     const auto& info = game->GetGameOverInfo();
     if (!info.killerName.empty())
