@@ -24,13 +24,13 @@ CutsceneScreen::CutsceneScreen(Game* game, GameScene nextScene)
         mImage1 = AddImage("../Assets/Cutscenes/transition 1 to 2/1.PNG", topCenter, 0.5f);
         mImage2 = AddImage("../Assets/Cutscenes/transition 1 to 2/2.PNG", topCenter, 0.5f);
         mImage3 = AddImage("../Assets/Cutscenes/transition 1 to 2/3.PNG", topCenter, 0.5f);
-        text1 = "Ele encontrou um carro, deve pertencer a familia que ele encontrou andando na floresta";
+        text1 = "Ragnar encontrou um carro, deve pertencer a familia que encontrou andando na floresta";
     } else {
         // Default / Intro
         mImage1 = AddImage("../Assets/Cutscenes/start/frame1.PNG", topCenter, 0.5f);
         mImage2 = AddImage("../Assets/Cutscenes/start/frame2.PNG", topCenter, 0.5f);
         mImage3 = AddImage("../Assets/Cutscenes/start/frame3.PNG", topCenter, 0.5f);
-        text1 = "Ele estava distraido no jogo do tigrinho";
+        text1 = "Ragnar estava distraido no jogo do tigrinho";
     }
     
     mImage2->SetIsVisible(false);
@@ -128,9 +128,9 @@ void CutsceneScreen::Update(float deltaTime)
                 mImage2->SetIsVisible(false);
                 mImage3->SetIsVisible(true);
                 if (mNextScene == GameScene::Level2) {
-                    mText->SetText("Ele chegou em uma cidade cheia de gente em um carro roubado, e melhor deixar ele pra tras");
+                    mText->SetText("Ragnar chegou em uma cidade cheia de gente em um carro roubado, e melhor deixar ele pra tras");
                 } else {
-                    mText->SetText("Ele precisou ejetar e sua nave caiu, agora ele precisa encontrar a os destrocos para pedir resgate e escapar do planeta desconhecido");
+                    mText->SetText("Ele precisou ejetar e sua nave caiu! Agora Ragnar precisa encontrar os destrocos para pedir resgate e escapar do planeta desconhecido");
                 }
             }
             else
@@ -214,9 +214,9 @@ void CutsceneScreen::HandleKeyPress(int key)
             mImage2->SetIsVisible(false);
             mImage3->SetIsVisible(true);
             if (mNextScene == GameScene::Level2) {
-                mText->SetText("Ele chegou em uma cidade cheia de gente em um carro roubado, e melhor deixar ele pra tras");
+                mText->SetText("Ragnar chegou em uma cidade cheia de gente em um carro roubado, e melhor deixar ele pra tras");
             } else {
-                mText->SetText("Ele precisou ejetar e sua nave caiu, agora ele precisa encontrar a os destrocos para pedir resgate e escapar do planeta desconhecido");
+                mText->SetText("Ele precisou ejetar e sua nave caiu! Agora Ragnar precisa encontrar os destrocos para pedir resgate e escapar do planeta desconhecido");
             }
             break;
 
