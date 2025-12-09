@@ -421,7 +421,7 @@ void Game::PerformLoad(GameScene scene)
             PlayMusic("GrassFields.ogg");
             break;
         case GameScene::GameOver:
-            PlayMusic("menu.ogg");
+            PlayMusic("Gradius III - Continue (SNES OST) SunoRemix.mp3");
             new GameOver(this, "../Assets/Fonts/ALS_Micro_Bold.ttf", mPreviousScene);
             break;
     }
