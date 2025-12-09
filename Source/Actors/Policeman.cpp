@@ -95,6 +95,7 @@ void Policeman::OnUpdate(float deltaTime)
             mIsAggressive = true;
             mAIState = AIState::Aggressive;
             GetGame()->GetAudio()->PlaySound("Confused.wav");
+            GetGame()->AddFloatingText(mPosition, "Parado!", 2.0f, this);
         } else {
             UpdateIdle(deltaTime);
         }

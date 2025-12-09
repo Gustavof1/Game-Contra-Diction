@@ -1,5 +1,5 @@
 #include "Soldier.h"
-#include "PolicemanBullet.h"
+#include "SoldierBullet.h"
 #include "Spaceman.h"
 #include "../Game.h"
 #include "../Components/Drawing/AnimatorComponent.h"
@@ -79,6 +79,7 @@ void Soldier::OnUpdate(float deltaTime)
         if (dist < 400.0f) {
             mState = State::Attacking;
             GetGame()->GetAudio()->PlaySound("Confused.wav");
+            GetGame()->AddFloatingText(mPosition, "Alien encontrado, exterminar", 2.0f, this);
             mShotsFired = 0;
             mCurrentAnimTime = 0.0f;
             mShotTimer = 0.0f;
@@ -122,7 +123,7 @@ void Soldier::OnUpdate(float deltaTime)
 void Soldier::Shoot(const Vector2& direction)
 {
     GetGame()->GetAudio()->PlaySound("Continuousshooting.wav");
-    auto* bullet = new PolicemanBullet(GetGame(), direction, this);
+    auto* bullet = new SoldierBullet(GetGame(), direction, this);
     bullet->SetPosition(mPosition + direction * 40.0f);
 }
 

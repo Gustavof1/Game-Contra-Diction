@@ -66,7 +66,7 @@ void FinalFlower::OnUpdate(float deltaTime)
                     auto* col = GetComponent<AABBColliderComponent>();
                     if (col) col->SetEnabled(false);
 
-                    GetGame()->AddFloatingText(GetPosition(), "Gostei de você.", 3.0f);
+                    GetGame()->AddFloatingText(GetPosition(), "Gostei de voce.", 3.0f, this);
                 }
             }
         } else if (mPlayerSeen && dist > 400.0f && !mIsDancing) {

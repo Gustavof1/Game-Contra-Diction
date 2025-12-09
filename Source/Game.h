@@ -51,6 +51,7 @@ struct FloatingText {
     float duration;
     float timer;
     class Texture* texture;
+    class Actor* owner = nullptr;
 };
 
 class Spaceman;
@@ -133,7 +134,7 @@ public:
 
     void BuildLevelFromJSON(const std::string& fileName);
 
-    void AddFloatingText(const Vector2& pos, const std::string& text, float duration);
+    void AddFloatingText(const Vector2& pos, const std::string& text, float duration, class Actor* owner = nullptr);
 
     void OnNPCKilled(class Actor* actor);
 

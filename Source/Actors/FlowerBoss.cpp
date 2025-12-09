@@ -64,9 +64,9 @@ FlowerBoss::FlowerBoss(Game* game, const std::string& reason)
 
     // Text
     if (reason == "kill") {
-        GetGame()->AddFloatingText(GetPosition(), "Você não devia ter feito isso, agora irá conhecer a minha ira", 4.0f);
+        GetGame()->AddFloatingText(GetPosition(), "Voce nao devia ter feito isso, agora ira conhecer a minha forca", 4.0f, this);
     } else if (reason == "ignore") {
-        GetGame()->AddFloatingText(GetPosition(), "Como ousa ignorar uma flor tão bonita como eu?", 4.0f);
+        GetGame()->AddFloatingText(GetPosition(), "Como ousa ignorar uma flor tao bonita como eu?", 4.0f, this);
     }
 
     ChangeState(0); // Start growing

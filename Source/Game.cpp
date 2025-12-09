@@ -596,6 +596,9 @@ void Game::UpdateGame(float deltaTime)
             delete it->texture;
             it = mFloatingTexts.erase(it);
         } else {
+            if (it->owner) {
+                it->pos = it->owner->GetPosition();
+            }
             ++it;
         }
     }
@@ -709,6 +712,13 @@ void Game::AddActor(Actor* actor)
 
 void Game::RemoveActor(Actor* actor)
 {
+    // Clear owner from floating texts
+    for (auto& ft : mFloatingTexts) {
+        if (ft.owner == actor) {
+            ft.owner = nullptr;
+        }
+    }
+
     auto iter = std::find(mPendingActors.begin(), mPendingActors.end(), actor);
     if (iter != mPendingActors.end())
     {
@@ -831,6 +841,10 @@ void Game::GenerateOutput()
         Vector2 drawPos = ft.pos;
         drawPos.y -= 80.0f; // Offset up
         
+        // Draw background box for contrast
+        Vector2 boxSize = size + Vector2(10.0f, 10.0f); // Padding
+        mRenderer->DrawRect(drawPos, boxSize, 0.0f, Vector3(0.0f, 0.0f, 0.0f), mCameraPos, RendererMode::TRIANGLES, 0.5f);
+
         mRenderer->DrawTexture(drawPos, size, 0.0f, Vector3::One, ft.texture, Vector4::UnitRect, mCameraPos);
     }
     
@@ -862,7 +876,7 @@ void Game::GenerateOutput()
     mRenderer->Present();
 }
 
-void Game::AddFloatingText(const Vector2& pos, const std::string& text, float duration)
+void Game::AddFloatingText(const Vector2& pos, const std::string& text, float duration, class Actor* owner)
 {
     Font* font = mRenderer->GetFont("../Assets/Fonts/ALS_Micro_Bold.ttf");
     if (font) {
@@ -874,6 +888,7 @@ void Game::AddFloatingText(const Vector2& pos, const std::string& text, float du
             ft.duration = duration;
             ft.timer = 0.0f;
             ft.texture = tex;
+            ft.owner = owner;
             mFloatingTexts.push_back(ft);
         }
     }

@@ -128,6 +128,8 @@ add_executable(${PROJECT_NAME}
         Source/Actors/Policeman.h
         Source/Actors/PolicemanBullet.cpp
         Source/Actors/PolicemanBullet.h
+        Source/Actors/SoldierBullet.cpp
+        Source/Actors/SoldierBullet.h
         Source/Actors/AlienKid.cpp
         Source/Actors/AlienKid.h
         Source/Actors/AlienMan.cpp

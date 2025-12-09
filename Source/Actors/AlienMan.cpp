@@ -94,6 +94,7 @@ void AlienMan::OnUpdate(float deltaTime)
     } else if (dist < mDetectionRadius) {
         if (!mHasPlayedActiveSound) {
             GetGame()->GetAudio()->PlaySound("Confused.wav");
+            GetGame()->AddFloatingText(mPosition, "Um monstro!!", 2.0f, this);
             mHasPlayedActiveSound = true;
         }
         if (dist < mMaintainDistance) {

@@ -32,8 +32,8 @@ GameOver::GameOver(class Game* game, const std::string& fontName, GameScene leve
     const auto& info = game->GetGameOverInfo();
     if (!info.killerName.empty())
     {
-        auto text = AddText("Voce foi derrotado por:", Vector2(leftColumnX, screenCenter.y - 100.0f), 1.0f);
-        text->SetTextColor(Vector3(0.0f, 0.0f, 0.0f));
+        auto text = AddText("Voce foi derrotado por:", Vector2(leftColumnX, screenCenter.y - 100.0f), 0.8f);
+        text->SetTextColor(Vector3(1.0f, 0.0f, 0.0f));
 
         if (info.isBlock)
         {
