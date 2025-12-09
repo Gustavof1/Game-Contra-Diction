@@ -22,31 +22,43 @@ StageSelect::StageSelect(Game* game, const std::string& fontName)
     auto stage1Btn = AddButton("STAGE 1", [this]() {
         Close();
         new CutsceneScreen(mGame, GameScene::Level1);
-    }, Vector2(Game::WINDOW_WIDTH / 2.0f, Game::WINDOW_HEIGHT * 0.30f), 0.8f);
+    }, Vector2(Game::WINDOW_WIDTH / 2.0f, Game::WINDOW_HEIGHT * 0.55f), 0.8f);
+    stage1Btn->SetTextColor(Vector3(1.0f, 1.0f, 1.0f));
+    stage1Btn->SetBackgroundColor(Vector4(1.0f, 0.0f, 0.8f, 1.0f));
     
     // Stage 2 Button
     auto stage2Btn = AddButton("STAGE 2", [this]() {
         Close();
         mGame->SetScene(GameScene::Level2);
-    }, Vector2(Game::WINDOW_WIDTH / 2.0f, Game::WINDOW_HEIGHT * 0.45f), 0.8f);
+    }, Vector2(Game::WINDOW_WIDTH / 2.0f, Game::WINDOW_HEIGHT * 0.63f), 0.8f);
+    stage2Btn->SetTextColor(Vector3(1.0f, 1.0f, 1.0f));
+    stage2Btn->SetBackgroundColor(Vector4(1.0f, 0.0f, 0.8f, 1.0f));
 
     // Stage 3 Button
     auto stage3Btn = AddButton("STAGE 3", [this]() {
         Close();
         mGame->SetScene(GameScene::Level3);
-    }, Vector2(Game::WINDOW_WIDTH / 2.0f, Game::WINDOW_HEIGHT * 0.60f), 0.8f);
+    }, Vector2(Game::WINDOW_WIDTH / 2.0f, Game::WINDOW_HEIGHT * 0.71f), 0.8f);
+    stage3Btn->SetTextColor(Vector3(1.0f, 1.0f, 1.0f));
+    stage3Btn->SetBackgroundColor(Vector4(1.0f, 0.0f, 0.8f, 1.0f));
 
     // Stage 4 Button
     auto stage4Btn = AddButton("STAGE 4 (TEST)", [this]() {
         Close();
         mGame->SetScene(GameScene::TestLevel);
-    }, Vector2(Game::WINDOW_WIDTH / 2.0f, Game::WINDOW_HEIGHT * 0.75f), 0.8f);
+    }, Vector2(Game::WINDOW_WIDTH / 2.0f, Game::WINDOW_HEIGHT * 0.79f), 0.8f);
+    stage4Btn->SetTextColor(Vector3(1.0f, 1.0f, 1.0f));
+    stage4Btn->SetBackgroundColor(Vector4(1.0f, 0.0f, 0.8f, 1.0f));
 
     // Back Button
-    auto backBtn = AddButton("BACK", [this]() {
+    auto backBtn = AddButton("", [this]() {
         Close();
         new MainMenu(mGame, "../Assets/Fonts/ALS_Micro_Bold.ttf");
-    }, Vector2(Game::WINDOW_WIDTH / 2.0f, Game::WINDOW_HEIGHT * 0.90f), 0.8f);
+    }, Vector2(Game::WINDOW_WIDTH / 2.0f, Game::WINDOW_HEIGHT * 0.87f), 0.5f);
+    
+    backBtn->SetTextures("../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/back_normal.png",
+                         "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/back_hover.png",
+                         "../Assets/Sprites/MenuButtons-ContraDiction/Buttons/Medium/back_pressed.png");
 }
 
 StageSelect::~StageSelect()

@@ -139,6 +139,11 @@ void UIButton::Draw(class Shader* shader)
 
         // 3. DESENHAR O TEXTO
         // Chama a classe pai (UIText) para desenhar as letras por cima do quadrado
+        
+        // Ajuste para centralizar o texto verticalmente (compensa descenders da fonte)
+        float oldY = mOffset.y;
+        mOffset.y += 7.0f;
         UIText::Draw(shader);
+        mOffset.y = oldY;
     }
 }

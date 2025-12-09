@@ -85,7 +85,7 @@ void MainMenu::Update(float deltaTime)
         if (mFadeTimer >= FADE_DURATION)
         {
             Close();
-            new StageSelect(mGame, "../Assets/Fonts/ALS_Micro_Bold.ttf");
+            new CutsceneScreen(mGame, GameScene::Level1);
         }
     }
 }
@@ -93,6 +93,13 @@ void MainMenu::Update(float deltaTime)
 void MainMenu::HandleKeyPress(int key)
 {
     if (mIsFadingOut) return;
+
+    if (key == SDLK_F5)
+    {
+        Close();
+        new StageSelect(mGame, "../Assets/Fonts/ALS_Micro_Bold.ttf");
+        return;
+    }
 
     // Cheat Code Logic
     if (key == mCheatCode[mCheatCodeIndex])
