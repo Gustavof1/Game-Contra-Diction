@@ -37,7 +37,11 @@ GameOver::GameOver(class Game* game, const std::string& fontName, GameScene leve
 
         if (info.isBlock)
         {
-            mKillerImage = AddImage(info.killerSpritePath, Vector2(leftColumnX, screenCenter.y), 2.0f, 0.0f, 150);
+            float scale = 2.0f;
+            if (info.killerName == "Poison Mushroom") {
+                scale = 1.0f;
+            }
+            mKillerImage = AddImage(info.killerSpritePath, Vector2(leftColumnX, screenCenter.y), scale, 0.0f, 150);
             if (info.useSrcRect)
             {
                 mKillerImage->SetTextureRect(info.srcX, info.srcY, info.srcW, info.srcH);

@@ -22,6 +22,9 @@ Goomba::Goomba(Game* game, float forwardSpeed, float deathTime)
     ac->AddAnimation("walk", {1, 2});
     ac->SetAnimation("walk");
     ac->SetAnimFPS(10.0f);
+    ac->SetColor(Vector3(1.0f, 0.5f, 0.5f)); // Highlight
+
+    SetScale(Vector2(1.2f, 1.2f)); // Bigger
 
     // Create rigid body component
     new RigidBodyComponent(this);

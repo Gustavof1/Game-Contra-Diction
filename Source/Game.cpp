@@ -1202,6 +1202,48 @@ void Game::SetGameOverInfo(Actor* killer)
     mGameOverInfo = GameOverInfo(); // Reset
     if (!killer) return;
 
+    // Check if it's a Hazard (Trap)
+    if (auto* hazard = dynamic_cast<Hazard*>(killer))
+    {
+        // Try to use the hazard's own sprite first (Spikes/Mushroom)
+        auto* sprite = hazard->GetComponent<SpriteComponent>();
+        if (sprite && sprite->GetTexture()) {
+             mGameOverInfo.isBlock = true; // Treat as simple sprite
+             
+             std::string path = sprite->GetTexture()->GetFileName();
+             if (path.find("spikes") != std::string::npos) {
+                 mGameOverInfo.killerName = "Spikes";
+             } else {
+                 mGameOverInfo.killerName = "Poison Mushroom";
+             }
+             
+             mGameOverInfo.killerSpritePath = path;
+             mGameOverInfo.useSrcRect = false;
+             return;
+        }
+
+        // Fallback: Try to find a block underneath
+        Vector2 killerPos = killer->GetPosition();
+        for (auto* drawable : mDrawables) {
+            auto* b = dynamic_cast<Block*>(drawable->GetOwner());
+            if (b) {
+                 // Check distance (assuming 32x32 blocks)
+                 Vector2 diff = b->GetPosition() - killerPos;
+                 if (diff.LengthSq() < 1600.0f) { // 40x40 distance squared
+                     mGameOverInfo.isBlock = true;
+                     mGameOverInfo.killerName = "Trap";
+                     mGameOverInfo.killerSpritePath = b->GetTexturePath();
+                     mGameOverInfo.useSrcRect = true;
+                     mGameOverInfo.srcX = b->GetOriginalSrcX();
+                     mGameOverInfo.srcY = b->GetOriginalSrcY();
+                     mGameOverInfo.srcW = b->GetSize();
+                     mGameOverInfo.srcH = b->GetSize();
+                     return;
+                 }
+            }
+        }
+    }
+
     // Check if it's an enemy (has AnimatorComponent usually)
     auto* anim = killer->GetComponent<AnimatorComponent>();
     if (anim)
@@ -1237,30 +1279,6 @@ void Game::SetGameOverInfo(Actor* killer)
         mGameOverInfo.srcW = block->GetSize();
         mGameOverInfo.srcH = block->GetSize();
         return;
-    }
-
-    // Check if it's a Hazard (Trap) - Try to find a block underneath
-    if (dynamic_cast<Hazard*>(killer))
-    {
-        Vector2 killerPos = killer->GetPosition();
-        for (auto* drawable : mDrawables) {
-            auto* b = dynamic_cast<Block*>(drawable->GetOwner());
-            if (b) {
-                 // Check distance (assuming 32x32 blocks)
-                 Vector2 diff = b->GetPosition() - killerPos;
-                 if (diff.LengthSq() < 1600.0f) { // 40x40 distance squared
-                     mGameOverInfo.isBlock = true;
-                     mGameOverInfo.killerName = "Trap";
-                     mGameOverInfo.killerSpritePath = b->GetTexturePath();
-                     mGameOverInfo.useSrcRect = true;
-                     mGameOverInfo.srcX = b->GetOriginalSrcX();
-                     mGameOverInfo.srcY = b->GetOriginalSrcY();
-                     mGameOverInfo.srcW = b->GetSize();
-                     mGameOverInfo.srcH = b->GetSize();
-                     return;
-                 }
-            }
-        }
     }
 }
 
