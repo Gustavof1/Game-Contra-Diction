@@ -7,6 +7,8 @@
 #include "GasCloud.h"
 #include "Block.h"
 #include "Goomba.h"
+#include "CactusPillar.h"
+#include "CactusProjectile.h"
 #include "Mushroom.h"
 #include "Coin.h"
 #include "../Game.h"
@@ -392,7 +394,7 @@ void Spaceman::PerformJump()
     }
     else
     {
-        GetGame()->GetAudio()->PlaySound("JumpSuper.wav");
+        GetGame()->GetAudio()->PlaySound("JumpContradiction.wav");
         velocity.y = mJumpImpulse * 0.75f; 
     }
 
@@ -846,20 +848,36 @@ void Spaceman::OnVerticalCollision(const float minOverlap, AABBColliderComponent
 
         if (other->GetLayer() == ColliderLayer::Enemy)
         {
-            if (auto* goomba = dynamic_cast<Goomba*>(other->GetOwner()))
+            bool isCactus = false;
+            if (dynamic_cast<CactusPillar*>(other->GetOwner()) || dynamic_cast<CactusProjectile*>(other->GetOwner()))
             {
-                GetGame()->GetAudio()->PlaySound("Stomp.wav");
-                goomba->setStomped(true);
+                isCactus = true;
             }
-            other->GetOwner()->Kill();
 
-            if (mRigidBodyComponent)
+            if (isCactus)
             {
-                auto vel = mRigidBodyComponent->GetVelocity();
-                vel.y = mJumpImpulse * 0.5f;
-                mRigidBodyComponent->SetVelocity(vel);
-                SetOffGround();
-                mJumpCount = 1;
+                GetGame()->SetGameOverInfo(other->GetOwner());
+                Kill();
+            }
+            else
+            {
+                GetGame()->GetAudio()->PlaySound("Bump.wav");
+                
+                if (auto* goomba = dynamic_cast<Goomba*>(other->GetOwner()))
+                {
+                    goomba->setStomped(true);
+                }
+
+                other->GetOwner()->Kill();
+
+                if (mRigidBodyComponent)
+                {
+                    auto vel = mRigidBodyComponent->GetVelocity();
+                    vel.y = mJumpImpulse * 0.5f;
+                    mRigidBodyComponent->SetVelocity(vel);
+                    SetOffGround();
+                    mJumpCount = 1;
+                }
             }
         }
     }

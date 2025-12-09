@@ -18,6 +18,7 @@ private:
     float mStateTimer;
     float mAttackCooldown;
     bool mHasAttacked;
+    int mAttackCount;
     
     class AnimatorComponent* mAnim;
     class RigidBodyComponent* mRigidBody;

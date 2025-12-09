@@ -142,6 +142,8 @@ public:
 
     GameScene GetCurrentScene() const { return mCurrentScene; }
 
+    void PlayMusic(const std::string& musicName);
+
 private:
     void ProcessInput();
     void UpdateGame(float deltaTime);
@@ -149,8 +151,6 @@ private:
     void GenerateOutput();
 
     void UpdateUI(float deltaTime);
-
-    void PlayMusic(const std::string& musicName);
 
     // Level loading
     int **LoadLevel(const std::string& fileName, int width, int height);

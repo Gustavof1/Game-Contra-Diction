@@ -8,6 +8,9 @@
 #include "EnemyLaser.h"
 #include "Vine.h"
 #include "VineWarning.h"
+#include "CactusPillar.h"
+#include "CactusProjectile.h"
+#include "../Components/HealthBarComponent.h"
 #include "../Random.h"
 
 FlowerBoss::FlowerBoss(Game* game, const std::string& reason)
@@ -18,6 +21,7 @@ FlowerBoss::FlowerBoss(Game* game, const std::string& reason)
     , mStateTimer(0.0f)
     , mAttackCooldown(0.0f)
     , mHasAttacked(false)
+    , mAttackCount(0)
 {
     // Base: Walking
     mAnim = new AnimatorComponent(this, 
@@ -62,6 +66,9 @@ FlowerBoss::FlowerBoss(Game* game, const std::string& reason)
     mRigidBody->SetApplyGravity(true);
     mCollider = new AABBColliderComponent(this, 20, 20, 80, 100, ColliderLayer::Enemy);
 
+    // Health Bar
+    new HealthBarComponent(this, mHP, &mHP);
+
     // Text
     if (reason == "kill") {
         GetGame()->AddFloatingText(GetPosition(), "Voce nao devia ter feito isso, agora ira conhecer a minha forca", 4.0f, this);
@@ -97,35 +104,38 @@ void FlowerBoss::OnUpdate(float deltaTime)
         case 1: // Idle/Decide
             mRigidBody->SetVelocity(Vector2::Zero);
             if (mStateTimer > 0.5f) { // Wait a bit before deciding
-                float rand = Random::GetFloat();
-                if (dist < 100.0f) {
-                    // Close range: Punch (70%), Fly (10%), Crouch (20%)
-                    if (rand < 0.7f) ChangeState(2);
-                    else if (rand < 0.8f) ChangeState(3);
-                    else ChangeState(4);
+                if (mAttackCount == 0) {
+                    ChangeState(3); // Force Fly/Projectile
+                } else if (mAttackCount == 1) {
+                    ChangeState(4); // Force Crouch/Pillar
                 } else {
-                    // Far range: Walk (40%), Fly (30%), Crouch (30%)
-                    if (rand < 0.4f) ChangeState(5); // Walk
-                    else if (rand < 0.7f) ChangeState(3); // Fly
-                    else ChangeState(4); // Crouch
+                    float rand = Random::GetFloat();
+                    // Randomly choose between Fly (Projectile) and Crouch (Pillar)
+                    // Maybe keep some melee if close?
+                    // User said: "then he chooses between throwing or cactus from the ground randomly"
+                    // So let's prioritize those.
+                    if (rand < 0.5f) ChangeState(3);
+                    else ChangeState(4);
                 }
             }
             break;
-        case 2: // Attack (Punch)
+        case 2: // Attack (Punch) - Unused now based on request, but kept for logic consistency if needed
             if (mStateTimer > 0.5f) {
                 ChangeState(1);
             }
             break;
-        case 3: // Fly
+        case 3: // Fly (Projectile Attack)
             mRigidBody->SetVelocity(Vector2(dir * 120.0f, -50.0f));
             
             if (mAttackCooldown <= 0.0f) {
                  mAttackCooldown = 1.5f;
-                 auto* bullet = new EnemyLaser(GetGame(), this);
+                 auto* bullet = new CactusProjectile(GetGame(), this);
                  bullet->SetPosition(GetPosition());
                  Vector2 vel = diff;
                  vel.Normalize();
-                 bullet->SetVelocity(vel * 400.0f);
+                 bullet->GetRigidBody()->SetVelocity(vel * 600.0f); // Faster (was 200)
+                 
+                 if (mAttackCount == 0) mAttackCount++; // Increment only on first forced attack
             }
 
             // Fly for a bit then land
@@ -133,23 +143,46 @@ void FlowerBoss::OnUpdate(float deltaTime)
                 ChangeState(1);
             }
             break;
-        case 4: // Crouch Attack
+        case 4: // Crouch Attack (Pillar)
             mRigidBody->SetVelocity(Vector2::Zero);
             if (mStateTimer > 0.1f && !mHasAttacked) {
                 mHasAttacked = true;
-                // Spawn Warnings
+                if (mAttackCount == 1) mAttackCount++; // Increment on second forced attack
+
+                // Spawn Cactus Pillars
                 if (player) {
-                    for (int i = 0; i < 3; i++) {
-                        auto* warn = new VineWarning(GetGame());
-                        Vector2 spawnPos = player->GetPosition();
-                        spawnPos.x += (i - 1) * 40.0f; 
-                        spawnPos.y += 64.0f; 
-                        warn->SetPosition(spawnPos);
+                    // Define area around player
+                    float startX = player->GetPosition().x - 300.0f;
+                    float endX = player->GetPosition().x + 300.0f;
+                    // Use Player Y + 45 (approx half height) as ground level
+                    float groundY = player->GetPosition().y + 45.0f; 
+
+                    // Create safe spots
+                    std::vector<float> safeSpots;
+                    int numSafeSpots = Random::GetIntRange(1, 3);
+                    for(int i=0; i<numSafeSpots; i++) {
+                        safeSpots.push_back(Random::GetFloatRange(startX, endX));
+                    }
+
+                    // Spawn pillars in dangerous spots
+                    for (float x = startX; x <= endX; x += 120.0f) { // Increased spacing
+                        bool isSafe = false;
+                        for (float safeX : safeSpots) {
+                            if (abs(x - safeX) < 60.0f) { // Increased safe zone radius slightly
+                                isSafe = true;
+                                break;
+                            }
+                        }
+
+                        if (!isSafe) {
+                            // Random chance to spawn pillar
+                            if (Random::GetFloat() > 0.3f) {
+                                new CactusPillar(GetGame(), Vector2(x, groundY));
+                            }
+                        }
                     }
                 }
             }
-            // Spawn Vines after 1s
-            // Handled by VineWarning death
             
             if (mStateTimer > 2.0f) {
                 ChangeState(1);
@@ -176,11 +209,11 @@ void FlowerBoss::OnUpdate(float deltaTime)
              if (mAttackCooldown <= 0.0f) {
                  mAttackCooldown = 2.0f;
                  // Shoot
-                 auto* bullet = new EnemyLaser(GetGame(), this);
+                 auto* bullet = new CactusProjectile(GetGame(), this);
                  bullet->SetPosition(GetPosition());
                  Vector2 vel = diff;
                  vel.Normalize();
-                 bullet->SetVelocity(vel * 400.0f);
+                 bullet->GetRigidBody()->SetVelocity(vel * 400.0f);
              }
         }
     }

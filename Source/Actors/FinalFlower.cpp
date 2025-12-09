@@ -107,6 +107,7 @@ void FinalFlower::Kill()
 
 void FinalFlower::SpawnBoss(const std::string& reason)
 {
+    GetGame()->PlayMusic("Contra(NES)BossTheme(RemixSuno).mp3");
     auto* boss = new FlowerBoss(GetGame(), reason);
     boss->SetPosition(GetPosition());
 }

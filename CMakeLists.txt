@@ -166,6 +166,12 @@ add_executable(${PROJECT_NAME}
         Source/Actors/LevelEndActor.h
         Source/Actors/EndPhaseTrigger.cpp
         Source/Actors/EndPhaseTrigger.h
+        Source/Actors/CactusPillar.cpp
+        Source/Actors/CactusPillar.h
+        Source/Actors/CactusProjectile.cpp
+        Source/Actors/CactusProjectile.h
+        Source/Components/HealthBarComponent.cpp
+        Source/Components/HealthBarComponent.h
 )
 
 target_link_libraries(${PROJECT_NAME} PRIVATE
