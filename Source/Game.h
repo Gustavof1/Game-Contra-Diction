@@ -137,6 +137,8 @@ public:
 
     void OnNPCKilled(class Actor* actor);
 
+    void SetLevelComplete(class Actor* endActor);
+
     GameScene GetCurrentScene() const { return mCurrentScene; }
 
 private:

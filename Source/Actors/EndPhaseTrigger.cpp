@@ -36,12 +36,8 @@ EndPhaseTrigger::EndPhaseTrigger(Game* game, float w, float h)
             auto* endSeq = new LevelEndActor(GetGame(), texPath); // Use a imagem certa
             endSeq->SetPosition(GetPosition());
 
-            // 2. Pausar ou Esconder o Player
-            auto* player = GetGame()->GetPlayer();
-            if (player) {
-                player->SetState(ActorState::Paused); // Para de mover
-                // Opcional: player->SetVisible(false); // Se ele "entrou" na nave
-            }
+            // 2. Pausar TUDO (Inimigos, Projéteis, Player) exceto a animação final
+            GetGame()->SetLevelComplete(endSeq);
 
             // 3. Destruir este gatilho para não ativar de novo
             SetState(ActorState::Destroy);

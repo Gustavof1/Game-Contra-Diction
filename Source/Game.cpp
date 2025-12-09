@@ -1096,11 +1096,12 @@ void Game::BuildLevelFromJSON(const std::string& fileName)
 
                         // Aplica no bloco
                         block->SetFlipData(rotation, scale);
+                    }
                 }
             }
         }
     }
-}
+    
 
     for (const auto& layer : layers)
     {
@@ -1244,6 +1245,27 @@ void Game::SetGameOverInfo(Actor* killer)
                      return;
                  }
             }
+        }
+    }
+}
+
+void Game::SetLevelComplete(Actor* endActor)
+{
+    // Pause all active actors except the end sequence actor
+    for (auto actor : mActors)
+    {
+        if (actor != endActor && actor->GetState() == ActorState::Active)
+        {
+            actor->SetState(ActorState::Paused);
+        }
+    }
+
+    // Also handle pending actors
+    for (auto actor : mPendingActors)
+    {
+        if (actor != endActor && actor->GetState() == ActorState::Active)
+        {
+            actor->SetState(ActorState::Paused);
         }
     }
 }
