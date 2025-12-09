@@ -1123,7 +1123,9 @@ void Game::BuildLevelFromJSON(const std::string& fileName)
                 if (name == "PlayerStart") {
                     mPlayer = new Spaceman(this);
                     mPlayer->SetPosition(finalPos);
-                    new TutorialDrawComponent(mPlayer);
+                    if (mCurrentScene == GameScene::Level1) {
+                        new TutorialDrawComponent(mPlayer);
+                    }
                 } else if (mCurrentScene == GameScene::Level3 && (name == "Policeman" || name == "Robot" || name == "RobotFlyer" || name == "AlienKid" || name == "AlienMan" || name == "AlienWoman" || name == "Soldier" )) {
                     // Skip enemies in Level 3
                     continue;
