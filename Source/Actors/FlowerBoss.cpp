@@ -15,7 +15,7 @@
 
 FlowerBoss::FlowerBoss(Game* game, const std::string& reason)
     : Actor(game)
-    , mHP(15)
+    , mHP(100)
     , mPhase(1)
     , mState(0)
     , mStateTimer(0.0f)
