@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.10" tiledversion="1.11.2" orientation="orthogonal" renderorder="right-down" width="30" height="20" tilewidth="16" tileheight="16" infinite="1" nextlayerid="2" nextobjectid="1">
  <tileset firstgid="1" source="Level1.tsx"/>
+ <tileset firstgid="626" source="Tiles.tsx"/>
+ <tileset firstgid="1650" source="vegetation-1-alt-2.tsx"/>
+ <tileset firstgid="5746" source="NaveQuebrada.tsx"/>
  <layer id="1" name="Camada de Blocos 1" width="30" height="20">
   <data encoding="csv">
    <chunk x="-32" y="0" width="16" height="16">

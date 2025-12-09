@@ -79,18 +79,18 @@ void InventoryScreen::SetupUI()
     mHeadSlot.item = {ItemType::None, ""};
     mHeadSlot.itemImage = nullptr;
     mHeadSlot.rect = nullptr;
-    UIRect* headRect = AddRect(mHeadSlot.pos, Vector2(60, 60), 1.0f, 0.0f, 110);
-    headRect->SetColor(Vector4(1.0f, 0.0f, 0.0f, 0.5f)); // Bright Red for visibility
-    mHeadSlot.rect = headRect;
+    // UIRect* headRect = AddRect(mHeadSlot.pos, Vector2(60, 60), 1.0f, 0.0f, 110);
+    // headRect->SetColor(Vector4(0.5f, 0.5f, 0.5f, 1.0f)); // Grey
+    // mHeadSlot.rect = headRect;
     
     // Hand Slot
     mHandSlot.pos = mHandSlotPos; 
     mHandSlot.item = {ItemType::None, ""};
     mHandSlot.itemImage = nullptr;
     mHandSlot.rect = nullptr;
-    UIRect* handRect = AddRect(mHandSlot.pos, Vector2(60, 60), 1.0f, 0.0f, 110);
-    handRect->SetColor(Vector4(0.0f, 1.0f, 0.0f, 0.5f)); // Bright Green for visibility
-    mHandSlot.rect = handRect;
+    // UIRect* handRect = AddRect(mHandSlot.pos, Vector2(60, 60), 1.0f, 0.0f, 110);
+    // handRect->SetColor(Vector4(0.5f, 0.5f, 0.5f, 1.0f)); // Grey
+    // mHandSlot.rect = handRect;
 
     // Sync with current player state
     const Spaceman* player = mGame->GetPlayer();
@@ -316,17 +316,17 @@ void InventoryScreen::Update(float deltaTime)
     // Update highlights
     for (int i = 0; i < mGridSlots.size(); ++i) {
         if (i == mSelectedSlotIndex) {
-            mGridSlots[i].rect->SetColor(Vector4(1.0f, 1.0f, 0.0f, 1.0f));
+            mGridSlots[i].rect->SetColor(Vector4(1.0f, 1.0f, 1.0f, 1.0f)); // White highlight
         } else {
-            mGridSlots[i].rect->SetColor(Vector4(0.5f, 0.5f, 0.5f, 1.0f));
+            mGridSlots[i].rect->SetColor(Vector4(0.5f, 0.5f, 0.5f, 1.0f)); // Grey
         }
     }
     
-    if (mSelectedSlotIndex == 9) mHeadSlot.rect->SetColor(Vector4(1.0f, 1.0f, 0.0f, 1.0f));
-    else mHeadSlot.rect->SetColor(Vector4(1.0f, 0.0f, 0.0f, 0.5f));
+    // if (mSelectedSlotIndex == 9) mHeadSlot.rect->SetColor(Vector4(1.0f, 1.0f, 1.0f, 1.0f));
+    // else mHeadSlot.rect->SetColor(Vector4(0.5f, 0.5f, 0.5f, 1.0f));
 
-    if (mSelectedSlotIndex == 10) mHandSlot.rect->SetColor(Vector4(1.0f, 1.0f, 0.0f, 1.0f));
-    else mHandSlot.rect->SetColor(Vector4(0.0f, 1.0f, 0.0f, 0.5f));
+    // if (mSelectedSlotIndex == 10) mHandSlot.rect->SetColor(Vector4(1.0f, 1.0f, 1.0f, 1.0f));
+    // else mHandSlot.rect->SetColor(Vector4(0.5f, 0.5f, 0.5f, 1.0f));
     
     int mouseX, mouseY;
     Uint32 buttons = SDL_GetMouseState(&mouseX, &mouseY);
