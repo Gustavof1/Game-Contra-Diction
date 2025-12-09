@@ -98,9 +98,15 @@ void TutorialDrawComponent::Draw(Renderer* renderer)
 {
     if (!mIsVisible) return;
 
+    // Switch to BaseShader to ignore lighting
+    // Shader* oldShader = renderer->GetActiveShader(); 
+    
+    renderer->SetActiveShader(renderer->GetBaseShader());
+
     // If all are hidden, we can stop drawing or even destroy the component (but let's just hide for now)
     if (!mShowJump && !mShowMove && !mShowCrouch && !mShowShoot && !mShowDance && !mShowInventory && !mShowRun)
     {
+        renderer->SetActiveShader(renderer->GetLightShader()); // Restore
         return;
     }
 
@@ -259,6 +265,9 @@ void TutorialDrawComponent::Draw(Renderer* renderer)
         }
         currentY += rowSpacing;
     }
+
+    // Restore LightShader
+    renderer->SetActiveShader(renderer->GetLightShader());
 }
 
 
