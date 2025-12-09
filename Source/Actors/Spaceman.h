@@ -36,6 +36,8 @@ public:
     ItemType GetHeadItem() const { return mHeadItem; }
     ItemType GetHandItem() const { return mHandItem; }
 
+    int GetJumpCount() const { return mJumpCount; }
+
     PlayerPosture GetPosture() const { return mPosture; }
 
 private:

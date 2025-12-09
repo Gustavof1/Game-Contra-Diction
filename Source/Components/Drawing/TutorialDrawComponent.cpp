@@ -1,16 +1,19 @@
 #include "TutorialDrawComponent.h"
 #include "../../Actors/Actor.h"
 #include "../../Game.h"
+#include "../../Actors/Spaceman.h"
 
 TutorialDrawComponent::TutorialDrawComponent(Actor* owner)
     : DrawComponent(owner, 200) // Higher draw order to be on top
     , mShowJump(true)
+    , mShowDoubleJump(true)
     , mShowMove(true)
     , mShowCrouch(true)
     , mShowShoot(true)
     , mShowDance(true)
     , mShowInventory(true)
     , mShowRun(true)
+    , mJumpKeyReleased(true)
 {
     Renderer* renderer = owner->GetGame()->GetRenderer();
 
@@ -34,6 +37,7 @@ TutorialDrawComponent::TutorialDrawComponent(Actor* owner)
     mFont->Load("../Assets/Fonts/ALS_Micro_Bold.ttf");
 
     mTexJump = mFont->RenderText("Jump", Vector3(1.0f, 1.0f, 1.0f), 20);
+    mTexDoubleJump = mFont->RenderText("2x JUMP = Double Jump ", Vector3(1.0f, 1.0f, 1.0f), 20);
     mTexMove = mFont->RenderText("Move", Vector3(1.0f, 1.0f, 1.0f), 20);
     mTexCrouch = mFont->RenderText("Crouch", Vector3(1.0f, 1.0f, 1.0f), 20);
     mTexShoot = mFont->RenderText("Shoot", Vector3(1.0f, 0.0f, 0.0f), 20); // Red for Shoot
@@ -51,6 +55,7 @@ TutorialDrawComponent::~TutorialDrawComponent()
     }
 
     if (mTexJump) delete mTexJump;
+    if (mTexDoubleJump) delete mTexDoubleJump;
     if (mTexMove) delete mTexMove;
     if (mTexCrouch) delete mTexCrouch;
     if (mTexShoot) delete mTexShoot;
@@ -61,10 +66,28 @@ TutorialDrawComponent::~TutorialDrawComponent()
 
 void TutorialDrawComponent::ProcessInput(const uint8_t* keyState)
 {
-    if (keyState[SDL_SCANCODE_W] || keyState[SDL_SCANCODE_SPACE] || keyState[SDL_SCANCODE_UP])
+    Spaceman* spaceman = dynamic_cast<Spaceman*>(mOwner);
+    if (spaceman && spaceman->GetJumpCount() >= 2)
     {
-        mShowJump = false;
+        mShowDoubleJump = false;
     }
+
+    bool jumpPressed = keyState[SDL_SCANCODE_W] || keyState[SDL_SCANCODE_SPACE] || keyState[SDL_SCANCODE_UP];
+    
+    if (jumpPressed)
+    {
+        if (mJumpKeyReleased) {
+            if (mShowJump) {
+                mShowJump = false;
+            }
+            mJumpKeyReleased = false;
+        }
+    }
+    else
+    {
+        mJumpKeyReleased = true;
+    }
+
     if (keyState[SDL_SCANCODE_A] || keyState[SDL_SCANCODE_D] || keyState[SDL_SCANCODE_LEFT] || keyState[SDL_SCANCODE_RIGHT])
     {
         mShowMove = false;
@@ -104,7 +127,7 @@ void TutorialDrawComponent::Draw(Renderer* renderer)
     renderer->SetActiveShader(renderer->GetBaseShader());
 
     // If all are hidden, we can stop drawing or even destroy the component (but let's just hide for now)
-    if (!mShowJump && !mShowMove && !mShowCrouch && !mShowShoot && !mShowDance && !mShowInventory && !mShowRun)
+    if (!mShowJump && !mShowDoubleJump && !mShowMove && !mShowCrouch && !mShowShoot && !mShowDance && !mShowInventory && !mShowRun)
     {
         renderer->SetActiveShader(renderer->GetLightShader()); // Restore
         return;
@@ -163,6 +186,19 @@ void TutorialDrawComponent::Draw(Renderer* renderer)
         {
             Vector2 textSize(mTexJump->GetWidth() * textScale, mTexJump->GetHeight() * textScale);
             renderer->DrawTexture(Vector2(currentX, currentY), textSize, 0.0f, Vector3::One, mTexJump, Vector4::UnitRect, cameraPos);
+        }
+        currentY += rowSpacing;
+    }
+
+    // Row 1.5: "Double Jump = 2x JUMP"
+    if (mShowDoubleJump)
+    {
+        float currentX = startX + 25.0f; 
+        
+        if (mTexDoubleJump)
+        {
+            Vector2 textSize(mTexDoubleJump->GetWidth() * textScale, mTexDoubleJump->GetHeight() * textScale);
+            renderer->DrawTexture(Vector2(currentX, currentY), textSize, 0.0f, Vector3::One, mTexDoubleJump, Vector4::UnitRect, cameraPos);
         }
         currentY += rowSpacing;
     }

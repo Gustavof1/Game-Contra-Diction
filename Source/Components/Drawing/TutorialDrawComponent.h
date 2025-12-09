@@ -34,14 +34,18 @@ private:
     Texture* mTexDance;
     Texture* mTexInventory;
     Texture* mTexRun;
+    Texture* mTexDoubleJump;
 
     Font* mFont;
 
     bool mShowJump;
+    bool mShowDoubleJump;
     bool mShowMove;
     bool mShowCrouch;
     bool mShowShoot;
     bool mShowDance;
     bool mShowInventory;
     bool mShowRun;
+    
+    bool mJumpKeyReleased;
 };
