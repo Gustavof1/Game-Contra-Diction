@@ -1,21 +1,17 @@
 # Contra-Diction
 
-## Screenshots
+## Gameplay
+```Clique na imagem para assistir```
 
-### Gameplay
-![Gameplay](Gameplay%20Images/GameplayImage.png)
+[![Gameplay](Gameplay%20Images/contra-diction.jpg)](https://youtu.be/BA2nu5bin9o)
+
+## Screenshots
 
 ### Inventário
 ![Inventory](Gameplay%20Images/Inventory.png)
 
 ### Debug
 ![Debug](Gameplay%20Images/DebugImage.png)
-
-### Vídeo de Exemplo
-[Assista ao vídeo](Gameplay%20Images/ExampleVideo.webm)
-
-## Título
-**Contra-Diction**
 
 ## Descrição
 
