@@ -1,7 +1,7 @@
 # Contra-Diction
 
 ## Gameplay
-```Clique na imagem para assistir```
+https://youtu.be/BA2nu5bin9o
 
 [![Gameplay](Gameplay%20Images/contra-diction.jpg)](https://youtu.be/BA2nu5bin9o)
 
